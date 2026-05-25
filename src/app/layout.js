@@ -72,6 +72,20 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#1a365d" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msvalidate.01" content="9ACF89BD41333B26F8C154D46FDD8E5D" />
+  
+          {/* Google Ads conversion snippet */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16559467502/wNzYCJGyqZkcEO7Xldg9',
+                'value': 1.0,
+                'currency': 'INR'
+              });
+            `,
+          }}
+        />
+            
       </head>
       <body className={`body bg-black ${lato.className} ${rubik.className}`}>
         {/* GTM noscript fallback */}
