@@ -2,6 +2,7 @@
 import { Lato, Rubik } from "next/font/google";
 import Script from "next/script";
 import { Partytown } from "@builder.io/partytown/react";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 import Navbar from "@/components/Common/Navbar";
@@ -116,6 +117,9 @@ export default function RootLayout({ children }) {
         <div className="app-footer">
           <Footer />
         </div>
+
+        {/* Vercel Web Analytics */}
+        <Analytics />
 
         {/* --- Partytown Scripts --- */}
         {/* GTM - Offloaded to Web Worker */}
