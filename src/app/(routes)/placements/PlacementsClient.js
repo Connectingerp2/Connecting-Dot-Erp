@@ -2,11 +2,8 @@
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import Btnform from "@/components/HomePage/Btnform";
-const PopupForm = dynamic(() => import("./PopupForm"), {
+const PopupForm = dynamic(() => import("@/components/PopupForm"), {
   ssr: false,
-  // No fallback needed: the popup and bookmark tab are both fixed-position
-  // and invisible until triggered, so rendering nothing here causes no
-  // layout shift while the chunk loads.
   loading: () => null,
 });
 
