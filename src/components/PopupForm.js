@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -52,7 +51,8 @@ const PopupForm = ({
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [activeSuggestion, setActiveSuggestion] = useState(-1);
   const [locationSuggestions, setLocationSuggestions] = useState([]);
-  const [isLoadingCities, setIsLoadingCities] = useState(true);
+  const [isLoadingCities, setIsLoadingCities] = useState(false);
+  const [hasFocusedLocation, setHasFocusedLocation] = useState(false);
 
   // Submission state
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -76,10 +76,14 @@ const PopupForm = ({
     { value: "HR Course", label: "HR Course" },
   ];
 
-  // Load Indian cities and major global cities
+  // Load Indian cities and major global cities — deferred until the user
+  // actually interacts with the location field, not on popup open. The popup
+  // auto-opens on a timer on every page, so loading this on `isVisible` meant
+  // nearly every visitor downloaded the full cities dataset whether or not
+  // they ever touched this field.
   useEffect(() => {
 
-    if (!isVisible || locationSuggestions.length > 0) {
+    if (!hasFocusedLocation || locationSuggestions.length > 0) {
       return;
     }
 
@@ -253,7 +257,7 @@ const PopupForm = ({
     return () => {
       isMounted = false;
     };
-  }, [isVisible, locationSuggestions.length]);
+  }, [hasFocusedLocation, locationSuggestions.length]);
 
   useEffect(() => {
     if (open) setIsVisible(true);
@@ -593,12 +597,26 @@ const PopupForm = ({
 
       console.log("Submitting formData:", formData);
 
-      const { default: axios } = await import("axios");
-      const response = await axios.post(`${apiUrl}/api/submit`, formData);
+      // Native fetch instead of a dynamically-imported axios — removes the
+      // dependency entirely rather than just deferring it.
+      const res = await fetch(`${apiUrl}/api/submit`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-      console.log("PopupForm submitted successfully:", response.data);
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        const err = new Error(data?.message || "Request failed");
+        err.status = res.status;
+        err.responseData = data;
+        throw err;
+      }
+
+      console.log("PopupForm submitted successfully:", data);
       setStatusMessage({
-        text: response.data.message || "Registration complete!",
+        text: data.message || "Registration complete!",
         type: "success",
       });
 
@@ -626,27 +644,24 @@ const PopupForm = ({
       let alertMessage =
         "An error occurred while submitting. Please try again.";
 
-      if (error?.isAxiosError) {
-        if (error.response) {
-          const status = error.response.status;
-          const responseData = error.response.data;
-          console.error(`Response Status: ${status}`);
-          console.error("Raw Response Data:", responseData);
+      if (typeof error?.status === "number") {
+        const status = error.status;
+        const responseData = error.responseData;
+        console.error(`Response Status: ${status}`);
+        console.error("Raw Response Data:", responseData);
 
-          if (status === 400) {
-            alertMessage =
-              responseData?.message ||
-              "Submission failed. Please check your input.";
-            console.log("Backend 400 message for alert:", alertMessage);
-          } else {
-            alertMessage = `Submission failed due to a server issue (Status: ${status}). Please try again later.`;
-          }
-        } else if (error.request) {
+        if (status === 400) {
           alertMessage =
-            "Cannot reach the server. Check connection or try again later.";
+            responseData?.message ||
+            "Submission failed. Please check your input.";
+          console.log("Backend 400 message for alert:", alertMessage);
         } else {
-          alertMessage = `Application error before sending: ${error.message}`;
+          alertMessage = `Submission failed due to a server issue (Status: ${status}). Please try again later.`;
         }
+      } else if (error instanceof TypeError) {
+        // fetch throws TypeError for network failures (no res.status available)
+        alertMessage =
+          "Cannot reach the server. Check connection or try again later.";
       } else {
         alertMessage = `Unexpected application error: ${error.message || "Unknown error"}`;
       }
@@ -990,13 +1005,14 @@ const PopupForm = ({
                     onChange={handleLocationChange}
                     onKeyDown={handleLocationKeyDown}
                     onFocus={() => {
+                      if (!hasFocusedLocation) setHasFocusedLocation(true);
                       if (location.length > 0 && filteredSuggestions.length > 0) {
                         setShowSuggestions(true);
                       }
                     }}
                     required
                     maxLength="100"
-                    disabled={isSubmitting || isLoadingCities}
+                    disabled={isSubmitting}
                     aria-describedby="popup-status"
                     autoComplete="off"
                   />
@@ -1080,7 +1096,7 @@ const PopupForm = ({
 
                 <button
                   type="submit"
-                  disabled={isSubmitting || isLoadingCities}
+                  disabled={isSubmitting}
                   className={isSubmitting ? styles.submitting : ""}
                 >
                   {isSubmitting ? (

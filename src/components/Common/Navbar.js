@@ -4,34 +4,27 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
-import {
-  BadgeCheck,
-  BarChart3,
-  Braces,
-  Building2,
-  Cloud,
-  Code2,
-  Database,
-  Factory,
-  FileText,
-  Leaf,
-  LineChart,
-  Network,
-  Package,
-  ServerCog,
-  ShieldCheck,
-  Truck,
-  UserRound,
-  UsersRound,
-  Wrench,
-} from "lucide-react";
+import dynamic from "next/dynamic";
 import styles from "@/styles/Common/Navbar.module.css";
 
-// Dynamic import for AnimatedLogo
-import dynamic from "next/dynamic";
 const AnimatedLogo = dynamic(() => import("../AnimatedLogo"), {
   ssr: false,
   loading: () => <div className={styles.animatedLogoPlaceholder} />,
+});
+
+// Each mega-menu (and its ~15-icon data array) now loads as its own chunk,
+// only when that specific dropdown is opened — not on initial navbar load.
+const SAPMegaMenu = dynamic(() => import("./SAPMegaMenu"), {
+  ssr: false,
+  loading: () => <li className={styles.sapMenuColumn} />,
+});
+const ITMegaMenu = dynamic(() => import("./ITMegaMenu"), {
+  ssr: false,
+  loading: () => <li className={styles.sapMenuColumn} />,
+});
+const HRMegaMenu = dynamic(() => import("./HRMegaMenu"), {
+  ssr: false,
+  loading: () => <li className={styles.sapMenuColumn} />,
 });
 
 // Custom component definitions
@@ -73,344 +66,6 @@ const Button = ({ className, onClick, children, ...props }) => (
     {children}
   </button>
 );
-
-const sapMenuSections = [
-  {
-    title: "SAP Functional",
-    description: "Business & Process Oriented Solutions",
-    Icon: UsersRound,
-    items: [
-      {
-        name: "SAP FICO",
-        link: "/sap-fico-course-in-pune",
-        Icon: LineChart,
-        color: "teal",
-      },
-      {
-        name: "SAP Ariba",
-        link: "/sap-ariba-course-in-pune",
-        Icon: BadgeCheck,
-        color: "yellow",
-      },
-      {
-        name: "SAP MM",
-        link: "/sap-mm-course-in-pune",
-        Icon: Package,
-        color: "orange",
-      },
-      {
-        name: "SAP SD",
-        link: "/sap-sd-course-in-pune",
-        Icon: FileText,
-        color: "cyan",
-      },
-      {
-        name: "SAP HR/HCM",
-        link: "/sap-hr-hcm-course-in-pune",
-        Icon: UserRound,
-        color: "violet",
-      },
-      {
-        name: "SAP PP",
-        link: "/sap-pp-course-in-pune",
-        Icon: Factory,
-        color: "purple",
-      },
-      {
-        name: "SAP QM",
-        link: "/sap-qm-course-in-pune",
-        Icon: ShieldCheck,
-        color: "blue",
-      },
-      {
-        name: "SAP PM",
-        link: "/sap-pm-course-in-pune",
-        Icon: Wrench,
-        color: "green",
-      },
-      {
-        name: "SAP PS",
-        link: "/sap-ps-course-in-pune",
-        Icon: FileText,
-        color: "pink",
-      },
-      {
-        name: "SAP EWM",
-        link: "/sap-ewm-course-in-pune",
-        Icon: Truck,
-        color: "orange",
-      },
-      {
-        name: "SAP SCM",
-        link: "/sap-scm-course-in-pune",
-        Icon: Network,
-        color: "sky",
-      },
-      {
-        name: "SAP BTP",
-        link: "/sap-btp-course-in-pune",
-        Icon: Cloud,
-        color: "blue",
-      },
-      {
-        name: "SAP EHS",
-        link: "/sap-ehs-course-in-pune",
-        Icon: Leaf,
-        color: "green",
-      },
-      {
-        name: "SAP GRC",
-        link: "/sap-grc-course-in-pune",
-        Icon: ShieldCheck,
-        color: "violet",
-      },
-      {
-        name: "SAP IBP",
-        link: "/sap-ibp-course-in-pune",
-        Icon: BarChart3,
-        color: "indigo",
-      },
-      {
-        name: "SAP SUCCESSFACTOR",
-        link: "/sap-successfactors-course-in-pune",
-        Icon: UsersRound,
-        color: "orange",
-      },
-    ],
-  },
-  {
-    title: "SAP Technical",
-    description: "Technology & Development Focused",
-    Icon: Code2,
-    items: [
-      {
-        name: "SAP ABAP",
-        link: "/sap-abap-course-in-pune",
-        Icon: Braces,
-        color: "indigo",
-      },
-      {
-        name: "SAP S/4 HANA",
-        link: "/sap-s4-hana-course-in-pune",
-        Icon: Building2,
-        color: "blue",
-        sapBadge: true,
-      },
-      {
-        name: "SAP BW/BI",
-        link: "/sap-bwbi-course-in-pune",
-        Icon: Database,
-        color: "violet",
-      },
-      {
-        name: "SAP BASIS",
-        link: "/sap-basis-course-in-pune",
-        Icon: ServerCog,
-        color: "orange",
-      },
-    ],
-  },
-];
-
-// IT Courses with AI — grouped into mega-menu sections, same visual language as SAP
-const itMenuSections = [
-  {
-    title: "AI & Data Programs",
-    description: "Future-ready Skills Powered by AI",
-    Icon: BarChart3,
-    items: [
-      {
-        name: "Data Science with AI",
-        link: "/data-science-with-ai-course-in-pune",
-        Icon: Database,
-        color: "blue",
-      },
-      {
-        name: "Generative AI",
-        link: "/generative-ai-course-in-pune",
-        Icon: Network,
-        color: "violet",
-      },
-      {
-        name: "Agentic AI",
-        link: "/agentic-ai-course-in-pune",
-        Icon: ServerCog,
-        color: "indigo",
-      },
-      {
-        name: "Python with AI",
-        link: "/python-with-ai-course-in-pune",
-        Icon: Braces,
-        color: "teal",
-      },
-      {
-        name: "AIML",
-        link: "/ai-ml-course-in-pune",
-        Icon: BarChart3,
-        color: "purple",
-      },
-      {
-        name: "Advanced Data Analytics",
-        link: "/advanced-data-analytics-with-generative-ai-course-in-pune",
-        Icon: LineChart,
-        color: "cyan",
-      },
-      {
-        name: "Data Visualization with AI",
-        link: "/data-visualization-with-ai-course-in-pune",
-        Icon: FileText,
-        color: "yellow",
-      },
-      {
-        name: "Power BI",
-        link: "/power-bi-course-in-pune",
-        Icon: BarChart3,
-        color: "orange",
-      },
-      {
-        name: "Tableau",
-        link: "/tableau-course-in-pune",
-        Icon: LineChart,
-        color: "sky",
-      },
-    ],
-  },
-  {
-    title: "Development & Cloud",
-    description: "Full-Stack, Cloud & Enterprise Tech",
-    Icon: Code2,
-    items: [
-      {
-        name: "Full-Stack with AI",
-        link: "/full-stack-with-ai-course-in-pune",
-        Icon: Code2,
-        color: "blue",
-        sapBadge: true,
-      },
-      {
-        name: "JAVA",
-        link: "/java-course-in-pune",
-        Icon: Braces,
-        color: "orange",
-      },
-      {
-        name: "AWS",
-        link: "/aws-course-in-pune",
-        Icon: Cloud,
-        color: "yellow",
-      },
-      {
-        name: "DevOps",
-        link: "/devops-course-in-pune",
-        Icon: ServerCog,
-        color: "green",
-      },
-      {
-        name: "Salesforce",
-        link: "/salesforce-course-in-pune",
-        Icon: Building2,
-        color: "sky",
-      },
-    ],
-  },
-];
-
-// HR Courses — single mega-menu section, same visual language as SAP
-const hrMenuSections = [
-  {
-    title: "HR Programs",
-    description: "Human Resource Skills & Career Tracks",
-    Icon: UsersRound,
-    items: [
-      {
-        name: "HR Training",
-        link: "/hr-training-course-in-pune",
-        Icon: UserRound,
-        color: "blue",
-      },
-      {
-        name: "Core HR",
-        link: "/core-hr-course-in-pune",
-        Icon: Building2,
-        color: "teal",
-      },
-      {
-        name: "HR Payroll",
-        link: "/hr-payroll-course-in-pune",
-        Icon: FileText,
-        color: "orange",
-      },
-      {
-        name: "HR Management",
-        link: "/hr-management-course-in-pune",
-        Icon: UsersRound,
-        color: "violet",
-      },
-      {
-        name: "HR Generalist",
-        link: "/hr-generalist-course-in-pune",
-        Icon: BadgeCheck,
-        color: "yellow",
-      },
-      {
-        name: "HR Analytics",
-        link: "/hr-analytics-course-in-pune",
-        Icon: BarChart3,
-        color: "indigo",
-      },
-    ],
-  },
-];
-
-// Shared renderer for a mega-menu section (used by SAP, IT, and HR dropdowns)
-const renderMegaMenuSections = (sections, onItemClick) =>
-  sections.map((section) => {
-    const SectionIcon = section.Icon;
-
-    return (
-      <li key={section.title} className={styles.sapMenuColumn}>
-        <div className={styles.sapMenuHeader}>
-          <span className={styles.sapHeaderIcon}>
-            <SectionIcon aria-hidden="true" size={25} strokeWidth={2} />
-          </span>
-          <span>
-            <span className={styles.sapMenuTitle}>{section.title}</span>
-            <span className={styles.sapMenuSubtitle}>
-              {section.description}
-            </span>
-          </span>
-        </div>
-        <ul className={styles.sapMenuGrid}>
-          {section.items.map((item) => {
-            const ItemIcon = item.Icon;
-
-            return (
-              <li key={item.name}>
-                <Link
-                  className={styles.sapMenuLink}
-                  href={item.link}
-                  onClick={() => onItemClick(item.link)}
-                >
-                  <span
-                    className={`${styles.sapItemIcon} ${
-                      styles[`sapIcon${item.color}`]
-                    } ${item.sapBadge ? styles.sapSapBadge : ""}`}
-                  >
-                    {item.sapBadge ? (
-                      <span className={styles.sapLogoMark}>AI</span>
-                    ) : (
-                      <ItemIcon aria-hidden="true" size={18} strokeWidth={2} />
-                    )}
-                  </span>
-                  <span>{item.name}</span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </li>
-    );
-  });
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -599,32 +254,6 @@ const Header = () => {
     [mobileOpenDropdown]
   );
 
-  const handleNavigation = useCallback(
-    (link, section) => {
-      const linkBasePath = link.split("#")[0];
-      if (pathname !== linkBasePath) {
-        router.push(linkBasePath).then(() => {
-          if (section) {
-            setTimeout(() => {
-              document
-                .getElementById(section)
-                ?.scrollIntoView({ behavior: "smooth", block: "start" });
-            }, 100);
-          }
-          closeSidebar();
-        });
-      } else {
-        if (section) {
-          document
-            .getElementById(section)
-            ?.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-        closeSidebar();
-      }
-    },
-    [pathname, router, closeSidebar]
-  );
-
   // Touch gesture handlers
   const handleTouchStart = useCallback((e) => {
     setTouchStartX(e.touches[0].clientX);
@@ -728,7 +357,7 @@ const Header = () => {
           className={`${styles.dropdownMenu} ${styles.sapMegaMenu} ${styles.show}`}
           aria-labelledby="dropdownMenuButton2"
         >
-          {renderMegaMenuSections(sapMenuSections, handleNavClick)}
+          <SAPMegaMenu onItemClick={handleNavClick} />
         </ul>
       )}
     </div>
@@ -788,7 +417,7 @@ const Header = () => {
           className={`${styles.dropdownMenu} ${styles.sapMegaMenu} ${styles.itMegaMenu} ${styles.show}`}
           aria-labelledby="dropdownMenuButton3"
         >
-          {renderMegaMenuSections(itMenuSections, handleNavClick)}
+          <ITMegaMenu onItemClick={handleNavClick} />
         </ul>
       )}
     </div>
@@ -848,7 +477,7 @@ const Header = () => {
           className={`${styles.dropdownMenu} ${styles.sapMegaMenu} ${styles.hrMegaMenu} ${styles.show}`}
           aria-labelledby="dropdownMenuButton6"
         >
-          {renderMegaMenuSections(hrMenuSections, handleNavClick)}
+          <HRMegaMenu onItemClick={handleNavClick} />
         </ul>
       )}
     </div>

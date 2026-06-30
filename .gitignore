@@ -10,6 +10,12 @@
 !.yarn/releases
 !.yarn/versions
 
+#report
+ALL_COURSE_CITY_LINKS.md
+BROKEN_LINKS_REPORT.md
+DEPENDENCY_USAGE_REPORT.md
+TODO.md
+
 # testing
 /coverage
 

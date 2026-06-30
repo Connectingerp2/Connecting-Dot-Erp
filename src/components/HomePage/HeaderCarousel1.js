@@ -1,64 +1,18 @@
-
-"use client";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const ConsultationButton = dynamic(
+  () => import("./ConsultationButton"),
+  {
+    ssr: false,
+  }
+);
+
 /* ---------- Inline SVG icons (no extra deps needed) ---------- */
 
 const StarIcon = ({ className }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     <path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.3l6.5-.9L12 2.5z" />
-  </svg>
-);
-
-const GradCapIcon = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M22 10L12 5 2 10l10 5 10-5z" />
-    <path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5" />
-    <path d="M22 10v5" />
-  </svg>
-);
-
-const StarOutline = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.3l6.5-.9L12 2.5z" />
-  </svg>
-);
-
-const BriefcaseIcon = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <rect x="3" y="7" width="18" height="13" rx="2" />
-    <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
-    <path d="M3 12h18" />
-  </svg>
-);
-
-const UsersIcon = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <circle cx="9" cy="8" r="3.2" />
-    <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
-    <path d="M16 4.5a3 3 0 0 1 0 6" />
-    <path d="M18 14c2.2.7 4 2.6 4 5" />
-  </svg>
-);
-
-const BookIcon = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M4 5a2 2 0 0 1 2-2h6v17H6a2 2 0 0 0-2 2V5z" />
-    <path d="M20 5a2 2 0 0 0-2-2h-6v17h6a2 2 0 0 1 2 2V5z" />
-  </svg>
-);
-
-const ArrowRight = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M5 12h14" />
-    <path d="M13 6l6 6-6 6" />
-  </svg>
-);
-
-const DownloadIcon = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M12 3v12" />
-    <path d="M7 11l5 5 5-5" />
-    <path d="M4 21h16" />
   </svg>
 );
 
@@ -103,28 +57,32 @@ const OrbitBackground = ({ className }) => (
 
 /* ---------- Data ---------- */
 
-
-
+// Was a raw, untransformed Cloudinary URL (full-resolution WhatsApp upload —
+// likely several MB). That's the LCP culprit: this image renders above the
+// fold with `fill` + `sizes="100vw"`, so the browser was requesting a huge
+// width *of an already-huge source*. Added f_auto/q_auto/c_fill/w_ to compress
+// and cap the source Cloudinary serves before Next's image optimizer even
+// touches it.
 const heroBackgroundImage =
-  "https://res.cloudinary.com/df65lfym1/image/upload/v1781782322/WhatsApp_Image_2026-06-18_at_3.51.37_PM_i4hsiu.webp";
+  "https://res.cloudinary.com/df65lfym1/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1920/v1781782322/WhatsApp_Image_2026-06-18_at_3.51.37_PM_i4hsiu.webp";
 
-/* ---------- Component ---------- */
+/* ---------- Component (Server Component — no "use client") ---------- */
 
 export default function CareerHeroSlide({ onOpenForm }) {
   return (
-<section className="relative min-h-[560px] w-full overflow-hidden bg-purple-50 sm:min-h-[700px] md:min-h-[750px] lg:min-h-[800px]">
-  <div className="absolute inset-0 ">
-    <Image
-      src={heroBackgroundImage}
-      alt="Connecting Dots ERP building"
-      fill
-      priority
-      fetchPriority="high"
-      sizes="100vw"
-      className="-z-0 object-cover"
-    />
-  </div>
-    
+    <section className="relative min-h-[560px] w-full overflow-hidden bg-purple-50 sm:min-h-[700px] md:min-h-[750px] lg:min-h-[800px]">
+      <div className="absolute inset-0 ">
+        <Image
+          src={heroBackgroundImage}
+          alt="Connecting Dots ERP building"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="100vw"
+          className="-z-0 object-cover"
+        />
+      </div>
+
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-purple-950/15 via-transparent to-transparent" />
       {/* decorative sparkles */}
       <span className="pointer-events-none absolute right-5 top-10 z-10 select-none text-xl text-purple-200 sm:right-10 sm:top-12 sm:text-2xl">✦</span>
@@ -144,30 +102,22 @@ export default function CareerHeroSlide({ onOpenForm }) {
             </div>
 
             {/* heading */}
-<h1 className="mt-6 text-3xl font-extrabold leading-[1.05] tracking-tight text-white lg:!text-gray-900 sm:mt-7 lg:text-6xl xl:text-7xl">
-  Secure your
-  <br />
-  <span className="text-purple-600">Dream Career</span> with
-  <br />
-  Live Classes
-</h1>
+            <h1 className="mt-6 text-3xl font-extrabold leading-[1.05] tracking-tight text-white lg:!text-gray-900 sm:mt-7 lg:text-6xl xl:text-7xl">
+              Secure your
+              <br />
+              <span className="text-purple-600">Dream Career</span> with
+              <br />
+              Live Classes
+            </h1>
 
             {/* sub copy */}
             <p className="mt-5 max-w-md rounded-3xl bg-white/85 px-4 py-3 text-base font-medium leading-relaxed text-gray-700 shadow-sm shadow-slate-900/5 sm:mt-6 sm:text-lg">
-              From more than 10 years,we've been passionate about providing engaging, instructor-led training that helps professionals around the world grow and succeed
+              From more than 10 years,we&apos;ve been passionate about providing engaging, instructor-led training that helps professionals around the world grow and succeed
             </p>
-
-
 
             {/* CTAs */}
             <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:gap-4">
-              <button
-                onClick={onOpenForm}
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-purple-600 px-6 py-3.5 font-semibold text-white shadow-lg shadow-purple-300/50 transition hover:bg-purple-700 sm:w-auto sm:px-7 sm:py-4"
-              >
-                Free Consultation
-                <ArrowRight className="h-4 w-4" />
-              </button>
+              <ConsultationButton onOpenForm={onOpenForm} />
             </div>
           </div>
 
@@ -178,12 +128,9 @@ export default function CareerHeroSlide({ onOpenForm }) {
 
             {/* soft radial glow behind building */}
             <div className="absolute inset-0 -z-10 scale-110 rounded-full bg-purple-300/30 blur-3xl" />
-
           </div>
         </div>
       </div>
-
-
     </section>
   );
-}
+} 
