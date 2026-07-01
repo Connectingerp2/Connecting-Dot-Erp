@@ -34,7 +34,7 @@ const STORIES = [
       "The mentors constantly supported my learning journey. Their practical approach and placement guidance helped me secure my dream opportunity successfully.",
     journey: [
       { title: "Training", desc: "Completed SAP SD training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
+      { title: "Scenario", desc: "Worked on real-time projects scenario and gained hands-on experience" },
       { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
       { title: "Placed", desc: "Successfully placed as SAP SD Consultant at CLTech" },
     ],
@@ -53,7 +53,7 @@ const STORIES = [
       "Every learning session focused on practical implementation and interview readiness. That experience played a huge role in achieving my placement.",
     journey: [
       { title: "Training", desc: "Completed SAP MM training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
+      { title: "Scenario", desc: "Worked on real-time projects scenario and gained hands-on experience" },
       { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
       { title: "Placed", desc: "Successfully placed as SAP MM Consultant at Deloitte" },
     ],
@@ -72,7 +72,7 @@ const STORIES = [
       "Excellent mentors, structured training, and continuous interview preparation made the entire placement process smooth. I achieved my career goal confidently.",
     journey: [
       { title: "Training", desc: "Completed SAP FICO training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
+      { title: "Scenario", desc: "Worked on real-time projects scenario and gained hands-on experience" },
       { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
       { title: "Placed", desc: "Successfully placed as SAP FICO Consultant at Market Legos" },
     ],
@@ -88,10 +88,10 @@ const STORIES = [
     rating: 5,
     placedIn: "Placed in 4 Months",
     testimonial:
-      "Real project exposure and dedicated mentoring helped strengthen my technical skills. I felt completely prepared while attending every interview round confidently.",
+      "Real project Scenario exposure and dedicated mentoring helped strengthen my technical skills. I felt completely prepared while attending every interview round confidently.",
     journey: [
       { title: "Training", desc: "Completed SAP Security training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
+      { title: "Scenario", desc: "Worked on real-time projects scenario and gained hands-on experience" },
       { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
       { title: "Placed", desc: "Successfully placed as SAP Security Consultant at Deloitte" },
     ],
@@ -110,7 +110,7 @@ const STORIES = [
       "From classroom learning to mock interviews, every stage improved my confidence. The placement support exceeded my expectations throughout the complete journey.",
     journey: [
       { title: "Training", desc: "Completed SAP FICO training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
+      { title: "Scenario", desc: "Worked on real-time projects scenario and gained hands-on experience" },
       { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
       { title: "Placed", desc: "Successfully placed as SAP FICO Consultant at Deloitte" },
     ],
