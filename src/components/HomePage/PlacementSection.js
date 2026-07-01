@@ -15,7 +15,7 @@ const STORIES = [
       "The expert guidance and practical training prepared me exceptionally well. Every interview became easier because of the confidence I gained.",
     journey: [
       { title: "Training", desc: "Completed SAP ABAP training with industry experts" },
-      { title: "Projects", desc: "Built real-time projects and gained hands-on experience" },
+      { title: "Scenario", desc: "Built real-time projects scenario and gained hands-on experience" },
       { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
       { title: "Placed", desc: "Successfully placed as SAP ABAP Consultant at AG Consultancy" },
     ],
