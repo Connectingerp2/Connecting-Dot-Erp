@@ -17,14 +17,13 @@ import {
   FaChevronRight,
   FaExclamationTriangle,
 } from "react-icons/fa";
-import * as XLSX from "xlsx";
+
+import XLSX from "xlsx";
 import { saveAs } from "file-saver";
-
 import { fetchWithAuth } from "@/utils/auth";
-
 import { useActivityLogger } from "./layout";
 
-const Dashboard = () => {
+const Dashboard = async () => {
   const [leads, setLeads] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);

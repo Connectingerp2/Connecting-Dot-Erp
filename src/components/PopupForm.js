@@ -92,7 +92,7 @@ const PopupForm = ({
     const loadLocationData = async () => {
       try {
         setIsLoadingCities(true);
-        const citiesModule = await import("cities.json");
+        const citiesModule = await import("@/data/india-cities.json");
         const cities = citiesModule.default || citiesModule;
 
         if (!isMounted) return;

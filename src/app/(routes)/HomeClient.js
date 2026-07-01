@@ -4,7 +4,6 @@
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import HeaderCarousel from "@/components/HomePage/HeaderCarousel";
-import Achievements from "@/components/HomePage/Achievements";
 
 const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {
   ssr: false,
@@ -30,7 +29,7 @@ const PlacementSection = dynamic(
   () => import("@/components/HomePage/PlacementSection"),
   {
     ssr: false,
-    loading: () => <div style={{ minHeight: "400px" }} />,
+    loading: () => <div style={{ minHeight: "520px" }} />,
   }
 );
 
@@ -71,7 +70,7 @@ const Branches = dynamic(() => import("@/components/HomePage/Branches"), {
 
 const Courses = dynamic(() => import("@/components/HomePage/PopCourses"), {
   ssr: false,
-  loading: () => <div style={{ minHeight: "400px" }} />,
+  loading: () => <div style={{ minHeight: "520px" }} />,
 });
 
 const LatestBlogs = dynamic(() => import("@/components/HomePage/Blogs"), {
@@ -79,7 +78,12 @@ const LatestBlogs = dynamic(() => import("@/components/HomePage/Blogs"), {
   loading: () => <div style={{ minHeight: "400px" }} />,
 });
 
-const LazySection = ({ children, fallback, rootMargin = "600px" }) => {
+const Achievements = dynamic(() => import("@/components/HomePage/Achievements"), {
+  ssr: false,
+  loading: () => <div style={{ minHeight: "760px" }} />,
+});
+
+const LazySection = ({ children, fallback, rootMargin = "350px", intrinsicSize }) => {
   const ref = useRef(null);
   const [shouldRender, setShouldRender] = useState(false);
 
@@ -108,7 +112,21 @@ const LazySection = ({ children, fallback, rootMargin = "600px" }) => {
     return () => observer.disconnect();
   }, [rootMargin, shouldRender]);
 
-  return <div ref={ref}>{shouldRender ? children : fallback}</div>;
+  return (
+    <div
+      ref={ref}
+      style={
+        intrinsicSize
+          ? {
+              contentVisibility: "auto",
+              containIntrinsicSize: intrinsicSize,
+            }
+          : undefined
+      }
+    >
+      {shouldRender ? children : fallback}
+    </div>
+  );
 };
 
 export default function HomeClient() {
@@ -135,10 +153,10 @@ export default function HomeClient() {
         <LazySection fallback={<div style={{ minHeight: "300px" }} />}>
           <Keypoints />
         </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
+        <LazySection fallback={<div style={{ minHeight: "520px" }} />} intrinsicSize="520px">
           <Courses />
         </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
+        <LazySection fallback={<div style={{ minHeight: "520px" }} />} intrinsicSize="520px">
           <PlacementSection />
         </LazySection>
 
@@ -150,12 +168,9 @@ export default function HomeClient() {
         <LazySection fallback={<div style={{ height: "190px", background: "#f8f9fb" }} />}>
           <PlacedTicker />
         </LazySection>
-        <Achievements
-          grayscale={false}
-          overlayBlurColor="transparent"
-          segments={24}
-          fit={0.5}
-        />
+        <LazySection fallback={<div style={{ minHeight: "760px" }} />} intrinsicSize="760px">
+          <Achievements />
+        </LazySection>
         <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
           <FeedbackAndReviews />
         </LazySection>

@@ -88,7 +88,7 @@ const DSHeader = ({ data }) => {
 
     const loadCities = async () => {
       try {
-        const citiesModule = await import("cities.json");
+        const citiesModule = await import("@/data/india-cities.json");
         const cities = citiesModule.default || citiesModule;
         const indianCities = cities.filter(
           (city) => city.country === "IN" || city.country === "India"

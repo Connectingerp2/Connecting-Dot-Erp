@@ -1,7 +1,16 @@
 "use client";
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
+import dynamic from "next/dynamic";
 import CareerHeroSlide from "@/components/HomePage/HeaderCarousel1";
-import Btnform from './Btnform';
+
+const loadBtnform = () => import("./Btnform");
+
+const Btnform = dynamic(loadBtnform, {
+  ssr: false,
+  loading: () => (
+    <div className="min-h-[560px] w-full rounded-lg bg-white p-5" />
+  ),
+});
 
 const HeaderCarousel = () => {
   const [showForm, setShowForm] = useState(false);
@@ -10,9 +19,23 @@ const HeaderCarousel = () => {
     setShowForm(prev => !prev);
   }, []);
 
+  useEffect(() => {
+    const preload = () => {
+      loadBtnform();
+    };
+
+    if ("requestIdleCallback" in window) {
+      const id = window.requestIdleCallback(preload, { timeout: 2500 });
+      return () => window.cancelIdleCallback(id);
+    }
+
+    const id = window.setTimeout(preload, 1500);
+    return () => window.clearTimeout(id);
+  }, []);
+
   return (
     <div className="w-full max-w-[1800px] mx-auto overflow-hidden relative">
-      <div className="relative min-h-[650px] sm:min-h-[700px] md:min-h-[750px] lg:min-h-[800px] bg-white overflow-hidden">
+      <div className="relative min-h-[560px] sm:min-h-[700px] md:min-h-[750px] lg:min-h-[800px] bg-white overflow-hidden">
         <div className="w-full h-full">
           <CareerHeroSlide onOpenForm={toggleForm} />
         </div>

@@ -70,26 +70,93 @@ const heroBackgroundImage =
 
 export default function CareerHeroSlide({ onOpenForm }) {
   return (
-    <section className="relative min-h-[560px] w-full overflow-hidden bg-purple-50 sm:min-h-[700px] md:min-h-[750px] lg:min-h-[800px]">
-      <div className="absolute inset-0 ">
+    <section className="relative w-full overflow-hidden bg-white sm:min-h-[560px] md:min-h-[700px] lg:min-h-[800px] sm:bg-purple-50">
+      {/* ================================================================
+          IMAGE BLOCK
+          Mobile: fixed h-[300px] (UNCHANGED HEIGHT — do not modify)
+          Desktop (sm+): absolute inset-0, exactly as before
+      ================================================================ */}
+      <div className="relative h-[300px] w-full overflow-hidden sm:absolute sm:inset-0 sm:h-full">
         <Image
           src={heroBackgroundImage}
           alt="Connecting Dots ERP building"
           fill
           priority
           fetchPriority="high"
-          sizes="100vw"
-          className="-z-0 object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1920px"
+          className="-z-0 object-cover object-[70%_center] sm:object-center"
         />
+
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-purple-950/15 via-transparent to-transparent" />
+        {/* decorative sparkles */}
+        <span className="pointer-events-none absolute right-5 top-10 z-10 select-none text-xl text-purple-200 sm:right-10 sm:top-12 sm:text-2xl">✦</span>
+        <span className="pointer-events-none absolute right-1/3 top-24 z-10 hidden select-none text-lg text-purple-200 sm:block">✦</span>
+        <span className="pointer-events-none absolute bottom-40 left-1/2 z-10 hidden select-none text-base text-purple-200 md:block">✦</span>
+
+        {/* ---------- MOBILE-ONLY: smooth white fade at bottom of image, so it
+             blends into the floating card / content below ---------- */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent via-white/70 to-white sm:hidden" />
+
+        {/* ---------- MOBILE-ONLY: badge + heading overlaid on the image ---------- */}
+        <div className="relative z-10 px-5 pt-10 sm:hidden">
+          {/* premium glass pill badge */}
+          <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-white/90 px-3.5 py-2 shadow-[0_8px_24px_rgba(124,58,237,0.18)] ring-1 ring-purple-100 backdrop-blur-md">
+            <StarIcon className="h-4 w-4 shrink-0 text-purple-600" />
+            <span className="min-w-0 text-xs font-semibold text-gray-800">
+              India&apos;s Leading SAP &amp; IT Training with AI Institute
+            </span>
+          </div>
+
+          {/* heading, with a subtle radial glow behind it */}
+          <div className="relative mt-8">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -top-4 left-4 -z-10 h-40 w-40 rounded-full bg-purple-500/30 blur-3xl"
+            />
+            <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-white [text-shadow:0_2px_16px_rgba(0,0,0,0.35)]">
+              Secure your
+              <br />
+              <span
+                className="bg-gradient-to-r from-[#7C3AED] via-[#A855F7] to-[#D946EF] bg-clip-text text-transparent"
+                style={{ WebkitBackgroundClip: "text", backgroundClip: "text" }}
+              >
+                Dream Career
+              </span>{" "}
+              with
+              <br />
+              Live Classes
+            </h1>
+          </div>
+        </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-purple-950/15 via-transparent to-transparent" />
-      {/* decorative sparkles */}
-      <span className="pointer-events-none absolute right-5 top-10 z-10 select-none text-xl text-purple-200 sm:right-10 sm:top-12 sm:text-2xl">✦</span>
-      <span className="pointer-events-none absolute right-1/3 top-24 z-10 hidden select-none text-lg text-purple-200 sm:block">✦</span>
-      <span className="pointer-events-none absolute bottom-40 left-1/2 z-10 hidden select-none text-base text-purple-200 md:block">✦</span>
+      {/* ================================================================
+          MOBILE-ONLY: floating glass card
+          Sits below the hero image (no overlap) with breathing room.
+          Contains the strengthened copy + CTA button (moved inside card).
+      ================================================================ */}
+      <div className="relative z-20 mt-2 px-5 sm:hidden">
+        <div className="rounded-[28px] border border-purple-200/60 bg-white/80 p-6 shadow-[0_20px_55px_-12px_rgba(124,58,237,0.28)] backdrop-blur-xl">
+          <p className="text-[15px] leading-relaxed text-gray-700">
+            For over{" "}
+            <span className="font-bold text-purple-600">10+ Years</span> we&apos;ve
+            helped professionals build successful careers through engaging
+            instructor-led SAP &amp; AI training.
+          </p>
 
-      <div className="relative z-10 mx-auto max-w-[1400px] px-5 pt-10 sm:px-8 sm:pt-12 lg:px-10 lg:pt-14">
+          <div className="mt-6">
+            <ConsultationButton onOpenForm={onOpenForm} />
+          </div>
+        </div>
+      </div>
+
+      {/* ---------------- spacer below the floating card on mobile ---------------- */}
+      <div className="h-8 sm:hidden" aria-hidden="true" />
+
+      {/* ================================================================
+          DESKTOP CONTENT BLOCK — UNCHANGED
+      ================================================================ */}
+      <div className="relative z-10 mx-auto hidden max-w-[1400px] px-5 pb-8 pt-5 sm:block sm:px-8 sm:pb-0 sm:pt-12 lg:px-10 lg:pt-14">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-12 lg:gap-8">
           {/* ---------------- Left column ---------------- */}
           <div className="relative z-10 max-w-2xl lg:col-span-5">
@@ -102,7 +169,7 @@ export default function CareerHeroSlide({ onOpenForm }) {
             </div>
 
             {/* heading */}
-            <h1 className="mt-6 text-3xl font-extrabold leading-[1.05] tracking-tight text-white lg:!text-gray-900 sm:mt-7 lg:text-6xl xl:text-7xl">
+            <h1 className="mt-6 text-3xl font-extrabold leading-[1.05] tracking-tight text-white sm:mt-7 lg:!text-gray-900 lg:text-6xl xl:text-7xl">
               Secure your
               <br />
               <span className="text-purple-600">Dream Career</span> with
@@ -133,4 +200,4 @@ export default function CareerHeroSlide({ onOpenForm }) {
       </div>
     </section>
   );
-} 
+}

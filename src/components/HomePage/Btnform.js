@@ -71,7 +71,7 @@ const Btnform = ({ onClose, course }) => {
     const loadLocationData = async () => {
       try {
         setIsLoadingCities(true);
-        const citiesModule = await import("cities.json");
+        const citiesModule = await import("@/data/india-cities.json");
         const cities = citiesModule.default || citiesModule;
 
         const indianCities = cities.filter(city =>
