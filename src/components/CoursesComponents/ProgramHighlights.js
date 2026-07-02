@@ -181,204 +181,52 @@ setTimeout(() => {
     <div ref={componentRef} className="relative">
       <BackgroundAnimation />
       {/* Mobile View - Only show on screens smaller than 768px */}
-      <div className="md:hidden min-h-* text-white p-4 relative z-10">
-        <div className="max-w-sm mx-auto">
-          <div className="text-center mb-8">
-            <div
-  className="text-2xl font-extrabold tracking-wider mb-3 text-white text-center"
-  style={{
-    textShadow: '0 0 16px #fff, 0 0 32px #80d8ff',
-    fontFamily: 'Montserrat, Quicksand, Arial, sans-serif',
-    letterSpacing: '0.12em',
-    lineHeight: 1.1
-  }}
->
-  PROGRAM HIGHLIGHTS
+      <div className="flex justify-center mb-8 md:hidden lg:hidden xl:hidden">
+  <div className="text-center">
+    <h2 className="inline-flex flex-wrap items-center justify-center gap-1 text-2xl font-extrabold sm:text-3xl">
+      <span className="text-purple-400" aria-hidden>
+        ✦
+      </span>
+
+      <span className="text-white">
+        Program{" "}
+        <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+          Highlights
+        </span>
+      </span>
+
+      <span className="text-blue-400" aria-hidden>
+        ✦
+      </span>
+    </h2>
+
+    <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-20 md:w-24" />
+  </div>
 </div>
-<div 
-            style={{
-              width: '80px',
-              height: '4px',
-              background: 'linear-gradient(90deg, #a76b2e, #f18436)',
-              margin: '5px auto 10px',
-              borderRadius: '2px',
-              marginBottom: '1rem'
-            }}
-          />
-                    </div>
-
-          <div className="flex justify-center mb-8">
-            <div className="relative">
-              <div className="relative w-80 h-60 bg-gradient-to-br from-gray-600 to-gray-700 rounded-2xl shadow-2xl border border-gray-500 overflow-hidden">
-
-                <div className="absolute bottom-4 left-4 right-4 top-10 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl shadow-inner border border-gray-700 overflow-hidden">
-                  <div className="relative w-full h-full p-3 flex items-end justify-center gap-1.5">
-                    {cardData.map((card, index) => (
-                      <div
-                        key={card.id}
-                        className="relative cursor-pointer transition-all duration-300 ease-out opacity-100 translate-y-0 transform"
-                        style={{
-                          zIndex: 4 - index
-                        }}
-                        onMouseEnter={() => setHoveredCard(card.id)}
-                        onMouseLeave={() => setHoveredCard(null)}
-                      >
-                        <div
-                          className="absolute bg-gradient-to-b from-gray-700 to-gray-800 rounded-r-lg"
-                          style={{
-                            width: '4px',
-                            height: '150px',
-                            right: '-4px',
-                            top: '3px',
-                            transform: 'skewY(-2deg)',
-                            zIndex: -1
-                          }}
-                        />
-                        <div
-                          className={`w-16 h-36 rounded-lg ${card.bgGradient} relative overflow-hidden shadow-lg`}
-                          style={{
-                            transform: hoveredCard === card.id 
-                              ? 'translateY(-6px) scale(1.02)' 
-                              : 'translateY(0px) scale(1)',
-                            boxShadow: hoveredCard === card.id
-                              ? '0 12px 25px rgba(0,0,0,0.4), inset 0 1px 3px rgba(255,255,255,0.2)'
-                              : '0 6px 15px rgba(0,0,0,0.3), inset 0 1px 3px rgba(255, 255, 255, 0.2)'
-                          }}
-                        >
-                          <div className="h-full flex flex-col p-2">
-                            <div className="flex justify-end mb-1">
-                              <div className="w-5 h-5 bg-black/30 rounded-full flex items-center justify-center">
-                                <span className="text-xs text-white font-bold">
-                                  {String(index + 1).padStart(2, '0')}
-                                </span>
-                              </div>
-                            </div>
-                            <div className="flex justify-center mb-2">
-                              <div className="w-8 h-8 rounded-full overflow-hidden bg-white/10 flex items-center justify-center">
-                                {card.img ? (
-                                  <Image
-                                    src={card.img}
-                                    alt={card.title}
-                                    width={32}
-                                    height={32}
-                                    className="w-full h-full object-cover rounded-full"
-                                    unoptimized={process.env.NODE_ENV !== 'production'}
-                                    priority={index < 3} // Load first 3 images with priority
-                                    loading={index < 3 ? 'eager' : 'lazy'}
-                                  />
-                                ) : (
-                                  <span className="text-lg text-white">{card.icon}</span>
-                                )}
-                              </div>
-                            </div>
-                            <div className="flex-1 flex items-center justify-center px-1">
-                              <h3 className="text-[8px] xs:text-[9px] sm:text-[10px] md:text-xs font-bold text-white text-center leading-tight break-words">
-                                {card.title.length > 20 ? card.title.substring(0, 18) + '...' : card.title}
-                              </h3>
-                            </div>
-                          </div>
-                          <div 
-                            className="absolute inset-0 opacity-20"
-                            style={{
-                              background: `repeating-linear-gradient(
-                                45deg,
-                                transparent,
-                                transparent 1px,
-                                rgba(255,255,255,0.1) 1px,
-                                rgba(255,255,255,0.1) 2px
-                              )`
-                            }}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-transparent"></div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-t from-gray-800/50 to-transparent rounded-b-2xl"></div>
-              </div>
-              <div className="absolute -bottom-2 left-1 right-1 h-3 bg-black/20 rounded-2xl blur-sm"></div>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            {cardData.map((card, index) => (
-              <div
-                key={card.id}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-4 border border-gray-600 shadow-lg relative overflow-hidden opacity-100 translate-y-0"
-              >
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${card.gradient}`} />
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center text-lg mb-3 shadow-md overflow-hidden bg-white/10`}>
-                  {card.img ? (
-                    <Image
-                      src={card.img}
-                      alt={card.title}
-                      width={40}
-                      height={40}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  ) : (
-                    <span className="text-white">{card.icon}</span>
-                  )}
-                </div>
-                <h3 className="text-xs xs:text-sm sm:text-base md:text-lg font-semibold mb-1 text-white leading-tight truncate">
-                  {card.title}
-                </h3>
-                <p className="text-[10px] xs:text-xs sm:text-sm md:text-base text-gray-400 mb-2 font-light truncate">
-                  {card.material || 'Material'}
-                </p>
-                <p className="text-[10px] xs:text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed mb-3 line-clamp-2">
-                  {card.subtitle}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* Desktop/Tablet View - Show on 768px and above */}
       <div className="hidden md:flex min-h-* items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10 relative z-10">
         <div className="w-full max-w-7xl flex flex-col items-center justify-center gap-10 lg:gap-20">
           
           {/* Desktop Heading */}
-          <div className="text-center mb-8">
-          <h2 
-            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4"
-            style={{
-              fontSize: '2.5rem',
-              fontWeight: 700,
-              letterSpacing: '4px',
-              textShadow: `
-                0 0 0px #fff,
-                0 0 10px #fff,
-                0 0 10px #0073e6,
-                0 0 20px #182e4a,
-                0 0 20px #182e4a,
-                0 0 30px #182e4a,
-                0 0 30px #182e4a
-              `,
-              background: 'linear-gradient(90deg, #fff 35%, rgba(3, 163, 196, 1) 49%, #fff 62%)',
-              WebkitBackgroundClip: 'text',
-              backgroundClip: 'text',
-              color: 'transparent',
-              textAlign: 'center'
-            }}
-          >
-            PROGRAM HIGHLIGHTS
+          <div className="hidden md:flex lg:flex xl:flex mb-10 my-3 text-center sm:mb-14">
+          <div>
+            <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">
+            <span className="text-purple-400" aria-hidden>
+              ✦
+            </span>
+            <span className='text-white'>
+              Program{" "}
+              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                Highlights
+              </span>
+              </span>
+            <span className="text-blue-400" aria-hidden>
+              ✦
+            </span>
           </h2>
-          
-          {/* Custom Underline */}
-          <div 
-            style={{
-              width: '80px',
-              height: '4px',
-              background: 'linear-gradient(90deg, #a76b2e, #f18436)',
-              margin: '5px auto 10px',
-              borderRadius: '2px',
-              marginBottom: '1rem'
-            }}
-          />
-          
+          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-24" />
+          </div>
           </div>
 
           <div className="w-full flex flex-col md:flex-row items-start justify-between gap-6 lg:gap-12 xl:gap-20">

@@ -21,19 +21,44 @@ const HrCard = () => {
   
   return (
     <div className={styles.cardsSection}>
-      <h2 className={styles.cardsTitle}>HR Courses We Offer</h2>
-      <div className={styles.pageContent}>
-        {hrCards.map((card, index) => (
-          <div key={index} className={styles.card}>
-            <h2 className={styles.cardTitle}>{card.title}</h2>
-            <p className={styles.cardCopy}>{card.copy}</p>
-            <button className={styles.cardButton} onClick={() => handleRedirect(card.link)}>
-              {card.button}
-            </button>
-          </div>
-        ))}
-      </div>
+  <div className="flex justify-center mb-8 px-4">
+    <div className="text-center">
+      <h2 className="inline-flex flex-wrap items-center justify-center gap-1 text-xl font-extrabold sm:text-2xl md:text-4xl lg:text-5xl">
+        <span className="text-purple-400" aria-hidden>
+          ✦
+        </span>
+
+        <span className="text-white">
+          HR Courses{" "}
+          <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+            We Offer
+          </span>
+        </span>
+
+        <span className="text-blue-400" aria-hidden>
+          ✦
+        </span>
+      </h2>
+
+      <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-20 md:w-24" />
     </div>
+  </div>
+
+  <div className={styles.pageContent}>
+    {hrCards.map((card, index) => (
+      <div key={index} className={styles.card}>
+        <h2 className={styles.cardTitle}>{card.title}</h2>
+        <p className={styles.cardCopy}>{card.copy}</p>
+        <button
+          className={styles.cardButton}
+          onClick={() => handleRedirect(card.link)}
+        >
+          {card.button}
+        </button>
+      </div>
+    ))}
+  </div>
+</div>
   );
 };
 

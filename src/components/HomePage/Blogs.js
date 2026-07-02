@@ -190,12 +190,26 @@ const LatestBlogs = () => {
     <>
       <div id="latest-blogs" className="relative w-full mx-auto overflow-hidden py-8 md:py-16 px-4">
         {/* Header Section */}
-        <div className="text-center mb-8 md:mb-12">
-          <div className={styles.sectionHeading}>
-        <h2>Read our Latest Blogs</h2>
-        <div className={styles.titleUnderline}></div>
-        <p>Our alumni are making remarkable strides in top organizations</p>
-      </div>
+        
+         <div className="mb-10 text-center sm:mb-14">
+          <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">
+            <span className="text-purple-400" aria-hidden>
+              ✦
+            </span>
+            <span className='text-white'>
+              Read Our{" "}
+              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                Latest Blogs
+              </span>
+            </span>
+            <span className="text-blue-400" aria-hidden>
+              ✦
+            </span>
+          </h2>
+          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-24" />
+          <p className="mx-auto mt-4 max-w-lg px-4 text-sm text-white/60 sm:text-base">
+            Our alumni are making remarkable strides in top organizations
+          </p>
         </div>
 
         {/* Blog Cards Container */}

@@ -1,10 +1,11 @@
 "use client";
 
+import { Poppins } from "next/font/google";
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const AUTOPLAY_MS = 6000; // Auto-rotate every 10 seconds (set to 0 to disable)
+const AUTOPLAY_MS = 4000; // Auto-rotate every 10 seconds (set to 0 to disable)
 
 const ICONS = [
   // Training
@@ -75,6 +76,12 @@ function Avatar({ src, alt, size }) {
   );
 }
 
+// fonts 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 /* ------------------------------------------------------------------ */
 /*  Mini Card (Peeking) — only shown from the xl breakpoint up so the */
 /*  layout never overflows on 1024px (lg) screens.                    */
@@ -88,7 +95,7 @@ function MiniCard({ story, side, onClick }) {
         side === "left" ? "-mr-6 2xl:-mr-8" : "-ml-6 2xl:-ml-8"
       }`}
     >
-      <Avatar src={story.image} alt={story.name} size="sm" />
+      <Avatar src={story.image} alt={story.name || "candidate image"} size="sm" />
       <h4 className="mt-2 text-base font-semibold text-white 2xl:text-lg">{story.name}</h4>
       <p className="text-xs text-white/60 2xl:text-sm">{story.role}</p>
       <p className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-xl font-extrabold text-transparent 2xl:text-2xl">
@@ -125,7 +132,7 @@ function FeaturedCard({ story }) {
                 {story.lpa}
               </p>
               <span className="mt-4 text-xs text-white/70 sm:text-sm">{`${story.placedIn} at`}</span>
-              <Image src={story?.companyLogo} width={100} height={100} alt={story.company} className="my-3 h-auto w-16 sm:w-20 md:w-24" />
+              <Image src={story?.companyLogo} width={100} height={100} alt={story.company || "company logo"} className="my-3 h-auto w-16 sm:w-20 md:w-24" />
               <Stars count={story.rating} />
             </div>
 
@@ -170,7 +177,7 @@ function FeaturedCard({ story }) {
               <blockquote className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-4 sm:p-6">
                 <div className="flex gap-3">
                   <span className="text-3xl leading-none text-purple-400">“</span>
-                  <p className="text-sm leading-relaxed text-white/80 sm:text-base">{story.testimonial}</p>
+                  <p className={`text-sm leading-relaxed text-white/80 sm:text-base ${poppins.className}`}>{story.testimonial}</p>
                   <span className="self-end text-3xl leading-none text-purple-400">”</span>
                 </div>
               </blockquote>

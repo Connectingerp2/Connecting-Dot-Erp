@@ -14,16 +14,28 @@ const STORIES = [
     testimonial:
       "The expert guidance and practical training prepared me exceptionally well. Every interview became easier because of the confidence I gained.",
     journey: [
-      { title: "Training", desc: "Completed SAP ABAP training with industry experts" },
-      { title: "Projects", desc: "Built real-time projects and gained hands-on experience" },
-      { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
-      { title: "Placed", desc: "Successfully placed as SAP ABAP Consultant at AG Consultancy" },
+      {
+        title: "Training",
+        desc: "Built a strong foundation in SAP ABAP with expert-led sessions.",
+      },
+      {
+        title: "Scenario",
+        desc: "Solved real client requirements and custom development scenarios.",
+      },
+      {
+        title: "Interview",
+        desc: "Cracked technical rounds through regular mock interviews.",
+      },
+      {
+        title: "Placed",
+        desc: "Started my SAP ABAP career at AG Consultancy.",
+      },
     ],
   },
   {
     id: 2,
     name: "Nikhilesh Landge",
-    role: "SAP SD Consultant",
+    role: "SAP SD",
     image: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305822/pic2pp_ugfo1w.webp",
     lpa: "12 LPA",
     company: "CLTech",
@@ -33,10 +45,22 @@ const STORIES = [
     testimonial:
       "The mentors constantly supported my learning journey. Their practical approach and placement guidance helped me secure my dream opportunity successfully.",
     journey: [
-      { title: "Training", desc: "Completed SAP SD training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
-      { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
-      { title: "Placed", desc: "Successfully placed as SAP SD Consultant at CLTech" },
+      {
+        title: "Training",
+        desc: "Learned complete SAP SD processes through practical sessions.",
+      },
+      {
+        title: "Scenario",
+        desc: "Configured sales cycles using realistic business cases.",
+      },
+      {
+        title: "Interview",
+        desc: "Improved confidence with live interview practice.",
+      },
+      {
+        title: "Placed",
+        desc: "Joined CLTech as an SAP SD Consultant.",
+      },
     ],
   },
   {
@@ -46,16 +70,28 @@ const STORIES = [
     image: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305822/pic3pp_xgown1.webp",
     lpa: "9 LPA",
     company: "Deloitte",
-    companyLogo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305402/deloitte1_luqjwi.avif",
+    companyLogo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778304471/deloitte_eslhm1.webp",
     rating: 5,
     placedIn: "Placed in 3 Months",
     testimonial:
       "Every learning session focused on practical implementation and interview readiness. That experience played a huge role in achieving my placement.",
     journey: [
-      { title: "Training", desc: "Completed SAP MM training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
-      { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
-      { title: "Placed", desc: "Successfully placed as SAP MM Consultant at Deloitte" },
+      {
+        title: "Training",
+        desc: "Mastered SAP MM with practical assignments and guidance.",
+      },
+      {
+        title: "Scenario",
+        desc: "Worked on procurement and inventory business scenarios.",
+      },
+      {
+        title: "Interview",
+        desc: "Strengthened problem-solving through mock interviews.",
+      },
+      {
+        title: "Placed",
+        desc: "Began my journey as an SAP MM Consultant at Deloitte.",
+      },
     ],
   },
   {
@@ -71,10 +107,22 @@ const STORIES = [
     testimonial:
       "Excellent mentors, structured training, and continuous interview preparation made the entire placement process smooth. I achieved my career goal confidently.",
     journey: [
-      { title: "Training", desc: "Completed SAP FICO training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
-      { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
-      { title: "Placed", desc: "Successfully placed as SAP FICO Consultant at Market Legos" },
+      {
+        title: "Training",
+        desc: "Learned SAP FICO through structured, hands-on sessions.",
+      },
+      {
+        title: "Scenario",
+        desc: "Handled finance and reporting challenges like real projects.",
+      },
+      {
+        title: "Interview",
+        desc: "Built confidence with expert feedback and mock rounds.",
+      },
+      {
+        title: "Placed",
+        desc: "Secured my SAP FICO role at Market Legos.",
+      },
     ],
   },
   {
@@ -84,16 +132,28 @@ const STORIES = [
     image: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305821/pic5pp_vllliw.webp",
     lpa: "11 LPA",
     company: "Deloitte",
-    companyLogo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305402/deloitte1_luqjwi.avif",
+    companyLogo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778304471/deloitte_eslhm1.webp",
     rating: 5,
     placedIn: "Placed in 4 Months",
     testimonial:
       "Real project exposure and dedicated mentoring helped strengthen my technical skills. I felt completely prepared while attending every interview round confidently.",
     journey: [
-      { title: "Training", desc: "Completed SAP Security training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
-      { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
-      { title: "Placed", desc: "Successfully placed as SAP Security Consultant at Deloitte" },
+      {
+        title: "Training",
+        desc: "Built strong SAP Security skills with expert guidance.",
+      },
+      {
+        title: "Scenario",
+        desc: "Managed user roles and authorization scenarios confidently.",
+      },
+      {
+        title: "Interview",
+        desc: "Prepared through practical and scenario-based interviews.",
+      },
+      {
+        title: "Placed",
+        desc: "Joined Deloitte as an SAP Security Consultant.",
+      },
     ],
   },
   {
@@ -103,16 +163,28 @@ const STORIES = [
     image: "https://res.cloudinary.com/df65lfym1/image/upload/v1777626417/review_image_5_jjm78u.webp",
     lpa: "18 LPA",
     company: "Deloitte",
-    companyLogo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305402/deloitte1_luqjwi.avif",
+    companyLogo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778304471/deloitte_eslhm1.webp",
     rating: 5,
     placedIn: "Placed in 3 Months",
     testimonial:
       "From classroom learning to mock interviews, every stage improved my confidence. The placement support exceeded my expectations throughout the complete journey.",
     journey: [
-      { title: "Training", desc: "Completed SAP FICO training with industry experts" },
-      { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },
-      { title: "Interview", desc: "Cleared technical rounds and HR interviews" },
-      { title: "Placed", desc: "Successfully placed as SAP FICO Consultant at Deloitte" },
+      {
+        title: "Training",
+        desc: "Strengthened SAP FICO skills through practical learning.",
+      },
+      {
+        title: "Scenario",
+        desc: "Solved accounting and business process challenges hands-on.",
+      },
+      {
+        title: "Interview",
+        desc: "Refined technical and communication skills with mock rounds.",
+      },
+      {
+        title: "Placed",
+        desc: "Launched my SAP FICO career at Deloitte.",
+      },
     ],
   },
 ];

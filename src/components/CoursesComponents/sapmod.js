@@ -160,21 +160,26 @@ const SapModComponent = ({ data }) => {
   }
 
   return (
-    <div className="w-full bg-[#2d2d2d] mb-4 sm:mb-4 lg:mb-4">
-      <div className="bg-[#2d2d2d] flex flex-col items-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8 min-h-[600px]">
+    <div className="w-full mb-4 sm:mb-4 lg:mb-4">
+      <div className="flex flex-col items-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8 min-h-[600px]">
         {/* Header */}
-        <div className="w-full max-w-6xl mb-6 sm:mb-8">
-          <h2
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white text-center"
-            style={{
-              fontFamily: "Inter, Segoe UI, Roboto, Arial, sans-serif",
-              letterSpacing: "-0.5px",
-            }}
-          >
-            SYLLABUS
+        <div className="mb-10 text-center sm:mb-14">
+          <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">
+            <span className="text-purple-400" aria-hidden>
+              ✦
+            </span>
+            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              Syllabus
+            </span>
+            <span className="text-blue-400" aria-hidden>
+              ✦
+            </span>
           </h2>
+          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-24" />
+
         </div>
 
+        {/* previous here  */}
         <div className="flex flex-col md:flex-row gap-6 sm:gap-8 w-full max-w-6xl items-start">
           {/* Left Card */}
           <div
@@ -309,11 +314,10 @@ const SapModComponent = ({ data }) => {
               {curriculum.map((mod, idx) => (
                 <div
                   key={`${mod.title}-${idx}`}
-                  className={`flex mb-2 items-start transition-all duration-500 relative ${
-                    cardPopStates[idx]
+                  className={`flex mb-2 items-start transition-all duration-500 relative ${cardPopStates[idx]
                       ? "opacity-100 scale-100"
                       : "opacity-0 scale-90"
-                  }`}
+                    }`}
                   style={{
                     minHeight: "52px",
                     marginLeft: "2px",
@@ -577,5 +581,7 @@ function ProgressBar({ steps, activeStep }) {
     </div>
   );
 }
+
+
 
 export default SapModComponent;

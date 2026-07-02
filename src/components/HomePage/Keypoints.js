@@ -143,24 +143,51 @@ const OrbitalTrail = () => {
     return (
       <div className="w-full bg-slate-900 flex items-center justify-center overflow-x-hidden">
         <div className="w-full max-w-[1200px] px-4 min-h-[800px] flex flex-col items-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 mt-8 px-4" style={titleStyle}>
-            Why Choose Connecting Dots ERP?
+          
+          <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">
+            <span className="text-purple-400" aria-hidden>
+              ✦
+            </span>
+            <span className='text-white'>
+              Why Choose{" "}
+              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                Connecting Dots ERP?
+              </span>
+            </span>
+            <span className="text-blue-400" aria-hidden>
+              ✦
+            </span>
           </h2>
+          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-24" />
+        </div>
           <div className="w-full h-[600px] flex items-center justify-center">
             <div className="animate-pulse text-blue-400">Loading animation...</div>
           </div>
         </div>
-      </div>
+      
     );
   }
 
   return (
     <div className="w-full flex items-center justify-center overflow-x-hidden">
       <div className="w-full max-w-[1200px] px-4 py-8 flex flex-col items-center">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 mt-4 md:mt-3 px-4" style={titleStyle}>
-          Why Choose Connecting Dots ERP?
-        </h2>
-        <div style={underlineStyle} />
+        <div className="mb-10 text-center sm:mb-14">
+          <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">
+            <span className="text-purple-400" aria-hidden>
+              ✦
+            </span>
+            <span className='text-white'>
+              Why Choose{" "}
+              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                Connecting Dots ERP?
+              </span>
+            </span>
+            <span className="text-blue-400" aria-hidden>
+              ✦
+            </span>
+          </h2>
+          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-24" />
+        </div>
 
         <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10 md:gap-16 md:mt-16 lg:mt-0">
           {/* Orbital animation */}

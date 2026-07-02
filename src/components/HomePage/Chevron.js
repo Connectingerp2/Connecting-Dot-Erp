@@ -239,6 +239,8 @@ export default function OfferLetter() {
       className="chevron-root min-h-[520px] relative overflow-visible"
       style={{ paddingBottom: "12px", contain: "layout style paint" }}
     >
+      
+
       <BackgroundAnimation />
 
       {/* Section background image (placed under content, above global background) */}
@@ -263,18 +265,34 @@ export default function OfferLetter() {
       /> */}
 
       {/* Section heading */}
-      <div className="containerCH">
-        <h2>Training To Placement Approach</h2>
-        <div className="titleUnderline" />
+      <div className="my-10 text-center sm:mb-14">
+          <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">
+            <span className="text-purple-400" aria-hidden>
+              ✦
+            </span>
+            <span className='text-white'>
+              Training To{" "}
+              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                Placement Approach
+              </span>
+            </span>
+            <span className="text-blue-400" aria-hidden>
+              ✦
+            </span>
+          </h2>
+          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-24" />
+          {/* <p className="mx-auto mt-4 max-w-xl px-4 text-sm text-white/60 sm:text-base">
+            We empower students and professionals with practical skills, real-world experience, and expert guidance to build successful careers.
+          </p> */}
       </div>
 
       {/* Outer Sinusoidal Wave Background */}
-      <div className="chevron-wave-wrapper absolute top-[46%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="chevron-wave-wrapper absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <OuterSinusoidalWave />
       </div>
 
       {/* Center Content - Icon Row */}
-      <div className="chevron-content-wrapper absolute top-[46%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="chevron-content-wrapper absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div
           className="relative flex items-center gap-6 w-max"
           style={{ transform: "scale(1.25)", transformOrigin: "center" }}
