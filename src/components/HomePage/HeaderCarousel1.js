@@ -64,7 +64,7 @@ const OrbitBackground = ({ className }) => (
 // and cap the source Cloudinary serves before Next's image optimizer even
 // touches it.
 const heroBackgroundImage =
-  "https://res.cloudinary.com/df65lfym1/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1920/v1781782322/WhatsApp_Image_2026-06-18_at_3.51.37_PM_i4hsiu.webp";
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782994449/WhatsApp_Image_2026-06-18_at_3.51.37_PM_cvycpj.webp";
 
 /* ---------- Component (Server Component — no "use client") ---------- */
 
