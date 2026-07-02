@@ -23,7 +23,7 @@ import { saveAs } from "file-saver";
 import { fetchWithAuth } from "@/utils/auth";
 import { useActivityLogger } from "./layout";
 
-const Dashboard = async () => {
+const Dashboard = () => {
   const [leads, setLeads] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
