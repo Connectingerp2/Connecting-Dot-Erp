@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import Btnform from "@/components/HomePage/Btnform";
+import { IndianRupee, Minus, PipetteIcon, StarIcon } from "lucide-react";
 const PopupForm = dynamic(() => import("@/components/PopupForm"), {
   ssr: false,
   loading: () => null,
@@ -982,13 +983,11 @@ export default function PlacementPage() {
 
       {/* ══════════════ HERO ══════════════ */}
       <section className="hero">
-        <div className="hero-radial" />
-        <div className="hero-grid" />
 
-        <div className="hero-inner">
+        <div className="w-[95%] mx-auto flex justify-start gap-3 items-center">
 
           {/* ── LEFT ── */}
-          <div>
+          <div className="w-[50%]">
             <div className="hero-eyebrow">
               <span className="eyebrow-dot" />
               Placement Records
@@ -1024,52 +1023,8 @@ export default function PlacementPage() {
           </div>
 
           {/* ── RIGHT — graduate visual ── */}
-          <div className="hero-visual">
-            <div className="orbit-ring">
-              <div className="orbit-dot" />
-              <div className="orbit-dot" />
-              <div className="orbit-dot" />
-              <div className="orbit-dot" />
-
-              <div className="grad-circle">
-                <img
-                  src="https://res.cloudinary.com/df65lfym1/image/upload/v1778652734/ChatGPT_Image_May_13_2026_11_40_37_AM_ujwwvn.webp"
-                  alt="Learnova graduate"
-                  style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", borderRadius: "50%", display: "block" }}
-                />
-              </div>
-            </div>
-
-            {/* Floating badges */}
-            <div className="vbadge vbadge-1">
-              <div className="vb-row">
-                <span className="vb-icon">💼</span>
-                <div>
-                  <div className="vb-title">Latest Placed</div>
-                  <div className="vb-sub">Gaurav → Manpower Group</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="vbadge vbadge-2">
-              <div className="vb-row">
-                <span className="vb-icon">💰</span>
-                <div>
-                  <div className="vb-sub">Highest Package</div>
-                  <div className="vb-val">₹24 LPA</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="vbadge vbadge-3">
-              <div className="vb-row">
-                <span className="vb-icon">🔥</span>
-                <div>
-                  <div className="vb-title">1,500 placed</div>
-                  <div className="vb-sub">in 2024 to 2025</div>
-                </div>
-              </div>
-            </div>
+          <div className="w-[55%] absolute right-5 top-5 h-screen flex items-center">
+            <img src="https://res.cloudinary.com/df65lfym1/image/upload/v1783596718/PlacementHeroSectionImage_xhhviz.webp" alt="placement roadmap image" className="h-[500px]" />
           </div>
         </div>
       </section>
@@ -1256,7 +1211,7 @@ export default function PlacementPage() {
             ))}
           </div>
 
-          <div className="partner-ribbon">
+          <div className="partner-ribbon mt-5">
             {[
               { val: "100+", label: "Hiring Partners" },
               { val: "50+", label: "FAANG & MNCs" },

@@ -74,9 +74,9 @@ const generatedCourseSpecs = [
     modules: ["BTP Foundation", "SAP Integration Suite", "Extension Suite", "SAP HANA Cloud", "Security and Identity", "Deployment and Monitoring"],
     jobRoles: ["SAP BTP Consultant", "SAP Integration Consultant", "SAP Extension Developer", "Cloud Platform Consultant", "SAP Technical Consultant"],
     curriculum: [
-      { title: "BTP Foundation", duration: "2 weeks", content: ["SAP BTP architecture", "Global accounts, directories, and subaccounts", "Entitlements and service marketplace", "Cloud Foundry and Kyma overview", "Connectivity and destinations"], tools: ["SAP", "Cloud"] },
-      { title: "Integration Suite", duration: "3 weeks", content: ["Cloud Integration flows", "API Management", "Open Connectors", "Event Mesh fundamentals", "Monitoring integration artifacts"], tools: ["SAP", "Cloud"] },
-      { title: "Extensions and Security", duration: "3 weeks", content: ["SAP Build Apps and Work Zone", "CAP application basics", "HANA Cloud services", "Identity Authentication Service", "Role collections and transport management"], tools: ["SAP", "Security"] },
+      { title: "SAP BTP FOUNDATION ", duration: "2 weeks", content: ["What is SAP Ecosystem (S/4HANA, ECC, Cloud)", "Need of SAP BTP in modern enterprises", "Cloud Computing Basics (IaaS, PaaS, SaaS)", "Hyperscalers: AWS, Azure, GCP overview", "SAP Clean Core Strategy (VERY IMPORTANT for 2026)"], tools: ["SAP", "Cloud"] },
+      { title: "SAP BTP Overview", duration: "3 weeks", content: ["SAP BTP Architecture (Global Account → Subaccount → Space)", "Regions & Entitlements", "Service Marketplace & Service Plans",], tools: ["SAP", "Cloud"] },
+      { title: "CLOUD FOUNDATIONS & DEVELOPMENT BASICS ", duration: "3 weeks", content: ["CF Architecture", "Org & Spaces", "Node.js fundamentals for SAP CAP", "Java basics (Spring Boot intro)", "Git Fundamentals (Clone, Commit, Push)"], tools: ["SAP", "Security"] },
     ],
   },
   {
@@ -91,9 +91,9 @@ const generatedCourseSpecs = [
     modules: ["Product Safety", "Dangerous Goods Management", "Incident Management", "Risk Assessment", "Environmental Compliance", "Occupational Health"],
     jobRoles: ["SAP EHS Consultant", "EHS Functional Consultant", "Compliance Analyst", "Safety Systems Consultant", "SAP Functional Consultant"],
     curriculum: [
-      { title: "EHS Foundation", duration: "2 weeks", content: ["EHS business processes", "Specification management", "Phrase management", "Regulatory content overview", "Master data setup"], tools: ["SAP", "Security"] },
-      { title: "Product Safety and Compliance", duration: "3 weeks", content: ["Safety data sheets", "Dangerous goods checks", "Label management", "Substance volume tracking", "Compliance reporting"], tools: ["SAP", "Analytics"] },
-      { title: "Incident and Risk Management", duration: "3 weeks", content: ["Incident recording", "Risk assessment workflows", "Corrective actions", "Occupational health processes", "Dashboards and audits"], tools: ["SAP", "Security"] },
+      { title: "EHS Foundation", duration: "2 weeks", content: ["SAP & EHS FOUNDATION ", "Overview of ERP & Business Processes", "SAP Product Landscape", "ECC vs S/4HANA – Functional Differences", "SAP System Landscape (DEV / QAS / PRD)"], tools: ["SAP", "Security"] },
+      { title: "ORGANIZATIONAL & MASTER DATA SETUP ", duration: "3 weeks", content: ["Company Code", "Work Areas & Locations", "Specification Category", "Identifiers & Numbers", "User Exits & Enhancements (Overview)"], tools: ["SAP", "Analytics"] },
+      { title: "PRODUCT SAFETY & STEWARDSHIP", duration: "3 weeks", content: ["Dangerous Goods Overview", "Country-specific Regulations", "SDS Structure & Content", "SDS Versioning & Status Management", "UN Numbers & Packing Groups"], tools: ["SAP", "Security"] },
     ],
   },
   {
@@ -108,8 +108,8 @@ const generatedCourseSpecs = [
     modules: ["Access Control", "Risk Analysis", "Emergency Access Management", "Access Request Management", "Process Control", "Audit and Compliance"],
     jobRoles: ["SAP GRC Consultant", "SAP Security Consultant", "Risk and Compliance Analyst", "Access Control Consultant", "IT Auditor"],
     curriculum: [
-      { title: "GRC Foundation", duration: "2 weeks", content: ["GRC architecture", "Governance and risk concepts", "Access control landscape", "Rule set basics", "User and role analysis"], tools: ["SAP", "Security"] },
-      { title: "Access Control", duration: "3 weeks", content: ["ARA risk analysis", "ARM access workflows", "EAM firefighter setup", "BRM role management", "Mitigation controls"], tools: ["SAP", "Security"] },
+      { title: "SAP & GRC FOUNDATION ", duration: "2 weeks", content: ["What is ERP?", "SAP ECC vs SAP S/4HANA", "Why GRC is required in organizations", "Segregation of Duties (SoD)", "Audit lifecycle"], tools: ["SAP", "Security"] },
+      { title: "SAP GRC ARCHITECTURE ", duration: "3 weeks", content: ["SAP GRC Components", "GRC on S/4HANA Architecture", "Plug-in concepts (GRCPINW, GRCPIERP)", "GRC 10.1 vs 12.0 (latest)", "Risk Management (RM)"], tools: ["SAP", "Security"] },
       { title: "Process Control", duration: "3 weeks", content: ["Control testing", "Policy management", "Continuous control monitoring", "Audit trails", "Compliance reporting"], tools: ["SAP", "Analytics"] },
     ],
   },
@@ -125,9 +125,9 @@ const generatedCourseSpecs = [
     modules: ["Demand Planning", "Supply Planning", "S&OP", "Inventory Optimization", "Response and Supply", "IBP Excel Add-in"],
     jobRoles: ["SAP IBP Consultant", "Supply Chain Planning Consultant", "Demand Planner", "S&OP Analyst", "SAP Functional Consultant"],
     curriculum: [
-      { title: "IBP Foundation", duration: "2 weeks", content: ["IBP architecture", "Planning areas", "Master data types", "Key figures", "Excel add-in navigation"], tools: ["SAP", "Analytics"] },
-      { title: "Demand and S&OP", duration: "3 weeks", content: ["Demand planning models", "Forecasting methods", "Consensus demand planning", "Sales and operations planning", "Scenario planning"], tools: ["SAP", "Analytics"] },
-      { title: "Supply and Inventory", duration: "3 weeks", content: ["Supply planning operators", "Response planning", "Inventory optimization", "Alerts and dashboards", "Integration with SAP ERP and S/4HANA"], tools: ["SAP", "Cloud"] },
+      { title: "IBP Foundation", duration: "2 weeks", content: ["Overview of SAP Ecosystem", "Evolution of Supply Chain Planning", "Traditional Planning vs Integrated Planning", "Business Scenarios in FMCG, Pharma, Retail, Manufacturing", "Traditional Planning vs Integrated Planning"], tools: ["SAP", "Analytics"] },
+      { title: "SAP IBP DATA & MODELING ", duration: "3 weeks", content: ["Planning Areas & Planning Levels", "Time Profiles (Weekly, Monthly, Custom)", "Attributes & Master Data Types", "Key Figure Aggregation & Disaggregation", "SAP IBP Integration Options"], tools: ["SAP", "Analytics"] },
+      { title: "IBP FOR DEMAND ", duration: "3 weeks", content: ["Historical Data Preparation", "Forecast Model Selection & Tuning", "Forecast Error Calculation (MAPE, MAD)", "Causal Factors (Price, Promotion, Events)", "Hands-on Demand Planning Project"], tools: ["SAP", "Cloud"] },
     ],
   },
   {
@@ -547,134 +547,134 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "Financial Accounting (FI)",
+            name: "SAP S/4HANA ERP & Consultant Overview",
 
             subtopics: [
-              "Introduction to SAP FI",
+              "Overview of SAP ERP & S/4HANA",
 
-              "Organizational Structure in FI",
+              "SAP Modules Overview (FI, CO, MM, SD, HCM, PP)",
 
-              "General Ledger Accounting",
+              "Role of SAP FICO Consultant",
 
-              "Accounts Payable Management",
+              "SAP ECC vs SAP S/4HANA Finance",
 
-              "Accounts Receivable Management",
+              "Organizational Structure in Finance",
 
-              "Bank Accounting",
+              "Organizational Structure in SAP",
 
-              "Tax Configuration in FI",
+              "SAP GUI Navigation",
 
-              "Integration with Other Modules",
+              "Client, Company Code, Chart of Accounts",
             ],
           },
 
           {
-            name: "Controlling (CO)",
+            name: "General Ledger Accounting (FI-GL)",
 
             subtopics: [
-              "Overview of SAP CO",
+              "Enterprise Structure Configuration",
 
-              "Cost Element Accounting",
+              "Company",
 
-              "Cost Center Accounting",
+              "Company Code",
 
-              "Internal Orders",
+              "Business Area",
 
-              "Profit Center Accounting",
+              "G/L Accounting - Configuration & Posting",
 
-              "Activity-Based Costing (ABC)",
+              "Chart of Accounts",
 
-              "Profitability Analysis (CO-PA)",
+              "G/L Account Creation",
 
-              "Integration with FI & Other Modules",
+              "Document Reversal",
             ],
           },
 
           {
-            name: "Asset Accounting",
+            name: "Accounts Payable (FI-AP)",
 
             subtopics: [
-              "Introduction to Asset Accounting",
+              "Vendor Accounting",
 
-              "Asset Master Data",
+              "Vendor Master Data",
 
-              "Chart of Depreciation",
+              "Special G/L Transaction",
 
-              "Asset Transactions (Acquisition/Retirement)",
+              "One Time Vendors",
 
-              "Asset Depreciation Runs",
+              "Down Payments",
 
-              "Asset Reporting",
+              "Vendor Credit Memo",
 
-              "Integration with General Ledger",
+              "Withholding Tax (India Specific)",
 
               "Year-End Closing in Asset Accounting",
             ],
           },
 
           {
-            name: "Accounts Payable/Receivable",
+            name: "Accounts Receivable",
 
             subtopics: [
-              "Vendor Master Data",
-
               "Customer Master Data",
 
-              "Invoice Posting & Payments",
+              "Credit Memo",
 
-              "Outgoing & Incoming Payments",
+              "Down Payments",
 
-              "Payment Program Configuration (F110)",
+              "Customer Account Groups",
 
-              "Dunning Process",
+              "Customer Aging Reports",
 
-              "Credit Management",
+              "Incoming Payments",
 
-              "Reconciliation Accounts Setup",
+              "Customer Invoice Posting",
+
+              "Interest Calculation",
             ],
           },
 
           {
-            name: "General Ledger",
+            name: "Asset Accounting -End-to-End",
 
             subtopics: [
-              "GL Master Data",
+              "Asset Accounting Overview",
 
-              "Document Posting in GL",
+              "Revaluation",
 
-              "Recurring Entries",
+              "Asset Reports",
 
-              "Accruals & Deferrals",
+              "Depreciation Keys",
 
-              "Parking & Holding Documents",
+              "Asset Retirement",
 
-              "Journal Vouchers",
+              "Asset Transfer",
 
-              "Ledger Groups and Parallel Ledgers",
+              "Revaluation",
 
-              "Financial Statement Versions",
+              "Asset Accounting in S/4HANA (New AA)",
             ],
           },
 
           {
-            name: "Cost Center Accounting",
+            name: "Bank Accounting",
 
             subtopics: [
-              "Cost Center Hierarchy",
+              "House Banks",
 
-              "Planning in Cost Centers",
+              "Bank Master Data",
 
-              "Actual Postings",
+              "Electronic Bank Statement (EBS)",
 
-              "Statistical Key Figures",
+              "Bank GL Accounts",
 
-              "Cost Allocations (Assessment/Distribution)",
+              "Cash Journal",
 
-              "Activity Types",
+              "Cheque Management ",
 
-              "Reports and Variance Analysis",
+              "Cash Manageent Overview",
 
-              "Integration with Other CO Areas",
+              "Manual & Automatic Bank Reconciliation",
             ],
           },
         ],
@@ -1218,178 +1218,174 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "ABAP Programming Fundamentals",
+            name: "SAP & ABAP Fundamentals ",
 
             subtopics: [
-              "Introduction to ABAP",
+              "Overview of SAP",
 
-              "ABAP Data Types and Variables",
+              "SAP ERP vs SAP ECC vs SAP S/4HANA",
 
-              "Operators and Control Structures",
+              "SAP Modules Overview (FI, MM, SD, PP, HCM)",
 
-              "Internal Tables and Work Areas",
+              "SAP Logon",
 
-              "Loops and Modularization",
+              "User Roles & Authorizations",
 
-              "Debugging in ABAP",
+              "SAP Help & OSS Notes (Overview)",
 
-              "ABAP Editor and Runtime Environment",
+              "Transaction Codes",
 
-              "Best Practices in ABAP",
+              "SAP Landscape (DEV, QAS, PRD)",
             ],
           },
 
           {
-            name: "Data Dictionary & Database Access",
+            name: "ABAP Development Environment",
 
             subtopics: [
-              "What is Data Dictionary",
+              "ABAP Editor (SE38)",
 
-              "Domains, Data Elements, and Tables",
+              "Object Navigator (SE80)",
 
-              "Views and Search Helps",
+              "Transport Requests (CTS)",
 
-              "Table Relationships & Foreign Keys",
+              "ABAP Program Structure",
 
-              "Indexing and Buffering",
+              "Data Types (Elementary, Complex)",
 
-              "Database Table Maintenance",
+              "Standard, Sorted, Hashed Tables",
 
-              "Open SQL Basics",
+              "Table Operations (READ, LOOP, MODIFY, DELETE)",
 
-              "Authorization Checks",
+              "Subroutines (PERFORM)",
             ],
           },
 
           {
-            name: "Reports & List Generation",
+            name: "Data Dictionary (DDIC) ",
 
             subtopics: [
-              "Classical Reports",
+              "Domains",
 
-              "Interactive Reports",
+              "Data Elements",
 
-              "ALV Reports (List Viewer)",
+              "Tables (Transparent, Pool, Cluster)",
 
-              "Events in Reporting",
+              "Views (Database View, Projection View)",
 
-              "Report Selection Screens",
+              "Structures",
 
-              "User Interaction in Reports",
+              "Lock Objects",
 
-              "Nested Loops in Reports",
+              "Cardinality",
 
-              "Performance in Large Reports",
+              "Technical Settings",
             ],
           },
 
           {
-            name: "Forms & Interfaces",
+            name: "Open SQL & Database Programming ",
 
             subtopics: [
-              "SAP Script Basics",
+              "SELECT Statements",
 
-              "Smart Forms Overview",
+              "Joins (Inner, Left Outer)",
 
-              "Adobe Forms",
-
-              "Form Layout Techniques",
-
-              "Calling Forms from Programs",
-
-              "Print Program Integration",
-
-              "Interface Programming Concepts",
-
-              "Data Transfer Between Systems",
-            ],
-          },
-
-          {
-            name: "Modularization Techniques",
-
-            subtopics: [
-              "Includes and Subroutines",
-
-              "Function Modules",
-
-              "Groups and Naming Conventions",
-
-              "Parameter Passing Techniques",
-
-              "RFC-enabled Function Modules",
-
-              "Encapsulation and Code Reuse",
-
-              "Enhancement Techniques",
-
-              "BAdIs and User Exits",
-            ],
-          },
-
-          {
-            name: "Performance Analysis & Optimization",
-
-            subtopics: [
-              "Performance Bottlenecks",
-
-              "Efficient Use of Internal Tables",
-
-              "Index Optimization",
-
-              "Use of Field Symbols and References",
-
-              "Transaction SE30 and SAT",
-
-              "Memory Management",
-
-              "Code Inspector and SLIN",
-
-              "Best Practices for Optimization",
-            ],
-          },
-
-          {
-            name: "Open SQL & Advanced Topics",
-
-            subtopics: [
-              "SELECT Statements in ABAP",
-
-              "Inner and Outer Joins",
-
-              "Nested Queries",
+              "Aggregate Functions",
 
               "FOR ALL ENTRIES",
 
-              "Open SQL vs Native SQL",
+              "Database Hints & Performance",
 
-              "Data Locking Concepts",
+              "Subqueries",
 
-              "Advanced Looping Logic",
+              "Difference: Open SQL vs Native SQL",
 
-              "Dynamic Programming",
+              "When to use Native SQL",
             ],
           },
 
           {
-            name: "SAP Module Integration",
+            name: "Reports & ALV ",
 
             subtopics: [
-              "Integration with MM Module",
+              "Selection Screens",
 
-              "Integration with SD Module",
+              "Events (START-OF-SELECTION, END-OF-SELECTION)",
 
-              "Integration with FI Module",
+              "Drill-down Reports",
 
-              "Calling BAPIs and BADIs",
+              "Classical ALV",
 
-              "Cross-module Data Flow",
+              "ALV with OO ABAP",
 
-              "Function Module Interfaces",
+              "Editable ALV",
 
-              "IDocs and RFCs",
+              "SALV Model",
 
-              "Practical Project Scenario",
+              "ALV Performance Best Practices",
+            ],
+          },
+
+          {
+            name: "Forms & Output Management ",
+
+            subtopics: [
+              "SAP Script (Overview)",
+
+              "Smart Forms",
+
+              "Page Layouts",
+
+              "NACE Overview",
+
+              "S/4HANA Output Framework (Intro)",
+
+              "Dynamic Data Handling",
+
+              "Adobe Forms (S/4HANA)",
+            ],
+          },
+
+          {
+            name: "Object-Oriented ABAP ",
+
+            subtopics: [
+              "Classes & Objects",
+
+              "Methods & Attributes",
+
+              "Constructors",
+
+              "Abstract Classes",
+
+              "MVC Concept",
+
+              "Polymorphism",
+
+              "Interfaces",
+
+              "Best Practices for Clean Code",
+            ],
+          },
+
+          {
+            name: "Enhancements & Modifications ",
+
+            subtopics: [
+              "User Exits",
+
+              "Customer Exits",
+
+              "Enhancement Spots",
+
+              "When to Modify vs Enhance",
+
+              "SPAU / SPDD",
+
+              "BADIs (Classic & New)",
+
+              "Implicit & Explicit Enhancements",
             ],
           },
         ],
@@ -1670,29 +1666,29 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "SAP Ariba Procurement",
+            name: "Procurement & SAP S/4HANA Foundation",
 
             subtopics: [
-              "Introduction to SAP Ariba",
+              "Procurement & ERP Fundamentals",
 
-              "Procure-to-Pay Overview",
+              "Secure-to-Pay (S2P) Cycle",
 
-              "Requisition & Purchase Order Creation",
+              "Procure-to-Pay (S2P) vs Order-to-Cash(O2C)",
 
-              "Catalog Management",
+              "Direct vs Indirect Procurement",
 
-              "Invoice Management",
+              "SAP Ecosystem Overview",
 
-              "Supplier Enablement",
+              "SAP ECC vs SAP S/4HANA",
 
-              "Compliance & Policy Enforcement",
+              "SAP MM Overview (for Ariba consultants)",
 
-              "Integration with ERP Systems",
+              "Overview of SAP Ariba Modules",
             ],
           },
 
           {
-            name: "Sourcing Solutions",
+            name: "SAP Ariba Architecture & Basics",
 
             subtopics: [
               "Sourcing Project Lifecycle",
@@ -2132,178 +2128,170 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "SAP R/3 Architecture",
+            name: "SAP S/4 Hana & BASIS FOUNDATION ",
 
             subtopics: [
-              "Three-Tier Architecture Overview",
+              "What is ERP? Why SAP?",
 
-              "Presentation, Application & Database Layers",
+              "Overview of SAP",
 
-              "Dispatcher & Work Processes",
+              "SAP Product Portfolio (ECC vs S/4HANA)",
 
-              "Client-Server Concept",
+              "Role of SAP Basis Consultant (Support vs Implementation vs AMS)",
 
-              "RFC Communication",
+              "2-Tier vs 3-Tier Architecture",
 
-              "SAP Kernel & Instance Structure",
+              "Presentation, Application, Database layers",
 
-              "System Landscape Concepts",
+              "SAP GUI, SAP Fiori, Web GUI",
 
-              "Integration with External Systems",
+              "Single System vs Landscape (DEV, QAS, PRD)",
             ],
           },
 
           {
-            name: "System Installation & Configuration",
+            name: "OPERATING SYSTEM & DATABASE BASICS ",
 
             subtopics: [
-              "SAP S/4HANA & ECC Installation Overview",
+              "Windows vs Linux (SAP perspective)",
 
-              "Media Preparation & Installation Tools",
+              "Linux Fundamentals for SAP Basis",
 
-              "SWPM & SUM Tools",
+              "SAP User vs Root User concepts",
 
-              "Initial Configuration Tasks",
+              "SAP HANA Architecture",
 
-              "Post-Installation Activities",
+              "Column Store vs Row Store",
 
-              "Profile Parameters Setup",
-
-              "Installation Logs & Troubleshooting",
-
-              "Add-On Installation",
+              "SAP HANA Studio Overview",
             ],
           },
 
           {
-            name: "Client Administration",
+            name: "SAP S/4HANA INSTALLATION ",
 
             subtopics: [
-              "Creating & Managing Clients",
+              "Hardware & Software Requirements",
 
-              "Client Copy (Local, Remote, Export/Import)",
+              "SAP S/4HANA Editions",
 
-              "Client Deletion & Protection",
+              "SAP Installation Tools",
 
-              "Client-Specific vs Cross-Client Settings",
+              "SAP HANA Database Installation",
 
-              "Client Role Types",
+              "S/4HANA Application Installation",
 
-              "Client-Specific Transport",
+              "SAP MMC",
 
-              "Logical System Assignment",
+              "Sap control commands",
 
-              "System Refresh Concepts",
+              "SAP Services overview",
             ],
           },
 
           {
-            name: "User Management & Authorization",
+            name: "SAP BASIS ADMINISTRATION ",
 
             subtopics: [
-              "User Types & Creation",
+              "User Types (Dialog, System, Communication, Service)",
 
-              "Authorization Objects",
+              "Roles & Authorizations",
 
-              "Role Maintenance (PFCG)",
+              "User Lock/Unlock",
 
-              "Profile Generation",
+              "SU01, SU10",
 
-              "SU01, SU10, SUIM Transactions",
+              "Client Copy Types (Local, Remote, Client Export/Import)",
 
-              "Authorization Checks & Logs",
+              "Client Deletion",
 
-              "User Groups & Parameters",
+              "Client Copy Steps (SCCL, SCC9)",
 
-              "Audit & Compliance Tools",
+              "Logical System Creation",
             ],
           },
 
           {
-            name: "Background Jobs & Processing",
+            name: "TRANSPORT MANAGEMENT SYSTEM (TMS)",
 
             subtopics: [
-              "Job Scheduling with SM36",
+              "Transport Concepts (DEV → QAS → PRD)",
 
-              "Job Monitoring with SM37",
+              "Transport Organizer (SE09 / SE10)",
 
-              "Job Classes & Prioritization",
+              "Transport Logs Analysis",
 
-              "Periodic vs Event-Driven Jobs",
+              "Common Transport Errors & Fixes",
 
-              "Spool Management",
+              "TMS Configuration",
 
-              "Handling Long-Running Jobs",
-
-              "Batch Input Sessions",
-
-              "Job Logs & Error Analysis",
+              "Import & Export Requests",
             ],
           },
 
           {
-            name: "Transport Management System (TMS)",
+            name: "SAP KERNEL & SYSTEM ADMINISTRATION",
 
             subtopics: [
-              "TMS Configuration Steps",
+              "What is SAP Kernel?",
 
-              "Transport Routes (Single/Multisystem)",
+              "Kernel Upgrade Process",
 
-              "Creating & Releasing Transports",
+              "Kernel Upgrade Process",
 
-              "Import Queues & Scheduling",
+              "Default, Instance, Start Profiles",
 
-              "Transport Logs & History",
+              "Important Parameters",
 
-              "Transport Directory Structure",
+              "RZ10 / RZ11",
 
-              "Cross-Client Transport Restrictions",
+              "Profile Backup & Restore",
 
-              "Handling Transport Errors",
+              "Compatibility with HANA",
             ],
           },
 
           {
-            name: "System Monitoring & Performance",
+            name: "SAP HANA ADMINISTRATION ",
 
             subtopics: [
-              "CCMS Monitoring",
+              "HANA Studio & Cockpit",
 
-              "Workload Analysis (ST03N)",
+              "Tenant Databases (MDC)",
 
-              "Database Performance Tuning",
+              "User & Role Management in HANA",
 
-              "Memory & Buffer Monitoring",
+              "CPU & Disk Monitoring",
 
-              "EarlyWatch Alert",
+              "SAP HANA Backup Types",
 
-              "Application Log Monitoring (SLG1)",
+              "Backup Scheduling",
 
-              "Custom Alerts & Thresholds",
+              "Recovery Scenarios",
 
-              "Root Cause Analysis (RCA)",
+              "Backup Verification",
             ],
           },
 
           {
-            name: "Patch Administration & Upgrades",
+            name: "SYSTEM MONITORING & PERFORMANCE TUNING",
 
             subtopics: [
-              "SAP Kernel Patch Upgrade",
+              "SAP CCMS",
 
-              "Applying SAP Notes (SNOTE)",
+              "Transaction Codes",
 
-              "SPAM/SAINT Usage",
+              "Background Jobs (SM36 / SM37)",
 
-              "Support Package Stacks",
+              "Work Processes",
 
-              "SUM Tool for Upgrades",
+              "Memory Bottlenecks",
 
-              "Pre- & Post-Upgrade Steps",
+              "HANA Performance Issues",
 
-              "Downtime Minimization Techniques",
+              "EarlyWatch Alerts",
 
-              "Version Compatibility Checks",
+              "System Health Check",
             ],
           },
         ],
@@ -3050,178 +3038,176 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "Overview of EWM & WM",
+            name: "SAP & EWM FOUNDATION",
 
             subtopics: [
-              "Introduction to SAP WM and EWM",
+              "ERP Overview & SAP Architecture",
 
-              "Key Differences: WM vs. EWM",
+              "SAP ECC vs SAP S/4HANA",
 
-              "EWM Architecture & Deployment",
+              "Master Data vs Transaction Data",
 
-              "EWM Functionalities Overview",
+              "What is SAP EWM?",
 
-              "Basic Terminologies & Flows",
+              "Why EWM vs WM?",
 
-              "EWM in S/4HANA Context",
+              "Embedded EWM vs Decentralized EWM",
 
-              "Business Benefits of EWM",
+              "EWM Architecture in S/4HANA",
 
-              "Integration with Logistics Processes",
+              "Integration Overview (MM, SD, PP, QM, TM)",
             ],
           },
 
           {
-            name: "Warehouse Structure & Master Data",
+            name: "EWM ORGANIZATIONAL STRUCTURE & MASTER DATA",
 
             subtopics: [
-              "Warehouse Numbers & Storage Types",
+              "Warehouse Number",
 
-              "Storage Bins & Sections",
+              "Storage Types",
 
-              "Activity Areas & Work Centers",
+              "Storage Bins",
 
-              "Quant & HU Management",
+              "Business Partner Configuration",
 
-              "Business Partners & Resources",
+              "Product Master for EWM",
 
-              "Product & Packaging Specifications",
+              "Packaging Specifications",
 
-              "Master Data Replication",
+              "Resource Types",
 
-              "Warehouse Task & Order Creation",
+              "RF Framework Basics",
             ],
           },
 
           {
-            name: "Inbound & Outbound Processing",
+            name: "INBOUND PROCESS ",
 
             subtopics: [
               "Inbound Delivery Creation",
 
-              "Goods Receipt & Putaway",
+              "Inbound Delivery Types",
 
-              "Advanced Putaway Strategies",
+              "Expected Goods Receipt (EGR)",
 
-              "Outbound Delivery Management",
+              "Putaway Strategies",
 
-              "Picking & Packing Strategies",
+              "Storage Type Search Sequence",
 
-              "Goods Issue Process",
-
-              "Exception Handling in Deliveries",
-
-              "Monitoring Inbound/Outbound Processes",
-            ],
-          },
-
-          {
-            name: "Internal Warehouse Movements",
-
-            subtopics: [
-              "Warehouse Tasks & Orders",
-
-              "Ad Hoc Movements",
-
-              "Replenishment Strategies",
+              "WarWehouse Task Creation",
 
               "Slotting & Rearrangement",
 
-              "Posting Changes",
-
-              "Stock Transfers & Rearrangement",
-
-              "HU Movements",
-
-              "Exception Handling during Movements",
+              "Quality Inspection Integration (QM)",
             ],
           },
 
           {
-            name: "Physical Inventory",
+            name: "OUTBOUND PROCESS",
 
             subtopics: [
-              "Types of Physical Inventory",
+              "Outbound Delivery Creation",
 
-              "Inventory Documents Creation",
+              "Delivery Order (DO)",
 
-              "Cycle Counting Procedures",
+              "Picking Strategies",
 
-              "Counting Strategies & Thresholds",
+              "Work Center Picking",
 
-              "Inventory Adjustments",
+              "Pick, Pack, and Stage (PPS)",
 
-              "Inventory Reporting",
+              "Packing Workbench",
 
-              "Real-Time Inventory Monitoring",
+              "HU Management",
 
-              "Integration with MM Inventory",
+              "PGI Posting",
             ],
           },
 
           {
-            name: "Yard Management & Cross-Docking",
+            name: "INTERNAL WAREHOUSE PROCESSES ",
 
             subtopics: [
-              "Introduction to Yard Management",
+              "Stock Transfer",
 
-              "Yard Layout and Configuration",
+              "Replenishment",
 
-              "Dock Appointment Scheduling",
+              "Ad-Hoc Movements",
 
-              "Vehicle Check-In/Check-Out",
+              "PI Document Creation",
 
-              "Basic Cross-Docking Concepts",
+              "Counting & Differences",
 
-              "Preplanned vs Opportunistic Cross-Docking",
+              "Short Pick",
 
-              "Document Flow in Yard Management",
+              "Damaged Stock",
 
-              "EWM & TM Integration",
+              "Exception Codes Configuration",
             ],
           },
 
           {
-            name: "Resource Management & Wave Management",
+            name: "ADVANCED EWM FEATURES ",
 
             subtopics: [
-              "Resource Configuration & Types",
+              "Labor Standards",
 
-              "Labor Management Basics",
+              "Performance Measurement",
 
-              "Task Allocation Strategies",
+              "Yard Structure",
 
-              "Wave Template Design",
+              "Yard Bins",
 
-              "Wave Assignment Rules",
+              "Wave Monitoring",
+
+              "Optimization Techniques",
+
+              "Opportunistic Cross Docking",
+
+              "Opportunistic Cross Docking",
+            ],
+          },
+
+          {
+            name: "RF, FIORI & AUTOMATION",
+
+            subtopics: [
+              "RF Configuration",
+
+              "Screen Customization",
+
+              "RF Transactions (Putaway, Picking, PI)",
+
+              "Monitor Warehouse Tasks",
+
+              "Manage Deliveries",
 
               "Releasing & Executing Waves",
 
-              "Workload Distribution",
+              "PLC Integration",
 
-              "Monitoring Wave Execution",
+              "MFS (Material Flow System) Basics",
             ],
           },
 
           {
-            name: "Integration with SAP Modules (MM, SD, PP)",
+            name: "MONITORING, REPORTING & TROUBLESHOOTING ",
 
             subtopics: [
-              "Material Master Synchronization",
+              "Warehouse Monitor",
 
-              "Integration with Purchase Orders (MM)",
+              "Resource Monitor",
 
-              "Sales Order Fulfillment (SD)",
+              "Queue Failures",
 
-              "Delivery & Transportation Documents",
+              "Reprocessing Techniques",
 
-              "Production Supply (PP)",
+              "Standard Reports",
 
-              "Batch & Serial Number Integration",
+              "Custom Reports Overview",
 
-              "Status Management Integration",
-
-              "Cross-Module Reporting",
+              "KPIs for Warehouse Performance",
             ],
           },
         ],
@@ -3974,178 +3960,179 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "Organizational Management",
+            name: "SAP HCM & ERP FOUNDATION ",
 
             subtopics: [
-              "Enterprise Structure & Objects",
+              "Introduction to SAP & ERP",
 
-              "Organizational Units & Jobs",
+              "SAP Architecture (Presentation, Application, Database)",
 
-              "Position Management",
+              "Client, Company Code, Plant, Personnel Area",
 
-              "Relationships & Evaluation Paths",
+              "SAP ECC vs SAP S/4HANA HCM Overview",
 
-              "Infotype Configuration",
+              "Introduction to SAP HCM",
 
-              "Matrix Organization Modeling",
+              "SAP HCM Sub-Modules Overview",
 
-              "Integration with Personnel Administration",
+              "End-to-End Employee Lifecycle",
 
-              "Reporting Structure Analysis",
+              "Integration with FI, CO, MM, SD",
             ],
           },
 
           {
-            name: "Personnel Administration",
+            name: "ORGANIZATIONAL MANAGEMENT (OM) – CONFIG + REAL TIME ",
 
             subtopics: [
-              "Employee Master Data Maintenance",
+              "Enterprise Structure",
 
-              "Hiring & Separation Processes",
+              "Company Code",
 
-              "Action Types & Reasons",
+              "Personnel Area",
 
-              "Infotypes & Subtypes",
+              "Personnel Sub Area",
 
-              "Personnel Areas & Subareas",
+              "Organizational Management (OM)",
 
-              "Employee Groups & Subgroups",
+              "Objects & Object Types",
 
-              "Integration with Time & Payroll",
+              "Positions & Jobs",
 
-              "Data Archiving & Security",
+              "Org Structure Creation (Practical)",
             ],
           },
 
           {
-            name: "Time Management",
+            name: "PERSONNEL ADMINISTRATION (PA) – CORE MODULE ",
 
             subtopics: [
-              "Time Data Recording (Clock In/Out)",
+              "Personnel Administration Overview",
+
+              "PA Infotype Framework",
+
+              "Core Infotypes (VERY IMPORTANT)",
+
+              "IT0000 – Actions",
+
+              "IT0001 – Organizational Assignment",
+
+              "IT0008 – Basic Pay",
+
+              "Employee Actions",
+
+              "PA Configuration",
+            ],
+          },
+
+          {
+            name: "TIME MANAGEMENT (TM) ",
+
+            subtopics: [
+              "Time Infotypes",
+
+              "Time Configuration",
+
+              "Work Schedules",
+
+              "Holiday Calendarss",
+
+              "Personnel Subarea Grouping",
 
               "Absence & Attendance Types",
 
-              "Work Schedules & Variants",
+              "Time Evaluation (Schemas – Intro)",
 
-              "Quotas Configuration",
-
-              "Overtime & Time Evaluation",
-
-              "Public Holiday Calendar Setup",
-
-              "Integration with Payroll",
-
-              "Time Manager’s Workplace (TMW)",
+              "PCR Basics (Personnel Calculation Rules)",
             ],
           },
 
           {
-            name: "Payroll Accounting",
+            name: "PAYROLL (INDIA) – MOST CRITICAL ",
 
             subtopics: [
-              "Payroll Schema & Rules",
-
-              "Wage Types Configuration",
-
-              "Gross-to-Net Calculation",
-
-              "Legal Reporting & Statutory Deductions",
-
-              "Bank Transfers & Payments",
-
-              "Posting to Finance (FI)",
+              "Payroll Fundamentals",
 
               "Retroactive Accounting",
 
-              "Payroll Simulation & Monitoring",
+              "Indian Payroll Configuration",
+
+              "Payroll Processing",
+
+              "Payroll Schemas & PCR",
+
+              "PCR Logic",
+
+              "Real-Time PCR Examples",
+
+              "Payroll Debugging Techniques",
             ],
           },
 
           {
-            name: "Recruitment & Selection",
+            name: "REPORTING & FORMS",
 
             subtopics: [
-              "Vacancy Management",
+              "SAP HCM Reporting",
 
-              "Applicant Master Data",
+              "Ad-hoc Queries ",
 
-              "Applicant Actions",
+              "Standard SAP Reports",
 
-              "Selection Criteria Setup",
+              "Logical Databases (PNP)",
 
-              "Recruitment Media Management",
+              "Payroll Reports",
 
-              "Workflow for Approvals",
+              "Payslip Forms",
 
-              "Integration with OM & PA",
+              "Smart Forms",
 
-              "Reporting on Applicants",
+              "Adobe Forms (Overview)",
+
             ],
           },
 
           {
-            name: "Compensation Management",
+            name: "ADVANCED & REAL-TIME CONSULTANT SKILLS ",
 
             subtopics: [
-              "Compensation Planning Tools",
+              "Integration Topics",
 
-              "Budgeting & Eligibility Rules",
+              "OM ↔ PA Integration",
 
-              "Salary Survey Participation",
+              "PA ↔ Payroll Integration",
 
-              "Job Pricing Configuration",
+              "Transport Management System (TMS)",
 
-              "Long-Term Incentives",
+              "Debugging Payroll Issues",
 
-              "Pay Scale Management",
+              "Support Project Activities",
 
-              "Manager Self-Service Planning",
+              "Cutover Activities",
 
-              "Integration with Payroll",
+              "Go-Live & Post Go-Live Support",
             ],
           },
 
           {
-            name: "Performance Management",
+            name: "REAL-TIME PROJECT + INTERVIEW PREP ",
 
             subtopics: [
-              "Appraisal Templates & Catalogs",
+              "Real-Time Project",
 
-              "Appraisal Process Flow",
+              "End-to-End HCM Implementation",
 
-              "Objective Setting & Reviews",
+              "Business Blueprints",
 
-              "Integration with OM & PA",
+              "Configuration Mapping",
 
-              "Manager & Employee Roles",
+              "100+ Interview Questions",
 
-              "Automatic Rating & Calculations",
+              "Configuration-Based Questions",
 
-              "Talent Development Link",
+              "Resume Preparation",
 
-              "Reporting & Analytics",
-            ],
-          },
-
-          {
-            name: "Employee Self-Service (ESS) & Manager Self-Service (MSS)",
-
-            subtopics: [
-              "Overview of ESS/MSS Portals",
-
-              "Leave Requests & Approvals",
-
-              "Pay Slip Access & Tax Statements",
-
-              "Personal Data Changes",
-
-              "Team View & Time Tracking",
-
-              "Workflow Integration",
-
-              "Fiori-Based Services",
-
-              "Security & Role Management",
+              "MocWk Interviews",
             ],
           },
         ],
@@ -4432,46 +4419,90 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "Master Data Management (Material Master, Vendor Master)",
+            name: "SAP S/4 Hana Overview & ERP Fundamentals",
 
             subtopics: [
-              "Material Types & Views Overview",
+              "Introduction to SAP",
 
               "Material Master Creation & Maintenance",
 
-              "Vendor Master Data Configuration",
+              "Why SAP? Market scope & career paths",
 
-              "Purchasing & Accounting Views",
+              "SAP GUI navigation",
 
-              "Source List & Info Records",
+              "Logon, sessions, favourites",
 
-              "Centralized vs Decentralized Master Data",
+              "SAP system landscape (DEV / QAS / PRD)",
 
-              "Number Range Configuration",
+              "Client, company, company code",
 
-              "Integration with Other Modules",
+              "SAP ECC vs SAP S/4HANA overview",
             ],
           },
 
           {
-            name: "Procurement Process (P2P)",
+            name: "Enterprise Structure",
 
             subtopics: [
-              "Purchase Requisition Creation",
+              "Organizational Elements",
 
-              "Request for Quotation (RFQ)",
+              "Client",
 
-              "Purchase Order (PO) Processing",
+              "Company Code",
 
-              "Goods Receipt Posting",
+              "Plant",
 
-              "Invoice Posting & Matching",
+              "Purchasing Group",
 
-              "Release Strategy Setup",
+              "Company code to company",
 
-              "Outline Agreements (Contracts/Scheduling)",
+              "Purchasing organization to company/plant",
 
-              "Reporting in Procurement",
+              "Storage location to plant",
+            ],
+          },
+
+          {
+            name: "Master Data in SAP MM",
+
+            subtopics: [
+              "Material types (ROH, HALB, FERT, HAWA, etc.)",
+
+              "Material number ranges",
+
+              "Industry sector",
+
+              "Vendor account groups",
+
+              "Vendor creation & maintenance",
+
+              "Price & delivery conditions",
+
+              "Quota allocation",
+
+              "Standard vs Subcontracting",
+            ],
+          },
+
+          {
+            name: "Purchasing Process ",
+
+            subtopics: [
+              "Types of PR",
+
+              "Manual & automatic PR",
+
+              "RFQ creation",
+
+              "Vendor selection",
+
+              "Quotation comparison",
+
+              "PO types (NB, FO, etc.)",
+
+              "Release strategy for PO",
+
+              "Third-party procurement",
             ],
           },
 
@@ -4479,131 +4510,87 @@ export const coursesData = {
             name: "Inventory Management",
 
             subtopics: [
-              "Goods Movement Types (101, 102, etc.)",
+              "Movement types (101, 102, 201, 261, etc.)",
 
-              "Stock Overview & Analysis (MMBE)",
+              "GR for PO",
 
-              "Goods Issue & Transfer Posting",
+              "GR without PO",
 
-              "Batch Management",
+              "GI to production order",
 
-              "Stock Types (Unrestricted, Blocked, Quality)",
+              "Plant to plant",
 
-              "Special Stock Handling (Subcontracting, Consignment)",
+              "Storage location to storage location",
 
-              "Reservations & Material Documents",
+              "Stock display",
 
-              "Integration with WM/EWM",
+              "Material documents",
             ],
           },
 
           {
-            name: "Material Requirements Planning (MRP)",
+            name: "Invoice Verification ",
 
             subtopics: [
-              "MRP Types & Procedures",
+              "Invoice types",
 
-              "Planning File Entry & Processing Keys",
+              "PO-based vs Non-PO invoice",
 
-              "Lot Sizing Techniques",
+              "Credit memo",
 
-              "Planning Horizon Setup",
+              "Automatic vs manual posting",
 
-              "Source Determination & Quota Arrangements",
+              "GR/IR Account",
 
-              "MRP Controllers & Exception Messages",
+              "Account entries",
 
-              "MD01/MD04 Transaction Usage",
+              "Tolerance limits",
 
-              "Integration with Production Planning",
+              "Invoice blocking",
             ],
           },
 
           {
-            name: "Physical Inventory",
+            name: "Valuation & Account Determination ",
 
             subtopics: [
-              "Inventory Document Creation",
+              "Valuation area",
 
-              "Cycle Counting Configuration",
+              "Valuation class",
 
-              "Posting Inventory Differences",
+              "Price control (Standard vs Moving Average)",
 
-              "Counting Methods & Thresholds",
+              "Split valuation",
 
-              "Batch & Serial Number Tracking",
+              "Chart of accounts",
 
-              "Annual vs Continuous Inventory",
+              "Transaction keys (BSX, WRX, PRD, etc.)",
 
-              "Inventory Reports (MB5B, MI20, etc.)",
+              "OBYC configuration",
 
-              "Integration with Financial Adjustments",
+              "Integration with Finance",
             ],
           },
 
           {
-            name: "Valuation and Account Determination",
+            name: "Special Procurement & Special Stocks ",
 
             subtopics: [
-              "Valuation Classes & Types",
+              "Subcontracting process",
 
-              "Automatic Account Posting (OBYC)",
+              "Consignment process",
 
-              "Split Valuation Concepts",
+              "Pipeline materials",
 
-              "Price Control (Standard vs Moving Avg)",
+              "Returnable transport packaging (RTP)",
 
-              "GR/IR Clearing Account Setup",
+              "Vendor consignment",
 
-              "Account Category Reference",
+              "Customer consignment",
 
-              "Material Ledger Overview",
+              "Project stock",
 
-              "FI Integration with MM Valuation",
-            ],
-          },
-
-          {
-            name: "Invoice Verification",
-
-            subtopics: [
-              "Three-Way Matching Concept",
-
-              "Invoice Posting via MIRO",
-
-              "Handling Variances & Blocks",
-
-              "Subsequent Debit/Credit Transactions",
-
-              "Credit Memo Processing",
-
-              "Automatic Posting to FI",
-
-              "Invoice Release Strategy",
-
-              "Reporting & Analysis (MRBR, MIR5)",
-            ],
-          },
-
-          {
-            name: "Integration with other SAP Modules (FI, SD, PP)",
-
-            subtopics: [
-              "Purchase Order to FI Postings",
-
-              "Stock Movements Affecting Finance",
-
-              "Procurement for Sales Orders (SD)",
-
-              "Subcontracting Process with PP",
-
-              "Intercompany Stock Transfers",
-
-              "Automatic Postings to G/L",
-
-              "Third-Party Order Processing",
-
-              "Data Flow Between Modules",
+              "Sales order stock",
             ],
           },
         ],
@@ -5347,178 +5334,178 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "Introduction to SAP Production Planning",
+            name: "SAP & S/4HANA FOUNDATION ",
 
             subtopics: [
-              "Overview of Production Types (Make-to-Stock, Make-to-Order)",
+              "Introduction to SAP SE",
 
-              "Integration with Other SAP Modules (MM, SD, FICO)",
+              "SAP ERP vs SAP ECC vs SAP S/4HANA",
 
-              "PP Master Data Flow",
+              "SAP Modules overview (PP, MM, SD, QM, PM, FI, CO)",
 
-              "End-to-End Production Cycle",
+              "SAP GUI vs Fiori",
 
-              "Business Scenarios in Manufacturing",
+              "On-Premise vs Cloud vs Hybrid",
 
-              "Planning Strategies & Policies",
+              "HANA Database basics",
 
-              "Role of PP in Supply Chain",
+              "Role of Business Partner in S/4HANA",
 
-              "Key Transactions in SAP PP",
+              "End-to-End Business Process in Manufacturing Industry",
             ],
           },
 
           {
-            name: "Master Data (BOM, Work Center, Routing)",
+            name: "ORGANIZATIONAL STRUCTURE ",
 
             subtopics: [
-              "Bill of Materials (BOM) Creation & Usage",
+              "Enterprise Structure",
 
-              "Routing Definition & Operation Steps",
+              "Company Code",
 
-              "Work Center Setup & Capacities",
+              "Storage Location",
 
-              "Production Version Management",
+              "Sales Organization (integration overview)",
 
-              "Task List Types & Dependencies",
+              "Company Code → Plant",
 
-              "Master Recipe in Process Industries",
+              "Plant → Storage Location",
 
-              "Reference Operation Sets",
+              "Impact of Plant in PP processes",
 
-              "Data Consistency & Maintenance",
+              "Client",
             ],
           },
 
           {
-            name: "Demand Management & Sales and Operations Planning (SOP)",
+            name: "MASTER DATA IN SAP PP ",
 
             subtopics: [
-              "Planned Independent Requirements (PIR)",
+              "Material Types (ROH, HALB, FERT)",
 
-              "Flexible Planning & Standard SOP",
+              "Industry Sector",
 
-              "Forecasting in SOP",
+              "MRP Views (1–4)",
 
-              "Transfer of SOP to Demand Management",
+              "Work Scheduling View",
 
-              "Make-to-Order vs Make-to-Stock Scenarios",
+              "BOM Types",
 
-              "Product Group Planning",
+              "BOM Status",
 
-              "Interactive vs Automatic Planning",
+              "Capacity Planning",
 
-              "Integration with CO-PA and SD",
+              "Available Capacity",
             ],
           },
 
           {
-            name: "Material Requirements Planning (MRP)",
+            name: "MRP – MATERIAL REQUIREMENTS PLANNING ",
 
             subtopics: [
-              "MRP Types & Control Parameters",
+              "Demand Management",
 
-              "MRP Run Execution (MD01, MD02)",
+              "Independent vs Dependent Requirements",
 
-              "Lot Size & Safety Stock Settings",
+              "PD, VB, ND",
 
-              "Planning Horizon & Scheduling",
+              "Forecast-Based Planning",
 
-              "MRP Exception Messages",
+              "Single Item MRP",
 
-              "Procurement Proposals (Planned Orders, Purchase Reqs)",
+              "Total Plant MRP",
 
-              "MRP Evaluation & Reporting (MD04, MD05)",
+              "Lot Sizing Procedures",
 
-              "Multilevel & Single Level Planning",
+              "Forward & Backward Scheduling",
             ],
           },
 
           {
-            name: "Capacity Planning",
+            name: "DEMAND MANAGEMENT & PLANNING STRATEGIES",
 
             subtopics: [
-              "Work Center Capacity Definition",
+              "PIR Creation & Consumption",
 
-              "Rough-Cut Capacity Planning (RCCP)",
+              "Version Management",
 
-              "Capacity Requirements Planning (CRP)",
+              "Strategy 10 – Make to Stock",
 
-              "Finite & Infinite Scheduling",
+              "Strategy 20 – Make to Order",
 
-              "Capacity Evaluation Tools",
+              "Strategy 40 – Planning with Final Assembly",
 
-              "Capacity Leveling (CM25, CM21)",
+              "Strategy 50 – Planning without Final Assembly",
 
-              "Shift Planning & Calendars",
+              "Strategy Selection Logic",
 
-              "Bottleneck Resource Management",
+              "Strategy Group Configuration",
             ],
           },
 
           {
-            name: "Production Order Execution",
+            name: "PRODUCTION ORDERS",
 
             subtopics: [
-              "Order Creation & Release",
+              "Order Statuses (CRT, REL, PCNF, CNF, TECO, CLSD)",
 
-              "Order Printing & Shop Papers",
+              "Order Creation Methods",
 
-              "Material Staging & Issue",
+              "Planned Order → Production Order Conversion",
 
-              "Confirmation of Production Activities",
+              "Material Availability Check",
 
-              "Goods Receipt Posting",
+              "Goods Issue (261)",
 
-              "Order Settlement & Variance Analysis",
+              "Discrete Manufacturing",
 
-              "Rework & Scrap Handling",
+              "Repetitive Manufacturing (Intro)",
 
-              "Status Management in Orders",
+              "Process Manufacturing (Overview)",
             ],
           },
 
           {
-            name: "Shop Floor Control",
+            name: "CAPACITY & SCHEDULING ",
 
             subtopics: [
-              "Dispatching of Production Orders",
+              "Available Capacity",
 
-              "Sequence Scheduling",
+              "Capacity Evaluation",
 
-              "Monitoring Order Progress",
+              "Capacity Leveling",
 
-              "Capacity Utilization Reports",
+              "Finite vs Infinite Scheduling",
 
-              "Shift Notes & Logs",
+              "Lead Time Scheduling",
 
-              "Integration with MES Systems",
+              "Midpoint Scheduling",
 
-              "Production Execution Tracking",
+              "Dispatching Rules",
 
-              "Use of SAP Fiori Apps for Shop Floor",
+              "Basic Dates",
             ],
           },
 
           {
-            name: "Reporting & Analytics in PP",
+            name: "COSTING & CONTROLLING IN PP ",
 
             subtopics: [
-              "Production Order Information System (COOIS)",
+              "Cost Component Split",
 
-              "Capacity Load Reports (CM01, CM07)",
+              "Standard Cost Estimate",
 
-              "Planned vs Actual Cost Analysis",
+              "Cost Update",
 
-              "Lead Time & Throughput Metrics",
+              "Planned vs Actual Cost",
 
-              "Custom PP Reports via SQVI/SQ01",
+              "Variance Calculation",
 
-              "Fiori Dashboards for PP",
+              "Settlement to CO/FI",
 
-              "Integration with Embedded Analytics",
+              "Cost Roll-Up",
 
-              "Exception Reporting for Planners",
+              "Cost Update",
             ],
           },
         ],
@@ -5806,178 +5793,144 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            name: "Project Structures (WBS Elements)",
+            name: "ERP & SAP CONSULTANT FOUNDATION ",
 
             subtopics: [
-              "Work Breakdown Structure (WBS) Hierarchy",
+              "Role of SAP PM Functional Consultant",
 
-              "Project Definition & Profiles",
+              "Implementation vs Support vs Rollout Projects",
 
-              "Milestone Configuration",
+              "SAP Project Lifecycle (ASAP & Activate Methodology)",
 
-              "Planning Elements vs Account Assignment Elements",
+              "Business Requirement Gathering Techniques",
 
-              "Templates & Standard WBS Models",
+              "AS-IS vs TO-BE Process Mapping",
 
-              "Status Management & User Status",
+              "SAP Landscape (DEV, QAS, PRD)",
 
-              "WBS Reporting & Analysis",
+              "SAP GUI & Fiori (Advanced Navigation)",
 
-              "Integration with Networks & Cost Planning",
+              "Transport Management System (TMS)",
             ],
           },
 
           {
-            name: "Network & Activity Management",
+            name: "ENTERPRISE ASSET MANAGEMENT OVERVIEW ",
 
             subtopics: [
-              "Network Header & Activities",
+              "SAP PM vs SAP EAM (Enterprise Asset Management)",
 
-              "Relationships & Dependencies",
+              "Maintenance Strategies in Industry",
 
-              "Activity Types & Work Centers",
+              "Asset Lifecycle Management",
 
-              "Scheduling & Float Calculation",
-
-              "Confirmation of Activities",
-
-              "Activity Costing",
-
-              "Capacity Planning in Networks",
-
-              "Linking Networks to WBS Elements",
+              "Integration with Digital Manufacturing",
             ],
           },
 
           {
-            name: "Resource Planning & Scheduling",
+            name: "ORGANIZATIONAL STRUCTURE (CONFIG + DESIGN)",
 
             subtopics: [
-              "Internal vs External Resource Planning",
+              "Define & Configure:",
 
-              "Personnel Assignment to Activities",
+              "Maintenance Plant",
 
-              "Work Center Capacity Allocation",
+              "Planning Plant",
 
-              "Shift Scheduling for Projects",
+              "Work Centers",
 
-              "Resource Demand Forecasting",
-
-              "Integrated Planning with HR",
-
-              "Use of Project Planning Board (CJ20N)",
-
-              "Scheduling Scenarios & Simulations",
+              "Planner Groups",
             ],
           },
 
           {
-            name: "Cost & Revenue Planning",
+            name: "MASTER DATA – ADVANCED ",
 
             subtopics: [
-              "Primary & Secondary Cost Planning",
+              "Structuring Techniques (Industry-wise)",
 
-              "Cost Planning at WBS and Network Level",
+              "Superior/Subordinate Hierarchies",
 
-              "Unit Costing vs Detailed Planning",
+              "Reference Locations",
 
-              "Revenue Planning for Customer Projects",
+              "Equipment Lifecycle",
 
-              "Plan/Actual Cost Comparisons",
+              "Classes & Characteristics (Advanced Use)",
 
-              "Use of Costing Sheets",
+              "BOM Usage in Maintenance",
 
-              "Forecasting Cost to Completion",
+              "Strategy-based Task Lists",
 
-              "Integration with CO-OPA (Internal Orders)",
+              "Counter-based Monitoring",
             ],
           },
 
           {
-            name: "Budgeting & Availability Control",
+            name: "MAINTENANCE PROCESS (DEEP DIVE) ",
 
             subtopics: [
-              "Budget Upload & Versions",
+              "Define Notification Types",
 
-              "Budget Release Process",
+              "Screen Layout Configuration",
 
-              "Availability Control Settings",
+              "Order Type Configuration",
 
-              "Tolerance Limits & Exceptions",
+              "Planning Parameters",
 
-              "Budgeting at WBS vs Network Level",
+              "Settlement Profiles",
 
-              "Transfer & Supplement Functions",
+              "Status Management",
 
-              "Budget Reporting (S_ALR_87013558)",
-
-              "Integration with Investment Management",
+              "Planning → Scheduling → Execution → TECO → Settlement",
             ],
           },
 
           {
-            name: "Project Reporting & Progress Analysis",
+            name: "PREVENTIVE & PREDICTIVE MAINTENANCE ",
 
             subtopics: [
-              "Structure Overview Reports",
+              "Strategy Plans (Advanced)",
 
-              "Actual vs Planned Cost Analysis",
+              "Multi-Counter Plans",
 
-              "Milestone Trend Analysis (MTA)",
+              "Performance-Based Maintenance",
 
-              "Progress Tracking & Earned Value",
-
-              "Project Cash Flow Reports",
-
-              "Graphical Reporting Tools",
-
-              "User-defined Layouts (CJ20N)",
-
-              "SAP Fiori Apps for Project Reporting",
+              "Scheduling Parameters (Deep Dive)",
             ],
           },
 
           {
-            name: "Material Management in Projects (Integration with MM)",
+            name: "WORK CLEARANCE MANAGEMENT ",
 
             subtopics: [
-              "Material Assignment to WBS/Activities",
+              "Permit Configuration",
 
-              "PR/PO Generation from Networks",
+              "Safety Integration",
 
-              "Inventory Tracking for Projects",
-
-              "Project Stock (Q Stock) Handling",
-
-              "Component Overview in CJ20N",
-
-              "Goods Issue to Project",
-
-              "Third-Party Procurement for Projects",
-
-              "Integration with Valuation & Costing",
+              "Risk Control",
             ],
           },
 
           {
-            name: "Integration with Financials (FI/CO)",
+            name: "CROSS-MODULE INTEGRATION (CRITICAL) ",
 
             subtopics: [
-              "Automatic Posting of Costs & Revenues",
+              "Automatic PR Creation",
 
-              "Settlement to Cost Centers/Assets",
+              "External Services Management",
 
-              "Overhead Calculation from PS",
+              "Cost Centers",
 
-              "Accrual & Deferral Handling",
+              "Internal Orders",
 
-              "Integration with Internal Orders",
+              "Breakdown Impact on Production",
 
-              "Tax & Currency Considerations",
+              "Maintenance during Production",
 
-              "Reporting in CO Module for Projects",
+              "Work Center Capacity",
 
-              "Audit Trails & Financial Reconciliation",
+              "Labor Planning",
             ],
           },
         ],
@@ -6264,178 +6217,153 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            title: "Quality Planning (Master Data, Inspection Plans)",
+            title: "SAP & QM FOUNDATION",
 
             subtopics: [
-              "Inspection Characteristics & Master Inspection Characteristics (MICs)",
+              "What is ERP?",
 
-              "Inspection Methods & Catalogs",
+              "SAP evolution → ECC vs S/4HANA ",
 
-              "Inspection Plan Creation & Assignment",
+              "SAP modules overview (MM, PP, SD, QM, EWM) ",
 
-              "Sampling Procedures & Schemes",
+              "Quality concepts (QA vs QC) ",
 
-              "Task List Management for QM",
+              "Real-time industry use cases ",
 
-              "Versioning of Inspection Plans",
+              "Inspection types (Incoming, In-process, Final) ",
 
-              "Quality Info Records",
+              "SAP GUI & Fiori basics ",
 
-              "Integration with Engineering Change Management",
+              "ISO standards basics ",
             ],
           },
 
           {
-            title: "Quality Inspection (In-process, Goods Receipt)",
+            title: "ORGANIZATIONAL STRUCTURE ",
 
             subtopics: [
-              "Inspection Lot Creation",
+              "Client, Company Code, Plant, Storage Location ",
 
-              "Inspection Lot Types (GR, In-process, Delivery)",
+              "Assignment of organizational units ",
 
-              "Results Recording Process",
+              "Quality Control Key ",
 
-              "Usage Decisions",
+              "QM in Procurement vs Production ",
 
-              "Stock Posting from Inspection",
-
-              "Defect Recording during Inspection",
-
-              "Inspection during Production Process",
-
-              "Integration with Warehouse & Inventory",
             ],
           },
 
           {
-            title: "Quality Control (Statistical Process Control)",
+            title: "MASTER DATA IN QM ",
 
             subtopics: [
-              "Control Charts Setup & Interpretation",
+              "QM control key ",
 
-              "Defining SPC Criteria in MICs",
+              "Inspection setup ",
 
-              "Statistical Evaluation of Inspection Results",
+              "Inspection Characteristics (MIC) ",
 
-              "Control Limits & Alerts",
+              "Catalogs (Defects, Causes, Tasks) ",
 
-              "Trend Analysis & Process Capability",
+              "Selected sets ",
 
-              "Inspection Point Processing",
+              "Task list types ",
 
-              "Automatic Triggering of SPC",
+              "Routing vs Inspection Plan",
 
-              "Compliance with Quality Standards",
+              "Version management ",
             ],
           },
 
           {
-            title: "Quality Certificates & Notifications",
+            title: "QUALITY INSPECTION PROCESS ",
 
             subtopics: [
-              "Certificate Profile Creation",
+              "GR Inspection ",
 
-              "Certificate of Analysis (COA)",
+              "Goods Receipt from Production ",
 
-              "Certificate Printing During Delivery",
+              "Stock transfer inspection ",
 
-              "Notification Types & Categories",
+              "Creation of inspection lot ",
 
-              "Defect Notifications & Processing",
+              "Usage decision (UD) ",
 
-              "Corrective/Preventive Actions",
+              "Defect recording ",
 
-              "Reference to Inspection Lot or Equipment",
+              "Accept / Reject / Rework ",
 
-              "Workflow Integration for Notifications",
+              "Integration with MM ",
             ],
           },
 
           {
-            title: "Audits Management",
+            title: "QM IN PROCUREMENT ",
 
             subtopics: [
-              "Planning & Scheduling Audits",
+              "Vendor Quality Management",
 
-              "Audit Types (Internal, External, Supplier)",
+              "Quality Info Record (QIR) ",
 
-              "Audit Checklist Management",
+              "Vendor evaluation ",
 
-              "Execution & Documentation",
+              "Integration with MM ",
 
-              "Findings & Follow-ups",
-
-              "Compliance Tracking",
-
-              "Audit Reports & Dashboards",
-
-              "Integration with Quality Notifications",
+              "GR → Inspection → UD ",
             ],
           },
 
           {
-            title: "Failure Mode and Effects Analysis (FMEA)",
+            title: "QM IN PRODUCTION",
 
             subtopics: [
-              "FMEA Structure and Methodology",
+              "In-Process Inspection",
 
-              "Risk Priority Number (RPN) Calculation",
+              "Integration with PP",
 
-              "Preventive and Detection Actions",
+              "Production order inspection ",
 
-              "Linking FMEA with Inspection Plans",
+              "Final Inspection",
 
-              "Control Plan Setup",
+              "Goods receipt from production",
 
-              "Standard FMEA Templates",
-
-              "Reporting & Monitoring RPN Changes",
-
-              "Collaboration with Engineering Teams",
+              "Batch release ",
             ],
           },
 
           {
-            title: "Integration with other SAP Modules (PP, MM, PM)",
+            title: "QUALITY NOTIFICATIONS",
 
             subtopics: [
-              "Inspection in Procurement Process (MM)",
+              "Internal defect ",
 
-              "In-Process Inspection during Production (PP)",
+              "Customer complaint ",
 
-              "Calibration Inspection (PM)",
+              "Vendor complaint ",
 
-              "Inventory Movement based on QM Results",
+              "Notification Processing",
 
-              "Notification Link with Maintenance Orders",
+              "Tasks, Activities, Causes ",
 
-              "Vendor Evaluation Integration",
-
-              "Production Order Quality Checks",
-
-              "Cost Capture via Controlling Module",
+              "Corrective & Preventive Actions (CAPA)",
             ],
           },
 
           {
-            title: "Calibration Management in QM",
+            title: "QUALITY CONTROL & REPORTING",
 
             subtopics: [
-              "Calibration Task List",
+              "Certificate profiles ",
 
-              "Calibration Inspection Plans",
+              "Output configuration ",
 
-              "Triggering Calibration via PM Orders",
+              "Reporting & Analytics",
 
-              "Result Recording for Calibration",
+              "Standard SAP reports ",
 
-              "Certificate Generation for Calibration",
+              "Defect analysis ",
 
-              "Measurement Document Creation",
-
-              "Compliance & Regulatory Traceability",
-
-              "Integration with Equipment Master Data",
+              "KPI dashboards (S/4HANA) ",
             ],
           },
         ],
@@ -6724,178 +6652,170 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            title: "Supply Chain Planning (APO)",
+            title: "SCM & SAP S/4HANA FOUNDATION",
 
             subtopics: [
-              "Overview of Advanced Planning & Optimization (APO)",
+              "What is SCM? (Plan → Source → Make → Deliver → Return)",
 
-              "Demand Planning (DP)",
+              "Traditional SCM vs Digital SCM",
 
-              "Supply Network Planning (SNP)",
+              "SCM in Manufacturing, Retail, Pharma, FMCG",
 
-              "Production Planning/Detailed Scheduling (PP/DS)",
+              "Role of SAP SCM Consultant",
 
-              "Global Available-to-Promise (GATP)",
+              "End-to-End Supply Chain Overview",
 
-              "Integration with SAP ECC",
+              "SAP ECC vs SAP S/4HANA",
 
-              "Planning Book & Data Views",
+              "S/4HANA Architecture (Simplification List)",
 
-              "Heuristics and Optimizer Configuration",
+              "SAP Best Practices & Activate Methodology",
             ],
           },
 
           {
-            title: "Procurement & Inventory Management",
+            title: "SAP MATERIAL MANAGEMENT (MM) – CORE SCM",
 
             subtopics: [
-              "Purchase Requisition and Order Processing",
+              "Client, Company Code, Plant, Storage Location",
 
-              "Vendor Selection and Evaluation",
+              "Purchasing Organization & Purchasing Group",
 
-              "Goods Receipt and Inventory Updates",
+              "Assignment & Integration",
 
-              "Inventory Valuation and Accounting",
+              "Material Master (All Views in S/4)",
 
-              "Batch Management",
+              "Vendor Master → Business Partner (BP Concept)",
 
-              "Stock Transfer and Transfer Posting",
+              "Purchase Requisition",
 
-              "Material Master Data Management",
+              "Request for Quotation (RFQ)",
 
-              "Integration with MRP & Warehouse Systems",
+              "Goods Receipt (MIGO)",
             ],
           },
 
           {
-            title: "Production Planning & Detailed Scheduling",
+            title: "SAP PRODUCTION PLANNING (PP) – MAKE PROCESS",
 
             subtopics: [
-              "Production Planning Strategies",
+              "Material Master (PP Views)",
 
-              "Capacity Planning & Load Leveling",
+              "BOM (Bill of Materials)",
 
-              "Routing & Work Center Assignments",
+              "PIR (Planned Independent Requirements)",
 
-              "Scheduling Algorithms in PP/DS",
+              "Demand Strategy (Make to Stock / Make to Order)",
 
-              "Setup Matrix and Sequencing",
+              "MRP Controllers",
 
-              "Order Confirmation & Execution",
+              "Stock/Requirements List",
 
-              "Production Monitoring",
+              "Planned Order vs Production Order",
 
-              "Integration with MES Systems",
+              "Goods Receipt (101)",
             ],
           },
 
           {
-            title: "Logistics Execution (Warehouse & Transport)",
+            title: "SAP S/4HANA ADVANCED SCM CONCEPTS",
 
             subtopics: [
-              "Outbound Delivery Processing",
+              "Forecasting Basics",
 
-              "Goods Issue & Shipping",
+              "Demand vs Supply Planning",
 
-              "Handling Unit Management",
+              "Safety Stock Calculation",
 
-              "Warehouse Structure in LE-WM",
+              "Inventory OptimizationM",
 
-              "Picking, Packing, and Staging",
+              "IBP vs APO vs ECC Planning",
 
-              "Transportation Planning and Execution",
+              "Classic MRP vs Embedded MRP",
 
-              "Carrier Selection & Freight Settlement",
+              "Fiori MRP Apps",
 
-              "Integration with SAP EWM & TM",
+              "Planning Scenarios",
             ],
           },
 
           {
-            title: "Order Fulfillment & Customer Service",
+            title: "SAP SALES & DISTRIBUTION (SD) – DELIVER PROCESS",
 
             subtopics: [
-              "Sales Order Processing",
+              "Sales Organization",
 
-              "Available-to-Promise (ATP) Checks",
+              "Distribution Channel",
 
-              "Backorder Processing",
+              "Availability Check (ATP)",
 
-              "Delivery Scheduling",
+              "Picking, Packing",
 
-              "Customer Communication & CRM",
+              "PGI (Post Goods Issue)",
 
-              "Returns & Reverse Logistics",
+              "Transportation Planning Basics",
 
-              "Service Order Management",
+              "Integration with MM & PP",
 
-              "Customer Complaint Handling",
+              "Route Determination",
             ],
           },
 
           {
-            title: "Supply Chain Analytics & Reporting",
+            title: "INTEGRATION & REAL-TIME SCENARIOS",
 
             subtopics: [
-              "KPI Dashboards for SCM",
+              "MM ↔ PP Integration",
 
-              "Supply Chain Performance Metrics",
+              "PP ↔ SD Integration",
 
-              "Inventory Turnover & Fill Rate Analysis",
+              "MM ↔ SD Integration",
 
-              "Demand vs Forecast Accuracy",
+              "Automatic Account Determination (Overview)",
 
-              "Lead Time Analysis",
+              "End-to-End Manufacturing Scenario",
 
-              "SCM Cube in BW",
+              "Trading Company Scenario",
 
-              "SAP Fiori & Embedded Analytics",
+              "Retail SCM Scenario",
 
-              "Real-time Reporting with SAP HANA",
+              "Project-Based SCM Flow",
             ],
           },
 
           {
-            title: "Integration with other SAP Modules (MM, SD, PP)",
+            title: "REPORTING, ANALYTICS & FIORI ",
 
             subtopics: [
-              "Data Synchronization Across Modules",
+              "Standard SAP Reports",
 
-              "Purchase Order to Inventory Link (MM)",
+              "MRP Reports",
 
-              "Sales Order to Delivery & Billing (SD)",
+              "Inventory Reports",
 
-              "Production Orders & BOM Integration (PP)",
+              "Fiori Apps for MM, PP, SD",
 
-              "Accounting & Cost Control (FI/CO)",
+              "Analytical Apps",
 
-              "Batch and Serial Number Tracking",
+              "Transactional Apps",
 
-              "ATP & GATP Synchronization",
+              "Embedded Analytics",
 
-              "Cross-module Reporting & Analytics",
+              "Sales & Production Reports",
             ],
           },
 
           {
-            title: "Demand & Supply Network Planning",
+            title: "SAP Fiori for SCM",
 
             subtopics: [
-              "Demand Forecasting Techniques",
+              "Fiori Apps for MM, PP, SD",
 
-              "Causal and Statistical Forecasting",
+              "Analytical Apps.",
 
-              "Supply Network Design & Modeling",
+              "Transactional Apps",
 
-              "Multi-echelon Inventory Optimization",
-
-              "Push vs Pull Replenishment",
-
-              "Safety Stock Planning",
-
-              "Service Level Optimization",
-
-              "Collaboration with Suppliers and Partners",
+              "Embedded Analytics",
             ],
           },
         ],
@@ -7185,178 +7105,177 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            title: "Sales Order Processing",
+            title: "SAP Fundamentals & ERP",
 
             subtopics: [
-              "Sales Document Types (Inquiry, Quotation, Order)",
+              "Introduction to SAP",
 
-              "Order Creation & Change Processes",
+              "Why SAP? Market scope & career paths",
 
-              "Schedule Lines & Delivery Dates",
+              "SAP ECC vs SAP S/4HANA overview",
 
-              "Item Categories & Copy Control",
+              "SAP GUI",
 
-              "Availability Check (ATP)",
+              "Menu Path vs T-Codes",
 
-              "Text Determination",
+              "Help & Documentation",
 
-              "Output Determination (Print, Email)",
+              "Table Concepts (SE11 basics)",
 
-              "Integration with Delivery and Billing",
+              "Logon, sessions, favorites",
             ],
           },
 
           {
-            title: "Pricing & Conditions",
+            title: "SAP SD Business Process Overview ",
 
             subtopics: [
-              "Condition Technique Overview",
+              "Pre-Sales",
 
-              "Condition Records & Types (PR00, K004, etc.)",
+              "Sales Order",
 
-              "Access Sequence & Condition Tables",
+              "Goods Issue",
 
-              "Pricing Procedure Configuration",
+              "Company Code",
 
-              "Discounts, Surcharges & Taxes",
+              "Distribution Channel",
 
-              "Customer/Material Specific Pricing",
+              "Plant, Shipping Point, Storage Location",
 
-              "Free Goods Determination",
+              "Customer Master",
 
-              "Pricing in Sales Order & Invoice",
+              "Condition Master",
             ],
           },
 
           {
-            title: "Shipping & Transportation",
+            title: "Organizational Structure Configuration ",
 
             subtopics: [
-              "Delivery Document Processing",
+              "Define Company Code",
 
+              "Define Sales Organization",
+
+              "Define Division",
+
+              "Assign Sales Org to Company Code",
+
+              "Setup Sales Area",
+
+              "Assign Plant to Sales Org",
+
+              "Define Shipping Point",
+
+              "Assign Shipping Point to Plant",
+
+            ],
+          },
+
+          {
+            title: "Master Data – Customer & Material",
+
+            subtopics: [
+              "Account Groups",
+
+              "Partner Functions",
+
+              "General Data",
+
+              "Sales Org Data 1 & 2",
+
+              "Availability Check",
+
+              "Item Category Group",
+
+              "Customer not determined",
+
+              "Material not determined",
+            ],
+          },
+
+          {
+            title: "Sales Documents – Basics ",
+
+            subtopics: [
+              "Header",
+
+              "Schedule Line",
+
+              "Inquiry",
+
+              "Sales Order",
+
+              "Scheduling Agreements",
+
+              "VA01 / VA02 / VA03",
+
+              "Mandatory fields",
+
+              "Error handling",
+            ],
+          },
+
+          {
+            title: "Item Category & Schedule Line ",
+
+            subtopics: [
+              "Item Category Determination",
+
+              "Standard Item Categories (TAN, TANN, TATX, etc.)",
+
+              "Free Goods",
+
+              "Text Items",
+
+              "Schedule Line Determination",
+
+              "Delivery relevance",
+
+              "Availability check control",
+            ],
+          },
+
+          {
+            title: "Pricing & Condition Technique ",
+
+            subtopics: [
+              "Pricing Procedure",
+
+              "Condition Types",
+
+              "Condition Tables",
+
+              "Access Sequences",
+
+              "Calculation Types",
+
+              "PR00 (Base Price)",
+
+              "K004 / K005 (Discounts)",
+
+              "Freight & Surcharges",
+            ],
+          },
+
+          {
+            title: "Shipping & Delivery Processing ",
+
+            subtopics: [
               "Shipping Point Determination",
 
-              "Route Determination & Scheduling",
+              "Route Determination",
 
-              "Picking, Packing & Handling Units",
+              "Outbound Delivery (VL01N)",
 
-              "Goods Issue Posting",
+              "Picking",
 
-              "Transportation Planning & Execution",
+              "Packing",
 
-              "Freight Cost Calculation",
+              "Post Goods Issue (PGI)",
 
-              "Integration with WM & TM",
-            ],
-          },
+              "SD ↔ MM",
 
-          {
-            title: "Billing & Invoice Management",
-
-            subtopics: [
-              "Billing Document Types",
-
-              "Invoice Creation (VF01) & Output",
-
-              "Pro Forma Invoice Handling",
-
-              "Billing Plans (Milestone, Periodic)",
-
-              "Credit & Debit Memo Processing",
-
-              "Account Determination (FI Integration)",
-
-              "Billing Due List Processing",
-
-              "Archiving & Audit Compliance",
-            ],
-          },
-
-          {
-            title: "Credit Management",
-
-            subtopics: [
-              "Credit Control Areas",
-
-              "Static vs Dynamic Credit Check",
-
-              "Credit Limit Management",
-
-              "Credit Exposure Monitoring",
-
-              "Credit Blocks & Release Workflow",
-
-              "Integration with Sales Order & Delivery",
-
-              "Risk Categories & Scoring",
-
-              "Reports & Credit Review Tools",
-            ],
-          },
-
-          {
-            title: "Customer Master Data",
-
-            subtopics: [
-              "General Data, Company Code & Sales Area Views",
-
-              "Customer Account Groups",
-
-              "Partner Functions (Sold-to, Ship-to, etc.)",
-
-              "Customer Hierarchies",
-
-              "Master Data Maintenance (XD01, VD01)",
-
-              "Customer Blocking & Deletion",
-
-              "Text, Output & Pricing Data",
-
-              "Integration with FI & CRM",
-            ],
-          },
-
-          {
-            title: "Sales Information System",
-
-            subtopics: [
-              "Standard Reports & Key Figures",
-
-              "Info Structures & Update Rules",
-
-              "Flexible Analysis in LIS",
-
-              "Drill-down Reports",
-
-              "Customer & Material Statistics",
-
-              "Quota Management & Sales Targets",
-
-              "Forecasting Tools",
-
-              "Integration with BW/BI",
-            ],
-          },
-
-          {
-            title: "Integration with other SAP Modules (MM, FICO)",
-
-            subtopics: [
-              "Third-Party Sales Processing (MM Link)",
-
-              "Material Master View Coordination",
-
-              "Billing Integration with FI (Account Postings)",
-
-              "Credit Management Integration with FI/AR",
-
-              "Inventory Checks & Reservations (MM)",
-
-              "Revenue Recognition (FI-RA)",
-
-              "Automatic Journal Entry Posting",
-
-              "Cross-module Reporting & Reconciliation",
+              "SD ↔ WM/EWM (overview)",
             ],
           },
         ],
@@ -7645,180 +7564,180 @@ export const coursesData = {
         title: "Syllabus Overview",
         modules: [
           {
-            title: "Employee Central (Core HR)",
+            title: "SAP SUCCESSFACTORS INTRODUCTION ",
 
             subtopics: [
-              "Foundation Objects & Generic Objects",
+              "SuccessFactors Architecture",
 
-              "Employee & Job Information",
+              "Data Centers & Environments (Prod, Test, Preview)",
 
-              "Position Management",
+              "Provisioning vs Admin Center",
 
-              "Event Reason & Workflow Management",
+              "Admin Center Deep Dive",
 
-              "Time Off Configuration",
+              "Company Settings",
 
-              "Global Benefits & Payroll Integration",
+              "Theme Manager",
 
-              "Data Imports & Mass Changes",
+              "Business Configuration UI (BCUI)",
 
-              "Role-Based Permissions (RBP)",
+              "Upgrade Center",
+            ],
+          },
+          
+          {
+            title: "SAP & HCM FOUNDATION ",
+
+            subtopics: [
+              "SAP Product Landscape",
+
+              "SAP HCM vs SAP SuccessFactors",
+
+              "SAP S/4HANA + SuccessFactors Strategy",
+
+              "Hire to Retire Lifecycle",
+
+              "Global HR Challenges",
+
+              "Data Privacy (GDPR Basics)",
+
+              "Role of a SuccessFactors Consultant",
+
+              "Project Lifecycle (ASAP / Activate Methodology)",
             ],
           },
 
           {
-            title: "Talent Acquisition (Recruiting & Onboarding)",
+            title: "EMPLOYEE CENTRAL – CORE MODULE ",
 
             subtopics: [
-              "Requisition Template Configuration",
+              "EC Data Model Overview",
 
-              "Job Posting & Career Site Builder",
+              "MDF vs Foundation Objects",
 
-              "Candidate Pipeline Management",
+              "Generic Objects (GO)",
 
-              "Interview Scheduling & Collaboration",
+              "Effective Dating Concepts",
 
-              "Offer Letter Management",
+              "Legal Entity",
 
-              "Onboarding 2.0 Process Flow",
+              "Business Unit",
 
-              "Document Management & e-Signature",
+              "Job Classification",
 
-              "Integration with Employee Central",
+              "Pay Structure",
             ],
           },
 
           {
-            title: "Performance & Goal Management",
+            title: "TIME OFF & TIME MANAGEMENT)",
 
             subtopics: [
-              "Goal Plan Template Configuration",
+              "Time Types",
 
-              "SMART Goal Alignment",
+              "Time Accounts",
+
+              "Accrual Rules",
+
+              "Leave Scenarios (India + Global)",
+
+              "Time Sheet Configuration",
+
+              "Time Valuation",
+
+              "Overtime Rules",
+
+              "Integration with Payroll",
+            ],
+          },
+
+          {
+            title: "TALENT MANAGEMENT MODULES ",
+
+            subtopics: [
+              "Goal Plan Templates (XML)",
 
               "Performance Form Templates",
 
-              "360-Degree Feedback Process",
-
-              "Calibration & Talent Review",
+              "Route Maps",
 
               "Continuous Performance Management (CPM)",
 
-              "Route Maps & Workflow Steps",
+              "Recruiting Architecture",
 
-              "Integration with Compensation Planning",
+              "Recruiting Posting",
+
+              "Integration with EC",
+
+              "Business Process Designer (BPD)",
             ],
           },
 
           {
-            title: "Learning Management System (LMS)",
-
-            subtopics: [
-              "Item, Curriculum, and Program Setup",
-
-              "Assignment Profiles & Learning Paths",
-
-              "Online vs Instructor-Led Training (ILT)",
-
-              "Scheduled Offerings & Class Management",
-
-              "Completion Tracking & Evaluations",
-
-              "Compliance & Certification Management",
-
-              "Reporting using Plateau Reports",
-
-              "LMS Integration with BizX",
-            ],
-          },
-
-          {
-            title: "Compensation Management",
-
-            subtopics: [
-              "Compensation Plan Template Design",
-
-              "Eligibility Rules & Guidelines",
-
-              "Budgeting & Pay Matrix Configuration",
-
-              "Merit, Bonus & Stock Components",
-
-              "Compensation Statements",
-
-              "Executive Review & Planning",
-
-              "Integration with Performance Ratings",
-
-              "Calibration & Validation Rules",
-            ],
-          },
-
-          {
-            title: "Workforce Planning & Analytics",
-
-            subtopics: [
-              "Workforce Planning Models",
-
-              "Scenario Planning & Forecasting",
-
-              "Headcount & FTE Tracking",
-
-              "Turnover & Attrition Metrics",
-
-              "Operational Reporting in Report Center",
-
-              "Canvas Reports & Story Reports",
-
-              "Role-Based Report Access",
-
-              "Integration with SAP Analytics Cloud",
-            ],
-          },
-
-          {
-            title: "SuccessFactors Integrations",
+            title: "INTEGRATION & TECHNICAL CONCEPTS ",
 
             subtopics: [
               "Integration Center Basics",
 
-              "SAP Cloud Platform Integration (CPI)",
+              "EC to EC Integrations",
 
-              "SFTP File-based Integrations",
+              "Scheduled Jobs",
 
-              "OData & SFAPI APIs",
+              "SF ↔ SAP S/4HANA",
 
-              "Point-to-Point Integrations",
+              "Middleware Overview",
 
-              "Data Replication to SAP ERP",
+              "EC Payroll Overview",
 
-              "Intelligent Services Center",
+              "SAP Payroll vs EC Payroll",
 
-              "Employee Central Payroll (ECP) Sync",
+              "India Payroll Scenarios",
             ],
           },
 
           {
-            title: "System Configuration & Data Models",
+            title: "SECURITY, REPORTING & MIGRATION ",
 
             subtopics: [
-              "Corporate Data Model & Succession Data Model",
+              "Permission Roles",
 
-              "CSF (Country Specific Fields) Setup",
+              "Target Population",
 
-              "Business Rules & Workflows",
+              "Permission Groups",
 
-              "Picklist Management",
+              "Ad Hoc Reports",
 
-              "Import/Export of Configuration",
+              "People Analytics (Story Reports)",
 
-              "Admin Center Tools (Manage Business Config)",
+              "Incremental vs Full Load",
 
-              "Provisioning & Instance Synchronization",
+              "Go-Live Strategy",
 
-              "System Audit & Data Privacy Tools",
+              "Validation Errors",
             ],
           },
+
+          {
+            title: "REAL-TIME PROJECT & CERTIFICATION PREP",
+
+            subtopics: [
+              "Client Requirement Gathering",
+
+              "System Design Document (SDD)",
+
+              "Configuration",
+
+              "SAP SuccessFactors EC Certification Topics",
+
+              "CV / Resume Preparation",
+
+              "Real-Time Scenarios",
+
+              "Freelancing & Global Opportunities",
+
+              "Post Go-Live Support",
+            ],
+          },          
         ],
       },
       videoUrl: "https://i.imgur.com/8wkvVyH.mp4",
@@ -9848,345 +9767,345 @@ export const coursesData = {
     updatedAt: "2025-06-30T00:00:00Z", // Used in: JSON-LD WebPage dateModified
   },
   "agentic-ai": {
-  title: "Agentic AI",
-  fullTitle: "Agentic AI & Autonomous Systems",
-  category: "it",
-  slug: "agentic-ai",
+    title: "Agentic AI",
+    fullTitle: "Agentic AI & Autonomous Systems",
+    category: "it",
+    slug: "agentic-ai",
 
-  description:
-    "Master Agentic AI in {city} with our comprehensive course. Learn to build autonomous AI agents, multi-agent systems, LLM orchestration, and AI-powered workflows. Our Agentic AI training in {city} offers hands-on experience with real-world agent projects, industry-relevant curriculum, and 100% placement support to help you build a successful career in next-generation AI.",
-  metaTitle: "Agentic AI Course in {city} | Autonomous AI Training & Certification",
-  metaDescription:
-    "Master Agentic AI in {city}. Learn autonomous agents, LLM orchestration, multi-agent systems, and AI workflows. Certification, real projects & 100% placement. Launch your AI career now!",
-
-  duration: "12-16 weeks",
-  price: { min: 60000, max: 150000 },
-  modules: [
-    "AI Agents & Autonomous Systems",
-    "LLM Orchestration & Prompt Engineering",
-    "Multi-Agent Frameworks (LangChain, AutoGen)",
-    "Tool Use & Function Calling",
-    "Memory & Context Management",
-    "RAG (Retrieval Augmented Generation)",
-    "Agent Workflows & Pipelines",
-    "AI Safety & Evaluation",
-    "Production Deployment of Agents",
-  ],
-  prerequisites:
-    "Basic Python programming and familiarity with AI/ML concepts recommended",
-  certification: "Certified Agentic AI Professional",
-  jobRoles: [
-    "Agentic AI Engineer",
-    "AI Automation Specialist",
-    "LLM Engineer",
-    "AI Product Developer",
-    "Prompt Engineer",
-    "AI Solutions Architect",
-    "ML Engineer",
-    "AI Consultant",
-  ],
-
-  header: {
-    title: "Agentic AI Course in {city}",
-    subtitle:
-      "Build Autonomous AI Systems with the Best Agentic AI Training in {city}",
     description:
-      "Connecting Dots ERP's Agentic AI course in {city} equips you with cutting-edge skills to design, build, and deploy autonomous AI agents. Learn LLM orchestration, multi-agent frameworks, tool use, memory systems, and production-grade AI pipelines that power the next generation of intelligent applications.",
-    backgroundVideo:
-      "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
-    features: ["Live Class", "1:1 mentorship", "Industry projects"],
-    alumni: [
-      { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-      { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-      { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-      { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-      { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
-    ],
-    buttons: [
-      { text: "Request Call Back", courseName: "Agentic AI Program" },
-      { text: "Download Curriculum", courseName: "Book Live Demo" },
-    ],
-    form: {
-      title: "Book a FREE live class",
-      inputs: [
-        { type: "text", name: "name", placeholder: "Enter your name" },
-        { type: "email", name: "email", placeholder: "Enter your Email" },
-        { type: "location", name: "location", placeholder: "Select your location" },
-        { type: "course", name: "course", placeholder: "Select course" },
-        { type: "tel", name: "contactname", placeholder: "Enter your phone number", countryCode: "+91" },
-      ],
-      submitText: "Book Live Class",
-    },
-  },
+      "Master Agentic AI in {city} with our comprehensive course. Learn to build autonomous AI agents, multi-agent systems, LLM orchestration, and AI-powered workflows. Our Agentic AI training in {city} offers hands-on experience with real-world agent projects, industry-relevant curriculum, and 100% placement support to help you build a successful career in next-generation AI.",
+    metaTitle: "Agentic AI Course in {city} | Autonomous AI Training & Certification",
+    metaDescription:
+      "Master Agentic AI in {city}. Learn autonomous agents, LLM orchestration, multi-agent systems, and AI workflows. Certification, real projects & 100% placement. Launch your AI career now!",
 
-  why: {
-    title: "Why Agentic AI?",
-    cards: [
-      {
-        title: 'What is <span class="highlight-span-cards">Agentic AI?</span>',
-        content:
-          "Agentic AI refers to AI systems that can autonomously plan, reason, and take actions to achieve goals — going far beyond simple question-answering. These agents use large language models (LLMs) as a reasoning engine, combined with tools, memory, and multi-step planning to complete complex real-world tasks. The Agentic AI course in {city} trains you to build these systems from scratch.",
-      },
-      {
-        title: 'What does an <span class="highlight-span-cards">Agentic AI Engineer</span> do?',
-        content:
-          "An Agentic AI Engineer designs and builds autonomous AI pipelines that can browse the web, write and execute code, query databases, and coordinate with other agents to complete long-horizon tasks. They work with LLM frameworks, APIs, and cloud infrastructure to ship production-ready AI products.",
-        listItems: [
-          "Build and orchestrate multi-agent systems.",
-          "Integrate LLMs with external tools and APIs.",
-          "Design memory and retrieval systems for agents.",
-        ],
-      },
-      {
-        title: 'Why take <span class="highlight-span-cards">Agentic AI</span> training?',
-        content:
-          "Agentic AI is the fastest-growing segment of the AI industry. Companies are racing to build autonomous assistants, coding agents, and business automation pipelines. Our Agentic AI training in {city} prepares you for high-demand roles such as:",
-        listItems: [
-          "Agentic AI Engineer",
-          "LLM Engineer",
-          "AI Automation Specialist",
-          "AI Solutions Architect",
-        ],
-      },
+    duration: "12-16 weeks",
+    price: { min: 60000, max: 150000 },
+    modules: [
+      "AI Agents & Autonomous Systems",
+      "LLM Orchestration & Prompt Engineering",
+      "Multi-Agent Frameworks (LangChain, AutoGen)",
+      "Tool Use & Function Calling",
+      "Memory & Context Management",
+      "RAG (Retrieval Augmented Generation)",
+      "Agent Workflows & Pipelines",
+      "AI Safety & Evaluation",
+      "Production Deployment of Agents",
     ],
-  },
+    prerequisites:
+      "Basic Python programming and familiarity with AI/ML concepts recommended",
+    certification: "Certified Agentic AI Professional",
+    jobRoles: [
+      "Agentic AI Engineer",
+      "AI Automation Specialist",
+      "LLM Engineer",
+      "AI Product Developer",
+      "Prompt Engineer",
+      "AI Solutions Architect",
+      "ML Engineer",
+      "AI Consultant",
+    ],
 
-  modulesData: {
-    title: "AGENTIC AI CURRICULUM",
-    globalActions: {
-      startLearning: "https://example.com/start-learning-agentic-ai",
-      downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
-    },
-    banner: {
-      title: "Build Autonomous AI Agents from Scratch",
+    header: {
+      title: "Agentic AI Course in {city}",
       subtitle:
-        "From LLM fundamentals to production multi-agent systems — become an Agentic AI expert.",
-      image:
-        "https://res.cloudinary.com/dudu879kr/image/upload/v1752485069/ITBanner_vkag1x.webp",
-      technologies: ["LangChain", "AutoGen", "OpenAI", "Python", "RAG", "LlamaIndex"],
-    },
-    tabs: [
-      {
-        modules: [
-          {
-            title: "AI & LLM Foundations",
-            duration: "2 Weeks",
-            content: [
-              "Introduction to Large Language Models (LLMs)",
-              "How transformer models work",
-              "Prompt engineering fundamentals and advanced techniques",
-              "OpenAI, Anthropic, and open-source model APIs",
-              "Token limits, context windows, and cost management",
-              "Setting up Python environment for AI development",
-            ],
-            detailedContent: [
-              "Understand how LLMs generate text and reason",
-              "Write effective prompts for complex tasks",
-              "Compare different LLM providers and choose the right one",
-              "Manage API keys, rate limits, and costs",
-              "Build simple LLM-powered apps from scratch",
-            ],
-            toolsAndTechnologies: [
-              { name: "OpenAI API", icon: "https://img.icons8.com/ios-filled/150/chatgpt.webp", alt: "OpenAI" },
-              { name: "Python", icon: "https://res.cloudinary.com/dudu879kr/image/upload/v1752208406/python_ut82h4.webp", alt: "Python" },
-              { name: "Jupyter", icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/jupyter_aqbxrj.webp", alt: "Jupyter" },
-              { name: "Hugging Face", icon: "https://img.icons8.com/fluency/240/hugging-face_app.webp", alt: "Hugging Face" },
-            ],
-            actions: {
-              startLearning: "https://example.com/start-learning-agentic-ai",
-              downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
-            },
-          },
-          {
-            title: "AI Agents & Tool Use",
-            duration: "3 Weeks",
-            content: [
-              "What are AI agents and how they differ from chatbots",
-              "ReAct (Reasoning + Acting) agent pattern",
-              "Function calling and tool use with OpenAI",
-              "Building custom tools: web search, code execution, APIs",
-              "Agent loops, planning, and error recovery",
-              "Single-agent systems with LangChain Agents",
-            ],
-            detailedContent: [
-              "Implement the ReAct pattern step by step",
-              "Create tools that agents can invoke autonomously",
-              "Handle agent failures and retries gracefully",
-              "Connect agents to real APIs and external services",
-              "Build a fully functional single-agent assistant",
-            ],
-            toolsAndTechnologies: [
-              { name: "LangChain", icon: "https://img.icons8.com/color/100/chain.webp", alt: "LangChain" },
-              { name: "OpenAI Functions", icon: "https://img.icons8.com/ios-filled/150/chatgpt.webp", alt: "OpenAI" },
-              { name: "Python", icon: "https://res.cloudinary.com/dudu879kr/image/upload/v1752208406/python_ut82h4.webp", alt: "Python" },
-              { name: "Tavily Search", icon: "https://img.icons8.com/color/100/search.webp", alt: "Search" },
-            ],
-            actions: {
-              startLearning: "https://example.com/start-learning-agentic-ai",
-              downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
-            },
-          },
-          {
-            title: "RAG & Memory Systems",
-            duration: "3 Weeks",
-            content: [
-              "Retrieval Augmented Generation (RAG) architecture",
-              "Vector databases: Pinecone, Chroma, FAISS",
-              "Embedding models and semantic search",
-              "Building a RAG pipeline from scratch",
-              "Short-term and long-term memory for agents",
-              "Conversation history and context management",
-            ],
-            detailedContent: [
-              "Understand why RAG solves hallucination problems",
-              "Chunk, embed, and store documents efficiently",
-              "Query vector databases for relevant context",
-              "Give agents persistent memory across sessions",
-              "Implement episodic and semantic memory patterns",
-            ],
-            toolsAndTechnologies: [
-              { name: "LlamaIndex", icon: "https://img.icons8.com/color/100/database.webp", alt: "LlamaIndex" },
-              { name: "Chroma DB", icon: "https://img.icons8.com/color/100/data-configuration.webp", alt: "ChromaDB" },
-              { name: "FAISS", icon: "https://img.icons8.com/color/100/search.webp", alt: "FAISS" },
-              { name: "OpenAI Embeddings", icon: "https://img.icons8.com/ios-filled/150/chatgpt.webp", alt: "Embeddings" },
-            ],
-            actions: {
-              startLearning: "https://example.com/start-learning-agentic-ai",
-              downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
-            },
-          },
-          {
-            title: "Multi-Agent Systems",
-            duration: "3 Weeks",
-            content: [
-              "Multi-agent architectures and design patterns",
-              "Microsoft AutoGen framework for multi-agent workflows",
-              "Agent roles: orchestrator, executor, critic, planner",
-              "Agent-to-agent communication and task delegation",
-              "CrewAI for role-based agent collaboration",
-              "Building a multi-agent research and writing pipeline",
-            ],
-            detailedContent: [
-              "Design systems where multiple agents collaborate",
-              "Implement supervisor and worker agent patterns",
-              "Use AutoGen to coordinate agent conversations",
-              "Build a crew of agents to complete complex projects",
-              "Handle agent conflicts and consensus mechanisms",
-            ],
-            toolsAndTechnologies: [
-              { name: "AutoGen", icon: "https://img.icons8.com/color/100/artificial-intelligence.webp", alt: "AutoGen" },
-              { name: "CrewAI", icon: "https://img.icons8.com/color/100/team.webp", alt: "CrewAI" },
-              { name: "LangGraph", icon: "https://img.icons8.com/color/100/flow-chart.webp", alt: "LangGraph" },
-              { name: "Python", icon: "https://res.cloudinary.com/dudu879kr/image/upload/v1752208406/python_ut82h4.webp", alt: "Python" },
-            ],
-            actions: {
-              startLearning: "https://example.com/start-learning-agentic-ai",
-              downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
-            },
-          },
-          {
-            title: "Production Deployment & Projects",
-            duration: "3 Weeks",
-            content: [
-              "Evaluating and testing AI agents reliably",
-              "AI safety, guardrails, and output validation",
-              "Deploying agents with FastAPI and Docker",
-              "Monitoring agent behavior in production",
-              "Cost optimization for LLM-based systems",
-              "Capstone: Build and deploy a full agentic AI application",
-            ],
-            detailedContent: [
-              "Write test suites for agent correctness",
-              "Add guardrails to prevent harmful outputs",
-              "Package and deploy agents as REST APIs",
-              "Monitor token usage and agent performance",
-              "Complete a portfolio-ready agentic AI project",
-            ],
-            toolsAndTechnologies: [
-              { name: "FastAPI", icon: "https://img.icons8.com/ios-filled/100/api-settings.webp", alt: "FastAPI" },
-              { name: "Docker", icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/docker_b4f1wr.webp", alt: "Docker" },
-              { name: "LangSmith", icon: "https://img.icons8.com/color/100/combo-chart.webp", alt: "LangSmith" },
-              { name: "GitHub", icon: "https://img.icons8.com/ios-filled/500/github.webp", alt: "GitHub" },
-            ],
-            actions: {
-              startLearning: "https://example.com/start-learning-agentic-ai",
-              downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
-            },
-          },
+        "Build Autonomous AI Systems with the Best Agentic AI Training in {city}",
+      description:
+        "Connecting Dots ERP's Agentic AI course in {city} equips you with cutting-edge skills to design, build, and deploy autonomous AI agents. Learn LLM orchestration, multi-agent frameworks, tool use, memory systems, and production-grade AI pipelines that power the next generation of intelligent applications.",
+      backgroundVideo:
+        "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      features: ["Live Class", "1:1 mentorship", "Industry projects"],
+      alumni: [
+        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+      ],
+      buttons: [
+        { text: "Request Call Back", courseName: "Agentic AI Program" },
+        { text: "Download Curriculum", courseName: "Book Live Demo" },
+      ],
+      form: {
+        title: "Book a FREE live class",
+        inputs: [
+          { type: "text", name: "name", placeholder: "Enter your name" },
+          { type: "email", name: "email", placeholder: "Enter your Email" },
+          { type: "location", name: "location", placeholder: "Select your location" },
+          { type: "course", name: "course", placeholder: "Select course" },
+          { type: "tel", name: "contactname", placeholder: "Enter your phone number", countryCode: "+91" },
         ],
+        submitText: "Book Live Class",
       },
-    ],
+    },
+
+    why: {
+      title: "Why Agentic AI?",
+      cards: [
+        {
+          title: 'What is <span class="highlight-span-cards">Agentic AI?</span>',
+          content:
+            "Agentic AI refers to AI systems that can autonomously plan, reason, and take actions to achieve goals — going far beyond simple question-answering. These agents use large language models (LLMs) as a reasoning engine, combined with tools, memory, and multi-step planning to complete complex real-world tasks. The Agentic AI course in {city} trains you to build these systems from scratch.",
+        },
+        {
+          title: 'What does an <span class="highlight-span-cards">Agentic AI Engineer</span> do?',
+          content:
+            "An Agentic AI Engineer designs and builds autonomous AI pipelines that can browse the web, write and execute code, query databases, and coordinate with other agents to complete long-horizon tasks. They work with LLM frameworks, APIs, and cloud infrastructure to ship production-ready AI products.",
+          listItems: [
+            "Build and orchestrate multi-agent systems.",
+            "Integrate LLMs with external tools and APIs.",
+            "Design memory and retrieval systems for agents.",
+          ],
+        },
+        {
+          title: 'Why take <span class="highlight-span-cards">Agentic AI</span> training?',
+          content:
+            "Agentic AI is the fastest-growing segment of the AI industry. Companies are racing to build autonomous assistants, coding agents, and business automation pipelines. Our Agentic AI training in {city} prepares you for high-demand roles such as:",
+          listItems: [
+            "Agentic AI Engineer",
+            "LLM Engineer",
+            "AI Automation Specialist",
+            "AI Solutions Architect",
+          ],
+        },
+      ],
+    },
+
+    modulesData: {
+      title: "AGENTIC AI CURRICULUM",
+      globalActions: {
+        startLearning: "https://example.com/start-learning-agentic-ai",
+        downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
+      },
+      banner: {
+        title: "Build Autonomous AI Agents from Scratch",
+        subtitle:
+          "From LLM fundamentals to production multi-agent systems — become an Agentic AI expert.",
+        image:
+          "https://res.cloudinary.com/dudu879kr/image/upload/v1752485069/ITBanner_vkag1x.webp",
+        technologies: ["LangChain", "AutoGen", "OpenAI", "Python", "RAG", "LlamaIndex"],
+      },
+      tabs: [
+        {
+          modules: [
+            {
+              title: "AI & LLM Foundations",
+              duration: "2 Weeks",
+              content: [
+                "Introduction to Large Language Models (LLMs)",
+                "How transformer models work",
+                "Prompt engineering fundamentals and advanced techniques",
+                "OpenAI, Anthropic, and open-source model APIs",
+                "Token limits, context windows, and cost management",
+                "Setting up Python environment for AI development",
+              ],
+              detailedContent: [
+                "Understand how LLMs generate text and reason",
+                "Write effective prompts for complex tasks",
+                "Compare different LLM providers and choose the right one",
+                "Manage API keys, rate limits, and costs",
+                "Build simple LLM-powered apps from scratch",
+              ],
+              toolsAndTechnologies: [
+                { name: "OpenAI API", icon: "https://img.icons8.com/ios-filled/150/chatgpt.webp", alt: "OpenAI" },
+                { name: "Python", icon: "https://res.cloudinary.com/dudu879kr/image/upload/v1752208406/python_ut82h4.webp", alt: "Python" },
+                { name: "Jupyter", icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/jupyter_aqbxrj.webp", alt: "Jupyter" },
+                { name: "Hugging Face", icon: "https://img.icons8.com/fluency/240/hugging-face_app.webp", alt: "Hugging Face" },
+              ],
+              actions: {
+                startLearning: "https://example.com/start-learning-agentic-ai",
+                downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
+              },
+            },
+            {
+              title: "AI Agents & Tool Use",
+              duration: "3 Weeks",
+              content: [
+                "What are AI agents and how they differ from chatbots",
+                "ReAct (Reasoning + Acting) agent pattern",
+                "Function calling and tool use with OpenAI",
+                "Building custom tools: web search, code execution, APIs",
+                "Agent loops, planning, and error recovery",
+                "Single-agent systems with LangChain Agents",
+              ],
+              detailedContent: [
+                "Implement the ReAct pattern step by step",
+                "Create tools that agents can invoke autonomously",
+                "Handle agent failures and retries gracefully",
+                "Connect agents to real APIs and external services",
+                "Build a fully functional single-agent assistant",
+              ],
+              toolsAndTechnologies: [
+                { name: "LangChain", icon: "https://img.icons8.com/color/100/chain.webp", alt: "LangChain" },
+                { name: "OpenAI Functions", icon: "https://img.icons8.com/ios-filled/150/chatgpt.webp", alt: "OpenAI" },
+                { name: "Python", icon: "https://res.cloudinary.com/dudu879kr/image/upload/v1752208406/python_ut82h4.webp", alt: "Python" },
+                { name: "Tavily Search", icon: "https://img.icons8.com/color/100/search.webp", alt: "Search" },
+              ],
+              actions: {
+                startLearning: "https://example.com/start-learning-agentic-ai",
+                downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
+              },
+            },
+            {
+              title: "RAG & Memory Systems",
+              duration: "3 Weeks",
+              content: [
+                "Retrieval Augmented Generation (RAG) architecture",
+                "Vector databases: Pinecone, Chroma, FAISS",
+                "Embedding models and semantic search",
+                "Building a RAG pipeline from scratch",
+                "Short-term and long-term memory for agents",
+                "Conversation history and context management",
+              ],
+              detailedContent: [
+                "Understand why RAG solves hallucination problems",
+                "Chunk, embed, and store documents efficiently",
+                "Query vector databases for relevant context",
+                "Give agents persistent memory across sessions",
+                "Implement episodic and semantic memory patterns",
+              ],
+              toolsAndTechnologies: [
+                { name: "LlamaIndex", icon: "https://img.icons8.com/color/100/database.webp", alt: "LlamaIndex" },
+                { name: "Chroma DB", icon: "https://img.icons8.com/color/100/data-configuration.webp", alt: "ChromaDB" },
+                { name: "FAISS", icon: "https://img.icons8.com/color/100/search.webp", alt: "FAISS" },
+                { name: "OpenAI Embeddings", icon: "https://img.icons8.com/ios-filled/150/chatgpt.webp", alt: "Embeddings" },
+              ],
+              actions: {
+                startLearning: "https://example.com/start-learning-agentic-ai",
+                downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
+              },
+            },
+            {
+              title: "Multi-Agent Systems",
+              duration: "3 Weeks",
+              content: [
+                "Multi-agent architectures and design patterns",
+                "Microsoft AutoGen framework for multi-agent workflows",
+                "Agent roles: orchestrator, executor, critic, planner",
+                "Agent-to-agent communication and task delegation",
+                "CrewAI for role-based agent collaboration",
+                "Building a multi-agent research and writing pipeline",
+              ],
+              detailedContent: [
+                "Design systems where multiple agents collaborate",
+                "Implement supervisor and worker agent patterns",
+                "Use AutoGen to coordinate agent conversations",
+                "Build a crew of agents to complete complex projects",
+                "Handle agent conflicts and consensus mechanisms",
+              ],
+              toolsAndTechnologies: [
+                { name: "AutoGen", icon: "https://img.icons8.com/color/100/artificial-intelligence.webp", alt: "AutoGen" },
+                { name: "CrewAI", icon: "https://img.icons8.com/color/100/team.webp", alt: "CrewAI" },
+                { name: "LangGraph", icon: "https://img.icons8.com/color/100/flow-chart.webp", alt: "LangGraph" },
+                { name: "Python", icon: "https://res.cloudinary.com/dudu879kr/image/upload/v1752208406/python_ut82h4.webp", alt: "Python" },
+              ],
+              actions: {
+                startLearning: "https://example.com/start-learning-agentic-ai",
+                downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
+              },
+            },
+            {
+              title: "Production Deployment & Projects",
+              duration: "3 Weeks",
+              content: [
+                "Evaluating and testing AI agents reliably",
+                "AI safety, guardrails, and output validation",
+                "Deploying agents with FastAPI and Docker",
+                "Monitoring agent behavior in production",
+                "Cost optimization for LLM-based systems",
+                "Capstone: Build and deploy a full agentic AI application",
+              ],
+              detailedContent: [
+                "Write test suites for agent correctness",
+                "Add guardrails to prevent harmful outputs",
+                "Package and deploy agents as REST APIs",
+                "Monitor token usage and agent performance",
+                "Complete a portfolio-ready agentic AI project",
+              ],
+              toolsAndTechnologies: [
+                { name: "FastAPI", icon: "https://img.icons8.com/ios-filled/100/api-settings.webp", alt: "FastAPI" },
+                { name: "Docker", icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/docker_b4f1wr.webp", alt: "Docker" },
+                { name: "LangSmith", icon: "https://img.icons8.com/color/100/combo-chart.webp", alt: "LangSmith" },
+                { name: "GitHub", icon: "https://img.icons8.com/ios-filled/500/github.webp", alt: "GitHub" },
+              ],
+              actions: {
+                startLearning: "https://example.com/start-learning-agentic-ai",
+                downloadCurriculum: "https://example.com/download-curriculum-agentic-ai",
+              },
+            },
+          ],
+        },
+      ],
+    },
+
+    certificate: {
+      courseTitle: "AGENTIC AI CERTIFICATION",
+      alt: "agentic-ai-certification-from-connecting-dots-erp",
+      image: "/Certificate/Certificate-1.avif",
+      completionText:
+        "The Agentic AI Certification from Connecting Dots ERP validates your ability to design, build, and deploy autonomous AI agent systems using modern LLM frameworks and tools.",
+      description:
+        "Through hands-on projects covering RAG pipelines, multi-agent orchestration, and production deployment, you will be equipped for high-demand roles in the rapidly growing field of Agentic AI.",
+    },
+
+    descriptionContent: {
+      title: "Why Choose Connecting Dots ERP for Agentic AI Training in {city}?",
+      paragraphs: [
+        "Connecting Dots ERP offers an industry-leading Agentic AI course in {city} that goes beyond basic AI literacy to teach you how to build truly autonomous systems. Our curriculum is built around the most in-demand frameworks — LangChain, AutoGen, CrewAI, and LlamaIndex — and covers everything from LLM fundamentals to deploying production-grade agent pipelines.",
+        "Unlike general AI courses, our Agentic AI training in {city} focuses specifically on autonomous decision-making, tool use, memory management, and multi-agent collaboration — the skills companies are urgently hiring for right now. Every module includes hands-on labs, real-world project work, and code you can take directly into a professional setting.",
+        "Our expert trainers bring active industry experience building AI products, ensuring the curriculum reflects what employers actually need. With small batch sizes, personalized mentorship, and 100% placement support including resume preparation and interview coaching, we are committed to seeing every student successfully transition into an Agentic AI role.",
+      ],
+      listItem1Header: "What makes our Agentic AI training in {city} unique?",
+      listItem1: [
+        "Curriculum built around LangChain, AutoGen, CrewAI, LlamaIndex — the exact tools companies use.",
+        "Covers the full stack: LLM APIs, RAG pipelines, multi-agent systems, and production deployment.",
+        "Hands-on capstone project you can showcase in interviews.",
+        "Expert trainers with active experience building AI products.",
+        "Small batches with personalized mentorship and 1:1 support.",
+        "100% placement assistance with resume building and mock interviews.",
+      ],
+      listItemAfterIndex: 2,
+      paragraphsAfterList: [],
+    },
+
+    faq: {
+      title: "Frequently Asked Questions",
+      video: "https://i.imgur.com/I7XKkrq.mp4",
+      items: [
+        {
+          question: "What is Agentic AI and how is it different from regular AI?",
+          answer:
+            "Regular AI models respond to a single prompt. Agentic AI systems can autonomously plan multi-step tasks, use tools like web search and code execution, remember past interactions, and delegate work to other agents — completing complex goals with minimal human input.",
+        },
+        {
+          question: "Do I need prior AI experience to join this course?",
+          answer:
+            "Basic Python programming is required. Familiarity with AI concepts is helpful but not mandatory — the course starts from LLM fundamentals before moving into agent frameworks.",
+        },
+        {
+          question: "Which frameworks will I learn in this course?",
+          answer:
+            "You will get hands-on experience with LangChain, LangGraph, Microsoft AutoGen, CrewAI, LlamaIndex, OpenAI APIs, and vector databases like ChromaDB and FAISS.",
+        },
+        {
+          question: "What kind of projects will I build?",
+          answer:
+            "You will build a single-agent research assistant, a RAG-powered document Q&A system, a multi-agent content pipeline, and a fully deployed agentic application as your capstone project.",
+        },
+        {
+          question: "What job roles can I apply for after this course?",
+          answer:
+            "Graduates can pursue roles including Agentic AI Engineer, LLM Engineer, AI Automation Specialist, AI Product Developer, and AI Solutions Architect at startups, product companies, and AI consultancies.",
+        },
+      ],
+    },
+
+    relatedCourses: makeRelatedCourses(generatedItRelatedCourses),
+
+    defaultRating: 4.8,
+    defaultReviewCount: 64,
+    publishedAt: "2025-06-01T00:00:00Z",
+    updatedAt: "2026-05-01T00:00:00Z",
   },
-
-  certificate: {
-    courseTitle: "AGENTIC AI CERTIFICATION",
-    alt: "agentic-ai-certification-from-connecting-dots-erp",
-    image: "/Certificate/Certificate-1.avif",
-    completionText:
-      "The Agentic AI Certification from Connecting Dots ERP validates your ability to design, build, and deploy autonomous AI agent systems using modern LLM frameworks and tools.",
-    description:
-      "Through hands-on projects covering RAG pipelines, multi-agent orchestration, and production deployment, you will be equipped for high-demand roles in the rapidly growing field of Agentic AI.",
-  },
-
-  descriptionContent: {
-    title: "Why Choose Connecting Dots ERP for Agentic AI Training in {city}?",
-    paragraphs: [
-      "Connecting Dots ERP offers an industry-leading Agentic AI course in {city} that goes beyond basic AI literacy to teach you how to build truly autonomous systems. Our curriculum is built around the most in-demand frameworks — LangChain, AutoGen, CrewAI, and LlamaIndex — and covers everything from LLM fundamentals to deploying production-grade agent pipelines.",
-      "Unlike general AI courses, our Agentic AI training in {city} focuses specifically on autonomous decision-making, tool use, memory management, and multi-agent collaboration — the skills companies are urgently hiring for right now. Every module includes hands-on labs, real-world project work, and code you can take directly into a professional setting.",
-      "Our expert trainers bring active industry experience building AI products, ensuring the curriculum reflects what employers actually need. With small batch sizes, personalized mentorship, and 100% placement support including resume preparation and interview coaching, we are committed to seeing every student successfully transition into an Agentic AI role.",
-    ],
-    listItem1Header: "What makes our Agentic AI training in {city} unique?",
-    listItem1: [
-      "Curriculum built around LangChain, AutoGen, CrewAI, LlamaIndex — the exact tools companies use.",
-      "Covers the full stack: LLM APIs, RAG pipelines, multi-agent systems, and production deployment.",
-      "Hands-on capstone project you can showcase in interviews.",
-      "Expert trainers with active experience building AI products.",
-      "Small batches with personalized mentorship and 1:1 support.",
-      "100% placement assistance with resume building and mock interviews.",
-    ],
-    listItemAfterIndex: 2,
-    paragraphsAfterList: [],
-  },
-
-  faq: {
-    title: "Frequently Asked Questions",
-    video: "https://i.imgur.com/I7XKkrq.mp4",
-    items: [
-      {
-        question: "What is Agentic AI and how is it different from regular AI?",
-        answer:
-          "Regular AI models respond to a single prompt. Agentic AI systems can autonomously plan multi-step tasks, use tools like web search and code execution, remember past interactions, and delegate work to other agents — completing complex goals with minimal human input.",
-      },
-      {
-        question: "Do I need prior AI experience to join this course?",
-        answer:
-          "Basic Python programming is required. Familiarity with AI concepts is helpful but not mandatory — the course starts from LLM fundamentals before moving into agent frameworks.",
-      },
-      {
-        question: "Which frameworks will I learn in this course?",
-        answer:
-          "You will get hands-on experience with LangChain, LangGraph, Microsoft AutoGen, CrewAI, LlamaIndex, OpenAI APIs, and vector databases like ChromaDB and FAISS.",
-      },
-      {
-        question: "What kind of projects will I build?",
-        answer:
-          "You will build a single-agent research assistant, a RAG-powered document Q&A system, a multi-agent content pipeline, and a fully deployed agentic application as your capstone project.",
-      },
-      {
-        question: "What job roles can I apply for after this course?",
-        answer:
-          "Graduates can pursue roles including Agentic AI Engineer, LLM Engineer, AI Automation Specialist, AI Product Developer, and AI Solutions Architect at startups, product companies, and AI consultancies.",
-      },
-    ],
-  },
-
-  relatedCourses: makeRelatedCourses(generatedItRelatedCourses),
-
-  defaultRating: 4.8,
-  defaultReviewCount: 64,
-  publishedAt: "2025-06-01T00:00:00Z",
-  updatedAt: "2026-05-01T00:00:00Z",
-},
   "full-stack": {
     // === BASIC COURSE INFO ===
     title: "Full Stack Development", // Used in: Page titles, headers, SEO
@@ -12843,7 +12762,7 @@ export const coursesData = {
     updatedAt: "2025-07-06T00:00:00Z", // Used in: JSON-LD WebPage dateModified
   },
 
-  
+
   // DATA VISUALIZATION
 
   "data-visualization": {
@@ -13611,7 +13530,7 @@ export const coursesData = {
     updatedAt: "2025-07-09T00:00:00Z", // Used in: JSON-LD WebPage dateModified
   },
 
-  
+
 
   tableau: {
     // === BASIC COURSE INFO ===
