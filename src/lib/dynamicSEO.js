@@ -282,7 +282,7 @@ export function generateDynamicJsonLd(courseSlug, citySlug) {
       telephone: hasOffice && city.office?.phone ? city.office.phone : "+919004002941",
       logo: {
         "@type": "ImageObject",
-        url: `${baseUrl}https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp`,
+        url: `${baseUrl}https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp`,
         "@id": `${pageUrl}#organizationLogoImage`,
         width: 228,
         height: 70,

@@ -35,7 +35,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+        url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
         width: 981,
         height: 420,
         alt: "Connecting Dots ERP Blogs"
@@ -48,7 +48,7 @@ export const metadata = {
     creator: "@CD_ERP",
     title: "Connecting Dots ERP Blog | SAP, HR & IT Training Insights",
     description: "Read blogs on SAP, HR, IT training, ERP careers, tips, and the latest industry updates.",
-    images: ["https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp"]
+    images: ["https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp"]
   },
   icons: {
     icon: [
@@ -159,7 +159,7 @@ export default async function BlogIndexPage() {
                 telephone: "+919004002941",
                 logo: {
                   "@type": "ImageObject",
-                  url: "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+                  url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
                   "@id": "https://connectingdotserp.com/#organizationLogoImage",
                   width: 228,
                   height: 70,

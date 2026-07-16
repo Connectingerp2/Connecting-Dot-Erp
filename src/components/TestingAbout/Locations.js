@@ -221,9 +221,9 @@ const InteractiveMap = ({
   const addMarker = (location, L) => {
     // Use traditional red marker icon
     const defaultIcon = L.icon({
-      iconUrl: "https://res.cloudinary.com/df65lfym1/image/upload/v1781498914/marker-icon_rvtjni.webp",
+      iconUrl: "https://res.cloudinary.com/bropujss/image/upload/v1783686294/marker-icon_rvtjni_dnzams.webp",
       shadowUrl:
-        "https://res.cloudinary.com/df65lfym1/image/upload/v1781498914/marker-shadow_q7ajno.webp",
+        "https://res.cloudinary.com/bropujss/image/upload/v1783686389/marker-shadow_q7ajno_juzh4e.webp",
       iconSize: [25, 41],
       iconAnchor: [12, 41],
       popupAnchor: [1, -34],

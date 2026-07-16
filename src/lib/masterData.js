@@ -1,26 +1,26 @@
 // lib/masterData.js - Clean and Commented Version
 
 const companyAlumni = [
-  { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-  { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-  { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-  { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-  { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+  { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+  { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+  { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+  { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+  { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
 ];
 
 const iconMap = {
-  SAP: "https://res.cloudinary.com/df65lfym1/image/upload/v1777628633/sap_3_llyzfc.webp",
-  Cloud: "https://res.cloudinary.com/df65lfym1/image/upload/v1777627592/cloud-data_kqdxuc.webp",
-  Security: "https://res.cloudinary.com/df65lfym1/image/upload/v1777627468/business-intelligence_lcmfjw.webp",
-  Analytics: "https://res.cloudinary.com/df65lfym1/image/upload/v1777627468/business-intelligence_lcmfjw.webp",
-  DevOps: "https://res.cloudinary.com/df65lfym1/image/upload/v1777627592/cloud-data_kqdxuc.webp",
+  SAP: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203364/sap_3_llyzfc_u3teld.webp",
+  Cloud: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203425/cloud-data_kqdxuc_nyfbsg.webp",
+  Security: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203469/business-intelligence_lcmfjw_fmz5tw.webp",
+  Analytics: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203469/business-intelligence_lcmfjw_fmz5tw.webp",
+  DevOps: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203425/cloud-data_kqdxuc_nyfbsg.webp",
   AI: "https://i.imgur.com/grx2N9O.mp4",
-  AWS: "https://res.cloudinary.com/df65lfym1/image/upload/v1777627592/cloud-data_kqdxuc.webp",
-  Azure: "https://res.cloudinary.com/df65lfym1/image/upload/v1777627592/cloud-data_kqdxuc.webp",
+  AWS: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203425/cloud-data_kqdxuc_nyfbsg.webp",
+  Azure: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203425/cloud-data_kqdxuc_nyfbsg.webp",
 };
 
 const defaultSapRelatedCourseIcon =
-  "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp";
+  "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp";
 
 const sapRelatedCourseIconMap = {
   ABAP: "https://img.icons8.com/color/96/source-code.webp",
@@ -263,8 +263,8 @@ const generatedCourseData = generatedCourseSpecs.reduce((acc, spec) => {
   const titleLower = spec.title.toLowerCase();
   const courseWord = isSap ? "SAP training" : "IT training";
   const backgroundVideo = isSap
-    ? "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm"
-    : "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm";
+    ? "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm"
+    : "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm";
 
   acc[spec.slug] = {
     title: spec.title,
@@ -463,15 +463,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "Enroll in the best SAP FICO course in {city} and master financial accounting and controlling with expert-led training. Our SAP FICO training in {city} offers real-time Training, industry-relevant curriculum, and 100% placement support to help you build a successful career in SAP finance modules.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call Back", courseName: "SAP FICO Program" },
@@ -759,61 +759,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: " SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Learn QM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Master PS skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM   from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from Industry Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -875,15 +875,15 @@ export const coursesData = {
       subtitle: "Get Certified with the best SAP training institute in {city}",
       description:
         "Grow Your Career with the Best SAP Course in {city}. Accelerate your professional journey with our industry-leading SAP training in {city}, featuring specialized courses in SAP FICO, SAP MM, and SAP SD. Our comprehensive and hands-on training program is designed to build deep expertise in core SAP modules like Financial Accounting, Materials Management, and Sales & Distribution. Whether you're a fresher or a working professional, we'll help you land your dream job in top MNCs.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP Training Program" },
@@ -1016,61 +1016,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP ABAP",
           description: "Learn ABAP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ABAP icon",
         },
         {
           name: "SAP QM",
           description: "Learn QM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Learn PS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -1135,15 +1135,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "The SAP ABAP Course in {city} focuses on learning Advanced Business Application Programming (ABAP), the programming language used for developing applications within the SAP environment. It covers key topics like reporting, interfaces, enhancements, and forms. Our SAP ABAP Training in {city} provides hands-on experience, preparing you for real-world SAP development projects and career opportunities in top companies.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP ABAP Program" },
@@ -1472,61 +1472,61 @@ export const coursesData = {
         {
           name: "SAP HANA",
           description: "Learn HANA from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HANA icon",
         },
         {
           name: "SAP ARIBA",
           description: "Become a ARIBA expert",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ARIBA icon",
         },
         {
           name: "SAP BW/BI",
           description: "Master BW/BI skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BI icon",
         },
         {
           name: "SAP BASIS",
           description: "Learn BASIS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BASIS icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -1593,15 +1593,15 @@ export const coursesData = {
         "Learn SAP Ariba with our Expert trainers to get a Salary hike.",
       description:
         "Embark on a journey toward a successful career with our SAP Ariba Course in {city}. Tailored for newcomers and experienced professionals alike, this program offers an extensive syllabus designed to make you proficient in SAP Ariba. From gaining expertise in procurement and sourcing solutions to mastering supplier management and advanced analytics, this course equips you with the hands-on skills needed to thrive in the field.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP Ariba Program" },
@@ -1925,61 +1925,61 @@ export const coursesData = {
         {
           name: "SAP HANA",
           description: "Learn HANA from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HANA icon",
         },
         {
           name: "SAP ARIBA",
           description: "Become a ARIBA expert",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ARIBA icon",
         },
         {
           name: "SAP BW/BI",
           description: "Master BW/BI skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BI icon",
         },
         {
           name: "SAP BASIS",
           description: "Learn BASIS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BASIS icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -2045,15 +2045,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "The goal of the SAP BASIS Course in {city} is to give students a thorough understanding of the SAP BASIS, or Business Application Software Integrated Solution, which is an essential part of the SAP system for system management and administration. It addresses important subjects including transport management, system configuration, user administration, and system monitoring. Our SAP BASIS Course in {city} guarantees practical experience, readying you for prospects for professional advancement in prestigious SAP-based companies as well as real-world issues.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP BASIS Program" },
@@ -2377,61 +2377,61 @@ export const coursesData = {
         {
           name: "SAP HANA",
           description: "Learn HANA from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HANA icon",
         },
         {
           name: "SAP ARIBA",
           description: "Become a ARIBA expert",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ARIBA icon",
         },
         {
           name: "SAP BW/BI",
           description: "Master BW/BI skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BI icon",
         },
         {
           name: "SAP ABAP",
           description: "Learn ABAP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ABAP icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -2497,15 +2497,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "The SAP BW/BI Course in {city} at Connecting Dots ERP is designed to help you maximize your SAP BW/BI implementation. This course provides an in-depth understanding of operations and Info Providers while focusing on optimizing data load performance and query execution. Enroll now in our SAP BI/BW Classroom Training in {city} and SAP BI/BW Online Training to gain hands-on expertise and enhance your data management skills.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP BI Program" },
@@ -2836,61 +2836,61 @@ export const coursesData = {
         {
           name: "SAP HANA",
           description: "Learn HANA from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HANA icon",
         },
         {
           name: "SAP ARIBA",
           description: "Learn ARIBA from experts", // Corrected description
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ARIBA icon",
         },
         {
           name: "SAP BASIS",
           description: "Learn BASIS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BASIS icon",
         },
         {
           name: "SAP ABAP",
           description: "Learn ABAP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ABAP icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -2955,15 +2955,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "SAP Extended Warehouse Management (EWM) is a powerful module within the SAP Supply Chain Management suite that offers advanced features for efficient warehouse operations. Connecting Dots ERP's SAP EWM course in {city} will empower you to manage warehouse processes, from inventory control to outbound deliveries with industrial learning by MNC experienced trainer and hands-on learning of various tools.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP EWM Program" },
@@ -3295,61 +3295,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Become a QM expert",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Master PS skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts", // Corrected description
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -3415,15 +3415,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "SAP S/4 HANA is SAP's next-generation ERP suite, designed to run on the in-memory HANA database, offering real-time data processing and analytics. It simplifies business processes and provides enhanced capabilities in areas like finance, supply chain, and procurement. Our SAP S/4 HANA Training in {city} equips you with hands-on knowledge of the platform, preparing you for roles in leading global organizations.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP S/4 HANA Program" },
@@ -3755,61 +3755,61 @@ export const coursesData = {
         {
           name: "SAP BW/BI",
           description: "Learn BW/BI from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BW/BI icon",
         },
         {
           name: "SAP ARIBA",
           description: "Learn ARIBA from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ARIBA icon",
         },
         {
           name: "SAP BASIS",
           description: "Learn BASIS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BASIS icon",
         },
         {
           name: "SAP ABAP",
           description: "Learn ABAP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ABAP icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon", // Corrected alt
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -3875,15 +3875,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "The SAP HCM Course in {city} at Connecting Dots ERP offers in-depth training on managing human resources processes within organizations. This course covers core HR functions such as personnel management, payroll, time management, and organizational management using SAP HCM. With expert trainers and hands-on projects, this course equips you with the skills needed to excel in HR roles at top companies.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP HR/HCM Program" },
@@ -4217,61 +4217,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Learn QM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Learn PS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -4336,15 +4336,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "SAP MM Course in {city} covers Industry oriented curriculum with placement. SAP MM deals with Master Data, Material Valuation, Account Determination, and Material Requirement Planning.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP MM Program" },
@@ -4675,61 +4675,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Learn QM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Learn PS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -4794,15 +4794,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "SAP PM (Plant Maintenance) is a module that helps businesses efficiently manage maintenance activities, including equipment management, preventive maintenance, and repair orders to ensure optimal production performance. It integrates with other SAP modules like MM and PP for seamless operations. Our SAP PM Training in {city} provides practical insights and real-world applications, preparing you for maintenance management roles in various industries.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP PM Program" },
@@ -5132,61 +5132,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Learn QM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Learn PS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP ABAP",
           description: "Learn ABAP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ABAP icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -5251,15 +5251,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "The SAP PP Course in {city} teaches you how to manage production planning and control processes within the SAP ERP system, including material requirements planning (MRP), bill of materials (BOM), and shop floor control. Our SAP PP Training in {city} provides practical knowledge and hands-on experience, preparing you for production and manufacturing roles in leading organizations.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP PP Program" },
@@ -5591,61 +5591,61 @@ export const coursesData = {
         {
           name: "SAP HANA",
           description: "Learn HANA from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HANA icon",
         },
         {
           name: "SAP ARIBA",
           description: "Become a ARIBA expert",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ARIBA icon",
         },
         {
           name: "SAP BW/BI",
           description: "Master BW/BI skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP BI icon",
         },
         {
           name: "SAP ABAP",
           description: "Learn ABAP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ABAP icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts", // Corrected description based on standard pattern
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -5710,15 +5710,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "Description: SAP Project Systems is a critical module within SAP ERP that focuses on managing projects across industries, ensuring efficient planning, execution, and control. With Connecting Dots ERP's SAP PS course in {city}, you'll learn how to streamline project management processes and gain practical skills to handle everything from project structuring to resource allocation and reporting. Our course is backed by expert trainers and real-world projects, this course is designed to make you proficient in project management roles.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP PS Program" },
@@ -6015,61 +6015,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Become a QM expert",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP ABAP",
           description: "Master ABAP skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP ABAP icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts", // Corrected description
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -6134,15 +6134,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "SAP Quality Management is a very important module in SAP ERP, designed to streamline and optimize the quality control processes across the globe. With Connecting Dots ERP, the SAP QM course in {city} will provide you with advanced knowledge and practical skills to manage audits, quality inspections, and compliance within manufacturing and supply chain operations of various industries with numerous case studies.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP QM Program" },
@@ -6450,61 +6450,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP PS",
           description: "Learn PS from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from Experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -6569,15 +6569,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "SAP Supply Chain Management (SCM) is an essential module within SAP that enables businesses to efficiently manage their supply chain processes, from procurement to product delivery. Connecting Dots ERP’s SAP SCM course in {city} offers an advanced learning experience, equipping you with skills in supply chain planning, logistics, and order fulfillment. Learn from industry experts with practical, hands-on sessions that prepare you for real-world challenges.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP SCM Program" },
@@ -6902,61 +6902,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Become a QM expert",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Master PS skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts", // Corrected this description
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
       ],
@@ -7022,15 +7022,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "Enroll in the best SAP SD course in {city} and master sales & distribution with expert-led training. Our SAP SD training in {city} offers real-time projects, industry-relevant curriculum, and 100% placement support to launch your career in SAP SD modules.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP SD Program" },
@@ -7360,61 +7360,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from scratch",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Become a QM expert",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Master PS skills",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP SUCCESSFACTOR",
           description: "Learn SUCCESSFACTOR from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SuccesFactor icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -7478,15 +7478,15 @@ export const coursesData = {
       subtitle: "Practical Based Job Oriented SAP Training in {city}",
       description:
         "SAP SuccessFactors is a top cloud-based human capital management or SAP HCM solution that helps organizations manage their workforce and optimize HR processes. Our SAP SuccessFactors course in {city} equips you with the skills to manage talent acquisition, employee performance, learning management, and workforce analytics.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308160/sap_p5eome.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "SAP Succesfactor Program" },
@@ -7824,61 +7824,61 @@ export const coursesData = {
         {
           name: "SAP PP",
           description: "Learn PP from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PP icon",
         },
         {
           name: "SAP QM",
           description: "Learn QM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP QM icon",
         },
         {
           name: "SAP PS",
           description: "Learn PS from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PS icon",
         },
         {
           name: "SAP MM",
           description: "Learn MM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP MM icon",
         },
         {
           name: "SAP EWM",
           description: "Learn EWM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP EWM icon",
         },
         {
           name: "SAP FICO",
           description: "Learn FICO from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP FICO icon",
         },
         {
           name: "SAP SD",
           description: "Learn SD from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SD icon",
         },
         {
           name: "SAP HR/HCM",
           description: "Learn HR/HCM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP HR/HCM icon",
         },
         {
           name: "SAP PM",
           description: "Learn PM from experts",
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP PM icon",
         },
         {
           name: "SAP SCM",
           description: "Learn SCM from experts", // Corrected description
-          icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781348816/rbxjkmf9aehvzhebzsvq_vlmain.webp",
+          icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686591/rbxjkmf9aehvzhebzsvq_vlmain_wcgorn.webp",
           alt: "SAP SCM icon",
         },
       ],
@@ -7946,15 +7946,15 @@ export const coursesData = {
         "Get Certified with the advance IT training institute in {city}",
       description:
         "Connecting Dots ERP offers an advanced IT course in {city} designed to equip you with the essential skills to excel in the fast-evolving tech industry. Our advance and detailed training program covers key modules such as Data Science, Data Analytics, Python, and Java, ensuring you gain the expertise to work with cutting-edge technologies and solve complex business problems. By mastering these modules, you'll be prepared to take on roles like Data Scientist, Data Analyst, Python Developer, and Java Developer. Our course is tailored to help you build a strong foundation and land your dream job in the dynamic field of IT.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "IT Training Program" },
@@ -8233,15 +8233,15 @@ export const coursesData = {
         "Take advantage of the Business Analytics Training Certificate Course to advance your profession quickly",
       description:
         "The Connecting Dots ERP's Business Analytics Course in {city} is intended to give students the tools they need to succeed in the industry. Important subjects covered in the course include business intelligence, data visualization, data analysis, and predictive analytics. Our business analytics training in {city} guarantees that you are ready for opportunities in prestigious firms that focus on data-driven decision-making careers by giving you practical experience working with real-world business data.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Business Analytics Program" },
@@ -8349,22 +8349,22 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "MLflow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/mlflow_jhrlvx.avif",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201700/mlflow_jhrlvx_jw1nyq.avif",
                   alt: "MLflow",
                 },
                 {
                   name: "Docker",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/docker_b4f1wr.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201986/docker_b4f1wr_ezuh2k.webp",
                   alt: "Docker",
                 },
                 {
                   name: "Kubernetes",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/Kubernetes_ovxyqx.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202391/Kubernetes_ovxyqx_owumpd.webp",
                   alt: "Kubernetes",
                 },
                 {
                   name: "TensorFlow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/tensorflow_xxrded.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200023/tensorflow_xxrded_qxo2gx.webp",
                   alt: "TensorFlow",
                 },
               ],
@@ -8445,22 +8445,22 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "MySQL",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/sql_wah3it.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200368/sql_wah3it_kkzw6b.webp",
                   alt: "sql",
                 },
                 {
                   name: "PostgreSQL",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/postgree_ulv71u.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201310/postgree_ulv71u_xypbck.webp",
                   alt: "postgree",
                 },
                 {
                   name: "SQL Server",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/sqlserver_voejbd.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199974/sqlserver_voejbd_sd915h.webp",
                   alt: "sqlserver",
                 },
                 {
                   name: "Oracle",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/oracle_mnrsak.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201064/oracle_mnrsak_rcbqir.webp",
                   alt: "oracle",
                 },
               ],
@@ -8508,7 +8508,7 @@ export const coursesData = {
                 },
                 {
                   name: "Hive",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/hive_pwnjlq.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201474/hive_pwnjlq_ddbudg.webp",
                   alt: "hive",
                 },
               ],
@@ -8541,17 +8541,17 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "Apache Air Flow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968324/Apache_airflow_zzv2uv.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202796/Apache_airflow_zzv2uv_vugpkh.webp",
                   alt: "Apache Air Flow",
                 },
                 {
                   name: "Kubeflow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968324/kubeflow_svu3ve.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202858/kubeflow_svu3ve_mbi5r2.webp",
                   alt: "Kubeflow",
                 },
                 {
                   name: "Prometheus",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968328/prometheus_ulmywr.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201134/prometheus_ulmywr_oxcuet.webp",
                   alt: "Prometheus",
                 },
                 {
@@ -8779,15 +8779,15 @@ export const coursesData = {
         "Practical Based Job Oriented Data Analytics Training in {city}",
       description:
         "To evaluate both structured and unstructured data and turn it into insights that can be put to use, the Data Analytics Course in {city} focuses on teaching the methods and resources needed. In addition to focusing on developing abilities in data mining, predictive analysis, and statistical modeling, this program prepares graduates for positions as data scientists, analysts, and business analysts.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Data Analytics Program" },
@@ -8980,17 +8980,17 @@ export const coursesData = {
                 },
                 {
                   name: "PostgreSQL",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/postgree_ulv71u.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201310/postgree_ulv71u_xypbck.webp",
                   alt: "postgree",
                 },
                 {
                   name: "SQL Server",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/sqlserver_voejbd.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199974/sqlserver_voejbd_sd915h.webp",
                   alt: "sqlserver",
                 },
                 {
                   name: "Oracle",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/oracle_mnrsak.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201064/oracle_mnrsak_rcbqir.webp",
                   alt: "oracle",
                 },
               ],
@@ -9036,7 +9036,7 @@ export const coursesData = {
                 },
                 {
                   name: "Hive",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/hive_pwnjlq.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201474/hive_pwnjlq_ddbudg.webp",
                   alt: "hive",
                 },
               ],
@@ -9067,22 +9067,22 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "Docker",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/docker_b4f1wr.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201986/docker_b4f1wr_ezuh2k.webp",
                   alt: "docker",
                 },
                 {
                   name: "Kubernetes",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/Kubernetes_ovxyqx.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202391/Kubernetes_ovxyqx_owumpd.webp",
                   alt: "kubernetes",
                 },
                 {
                   name: "MLflow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/mlflow_jhrlvx.avif",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201700/mlflow_jhrlvx_jw1nyq.avif",
                   alt: "mlflow",
                 },
                 {
                   name: "TensorFlow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/tensorflow_xxrded.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200023/tensorflow_xxrded_qxo2gx.webp",
                   alt: "tensorflow",
                 },
               ],
@@ -9303,15 +9303,15 @@ export const coursesData = {
         "We invite you to attend the Best Data Science Certification Program in {city}",
       description:
         "The complete Data Science Course in {city} given by Connecting Dots ERP is meant to give students the tools they need to succeed in the area. Predictive analytics, machine learning, data visualization, and data analysis are some of the important subjects covered in the course. With practical experience working with real-world data, our data science training in {city} makes sure you are ready for opportunities in top firms that focus on data-driven careers",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Data Science Program" },
@@ -9416,7 +9416,7 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "Apache Spark",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/apachespark_e67cw0.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202441/apachespark_e67cw0_q1qoum.webp",
                   alt: "apachespark",
                 },
                 {
@@ -9426,12 +9426,12 @@ export const coursesData = {
                 },
                 {
                   name: "Apache Airflow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968324/Apache_airflow_zzv2uv.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202796/Apache_airflow_zzv2uv_vugpkh.webp",
                   alt: "Apache Airflow",
                 },
                 {
                   name: "Hadoop",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/hadoop_w2ajco.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201643/hadoop_w2ajco_jgapry.webp",
                   alt: "Hadoop",
                 },
               ],
@@ -9463,12 +9463,12 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "C++",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781501206/cpp_t1ahqb.webp",
+                  icon: "https://res.cloudinary.com/bropujss/image/upload/v1783685154/cpp_t1ahqb_rjcgsd.webp",
                   alt: "C++",
                 },
                 {
                   name: "Java",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781501291/java_zmn0qr.webp",
+                  icon: "https://res.cloudinary.com/bropujss/image/upload/v1783685073/java_zmn0qr_dl4x41.webp",
                   alt: "Java",
                 },
                 {
@@ -9478,7 +9478,7 @@ export const coursesData = {
                 },
                 {
                   name: "LeetCode",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781500932/leetcode_n22znq.webp",
+                  icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686120/leetcode_n22znq_zswx5e.webp",
                   alt: "LeetCode",
                 },
               ],
@@ -9509,7 +9509,7 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "TensorFlow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/tensorflow_xxrded.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200023/tensorflow_xxrded_qxo2gx.webp",
                   alt: "tensorflow",
                 },
                 {
@@ -9520,12 +9520,12 @@ export const coursesData = {
                 },
                 {
                   name: "PyTorch",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968328/pytorch_a4lb7j.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200954/pytorch_a4lb7j_qez5bk.webp",
                   alt: "PyTorch",
                 },
                 {
                   name: "OpenCV",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/open_cv_gjzzwk.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201421/open_cv_gjzzwk_ul22s1.webp",
                   alt: "OpenCV",
                 },
               ],
@@ -9561,7 +9561,7 @@ export const coursesData = {
                 },
                 {
                   name: "Prometheus",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968328/prometheus_ulmywr.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201134/prometheus_ulmywr_oxcuet.webp",
                   alt: "Prometheus",
                 },
                 {
@@ -9571,7 +9571,7 @@ export const coursesData = {
                 },
                 {
                   name: "MLflow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/mlflow_jhrlvx.avif",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201700/mlflow_jhrlvx_jw1nyq.avif",
                   alt: "MLflow",
                 },
               ],
@@ -9812,14 +9812,14 @@ export const coursesData = {
       description:
         "Connecting Dots ERP's Agentic AI course in {city} equips you with cutting-edge skills to design, build, and deploy autonomous AI agents. Learn LLM orchestration, multi-agent frameworks, tool use, memory systems, and production-grade AI pipelines that power the next generation of intelligent applications.",
       backgroundVideo:
-        "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+        "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call Back", courseName: "Agentic AI Program" },
@@ -9908,7 +9908,7 @@ export const coursesData = {
               toolsAndTechnologies: [
                 { name: "OpenAI API", icon: "https://img.icons8.com/ios-filled/150/chatgpt.webp", alt: "OpenAI" },
                 { name: "Python", icon: "https://res.cloudinary.com/dudu879kr/image/upload/v1752208406/python_ut82h4.webp", alt: "Python" },
-                { name: "Jupyter", icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/jupyter_aqbxrj.webp", alt: "Jupyter" },
+                { name: "Jupyter", icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202721/jupyter_aqbxrj_ii35r8.webp", alt: "Jupyter" },
                 { name: "Hugging Face", icon: "https://img.icons8.com/fluency/240/hugging-face_app.webp", alt: "Hugging Face" },
               ],
               actions: {
@@ -10023,7 +10023,7 @@ export const coursesData = {
               ],
               toolsAndTechnologies: [
                 { name: "FastAPI", icon: "https://img.icons8.com/ios-filled/100/api-settings.webp", alt: "FastAPI" },
-                { name: "Docker", icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/docker_b4f1wr.webp", alt: "Docker" },
+                { name: "Docker", icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201986/docker_b4f1wr_ezuh2k.webp", alt: "Docker" },
                 { name: "LangSmith", icon: "https://img.icons8.com/color/100/combo-chart.webp", alt: "LangSmith" },
                 { name: "GitHub", icon: "https://img.icons8.com/ios-filled/500/github.webp", alt: "GitHub" },
               ],
@@ -10159,15 +10159,15 @@ export const coursesData = {
       subtitle: "Project-based Job Oriented Full stack course in {city}",
       description:
         "Grow your potential with Connecting Dot's Full Stack course in {city}, where you'll learn essential development skills for a successful tech career. With hands-on training and secure placement support, this course equips you to thrive in the ever-evolving world of full-stack development.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Full Stack Program" },
@@ -10336,7 +10336,7 @@ export const coursesData = {
                 },
                 {
                   name: "Debugger",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/debugger_utvfho.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201809/debugger_utvfho_pm8qbt.webp",
                   alt: "debugger",
                 },
               ],
@@ -10373,7 +10373,7 @@ export const coursesData = {
                 },
                 {
                   name: "React Router",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968328/react_router_ambiky.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201004/react_router_ambiky_stucrw.webp",
                   alt: "React Router",
                 },
                 {
@@ -10383,7 +10383,7 @@ export const coursesData = {
                 },
                 {
                   name: "Axios",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/axios_mlowpa.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202563/axios_mlowpa_eyqdmm.webp",
                   alt: "Axios",
                 },
               ],
@@ -10430,7 +10430,7 @@ export const coursesData = {
                 },
                 {
                   name: "Postman",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968328/postman_zodfv9.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201191/postman_zodfv9_ndcgjb.webp",
                   alt: "Postman",
                 },
               ],
@@ -10696,15 +10696,15 @@ export const coursesData = {
         "We invite you to attend the Best Artificial Intelligence Certification Program in {city}",
       description:
         "Connecting Dots ERP's extensive Artificial Intelligence Course in {city} aims to give students the abilities they need to succeed in AI. The course covers important subjects, including AI-driven automation, machine learning, deep learning, and natural language processing. With practical experience working on actual ChatGPT and AI projects, our AI training in {city} guarantees that you are ready for employment prospects in prestigious companies that value innovation and AI-powered solutions",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Generative AI" },
@@ -10858,12 +10858,12 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "Scikit-learn",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968328/scikit_pegd5q.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200788/scikit_pegd5q_r85ifo.webp",
                   alt: "Scikit-learn",
                 },
                 {
                   name: "XGBoost",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968330/xgboost_quecw0.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199858/xgboost_quecw0_famhql.webp",
                   alt: "XGBoost",
                 },
                 {
@@ -10873,7 +10873,7 @@ export const coursesData = {
                 },
                 {
                   name: "TensorFlow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781500654/tensorflow_xge4x6.webp",
+                  icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686201/tensorflow_xge4x6_ems3my.webp",
                   alt: "TensorFlow",
                 },
               ],
@@ -10904,7 +10904,7 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "TensorFlow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1781500654/tensorflow_xge4x6.webp",
+                  icon: "https://res.cloudinary.com/bropujss/image/upload/v1783686201/tensorflow_xge4x6_ems3my.webp",
                   alt: "TensorFlow",
                 },
                 {
@@ -10914,12 +10914,12 @@ export const coursesData = {
                 },
                 {
                   name: "OpenCV",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/open_cv_gjzzwk.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201421/open_cv_gjzzwk_ul22s1.webp",
                   alt: "OpenCV",
                 },
                 {
                   name: "Colab",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/colab_m2jiab.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202627/colab_m2jiab_l5jv15.webp",
                   alt: "Google Colab",
                 },
               ],
@@ -10950,7 +10950,7 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "SpaCy",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/spacy_hsfkrc.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200537/spacy_hsfkrc_ycw9rj.webp",
                   alt: "SpaCy",
                 },
                 {
@@ -10965,7 +10965,7 @@ export const coursesData = {
                 },
                 {
                   name: "BERT",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/bert_gn35co.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202487/bert_gn35co_wfxrul.webp",
                   alt: "BERT",
                 },
               ],
@@ -10996,22 +10996,22 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "YOLO",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968330/yolo_y92bdu.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199793/yolo_y92bdu_a3urm4.webp",
                   alt: "YOLO",
                 },
                 {
                   name: "OpenCV",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/open_cv_gjzzwk.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201421/open_cv_gjzzwk_ul22s1.webp",
                   alt: "OpenCV",
                 },
                 {
                   name: "TensorFlow",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/tensorflow_xxrded.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200023/tensorflow_xxrded_qxo2gx.webp",
                   alt: "TensorFlow",
                 },
                 {
                   name: "Edge Impulse",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/edge_impulse_i3fpvk.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201753/edge_impulse_i3fpvk_ryighq.webp",
                   alt: "Edge Impulse",
                 },
               ],
@@ -11226,15 +11226,15 @@ export const coursesData = {
       subtitle: "Project-based Job Oriented Java Course in {city}",
       description:
         "Grow your career with Connecting Dots ERP's Java course in {city}, designed to equip you with essential programming skills for a successful tech career. With hands-on training and job placement support, this course prepares you to thrive in the competitive world of Java development.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Java Training Program" },
@@ -11393,17 +11393,17 @@ export const coursesData = {
                 },
                 {
                   name: "JVisualVM",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968324/jvisualvm_bafe8i.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202923/jvisualvm_bafe8i_as49ea.webp",
                   alt: "JVisualVM",
                 },
                 {
                   name: "Maven",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/maven_ydgthn.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201878/maven_ydgthn_dxekpi.webp",
                   alt: "Maven",
                 },
                 {
                   name: "Gradle",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/gradle_gu0jia.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201585/gradle_gu0jia_omfofc.webp",
                   alt: "Gradle",
                 },
               ],
@@ -11435,7 +11435,7 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "JDBC",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/jdbc_gfmsn2.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201252/jdbc_gfmsn2_btaqon.webp",
                   alt: "JDBC",
                 },
                 {
@@ -11445,12 +11445,12 @@ export const coursesData = {
                 },
                 {
                   name: "PostgreSQL",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/postgree_ulv71u.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201310/postgree_ulv71u_xypbck.webp",
                   alt: "PostgreSQL",
                 },
                 {
                   name: "DBeaver",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/dbeaver_kpmjig.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201937/dbeaver_kpmjig_izh1mz.webp",
                   alt: "DBeaver",
                 },
               ],
@@ -11534,12 +11534,12 @@ export const coursesData = {
                 },
                 {
                   name: "Spring Security",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/springsecurity_knvsvu.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200422/springsecurity_knvsvu_ckgv6n.webp",
                   alt: "Spring Security",
                 },
                 {
                   name: "Postman",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968328/postman_zodfv9.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201191/postman_zodfv9_ndcgjb.webp",
                   alt: "Postman",
                 },
                 {
@@ -11760,15 +11760,15 @@ export const coursesData = {
         "Learn Our advanced Python Course in {city} with practical training",
       description:
         "Unlock new career opportunities with Connecting Dot's Python course in {city}, designed to help you master one of the most versatile programming languages. Through hands-on training, expert mentorship, and real-world projects, this course prepares you for a wide range of programming roles, making you proficient in Python development and data handling.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "PYTHON Program" },
@@ -11874,12 +11874,12 @@ export const coursesData = {
                 },
                 {
                   name: "IDLE",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968327/idle_mgstys.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784201370/idle_mgstys_dyokra.webp",
                   alt: "IDLE",
                 },
                 {
                   name: "Jupyter",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/jupyter_aqbxrj.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202721/jupyter_aqbxrj_ii35r8.webp",
                   alt: "Jupyter Notebook",
                 },
                 {
@@ -11919,10 +11919,10 @@ export const coursesData = {
                   icon: "https://img.icons8.com/color/500/python--v1.webp",
                   alt: "OOP",
                 },
-                { name: "UML", icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968330/uml_fdavh0.webp", alt: "UML" },
+                { name: "UML", icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199916/uml_fdavh0_n4gv30.webp", alt: "UML" },
                 {
                   name: "PyCharm",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/pycharm_mayskc.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200588/pycharm_mayskc_tt1ipk.webp",
                   alt: "PyCharm",
                 },
                 {
@@ -11974,7 +11974,7 @@ export const coursesData = {
                 },
                 {
                   name: "Seaborn",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/seaborn_qswyxp.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200653/seaborn_qswyxp_iln4wv.webp",
                   alt: "Seaborn",
                 },
               ],
@@ -12011,7 +12011,7 @@ export const coursesData = {
                 },
                 {
                   name: "SQLite",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/sqlite_ecjxyx.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200313/sqlite_ecjxyx_ebdbsk.webp",
                   alt: "SQLite",
                 },
                 {
@@ -12058,7 +12058,7 @@ export const coursesData = {
                 },
                 {
                   name: "scikit-learn",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968328/scikit_pegd5q.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200788/scikit_pegd5q_r85ifo.webp",
                   alt: "scikit-learn",
                 },
                 {
@@ -12068,7 +12068,7 @@ export const coursesData = {
                 },
                 {
                   name: "Scrapy",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/scrapy_gax5he.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200735/scrapy_gax5he_zrtpyg.webp",
                   alt: "Scrapy",
                 },
               ],
@@ -12284,15 +12284,15 @@ export const coursesData = {
       subtitle: "Join our Project-based Salesforce Training Program in {city}",
       description:
         "Accelerate your career with Connecting Dot's Salesforce course in {city}, designed to equip you with the essential skills required to master Salesforce CRM, one of the most in-demand platforms in the world. Through practical training and project-based learning, this course prepares you for a range of roles in CRM management, cloud solutions, and customer relationship management.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308123/it_courses_fvooho.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Salesforce Program" },
@@ -12493,7 +12493,7 @@ export const coursesData = {
                 },
                 {
                   name: "Dashboards",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/dashboard_kdcvvq.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202280/dashboard_kdcvvq_fdzjdk.webp",
                   alt: "Dashboards",
                 },
                 {
@@ -12535,12 +12535,12 @@ export const coursesData = {
               toolsAndTechnologies: [
                 {
                   name: "Apex",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/apex_ownaxt.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202672/apex_ownaxt_d7rzgx.webp",
                   alt: "Apex",
                 },
                 {
                   name: "LWC",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968325/lwc_v254sv.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202334/lwc_v254sv_ezdzko.webp",
                   alt: "Lightning Web Components",
                 },
                 {
@@ -12587,12 +12587,12 @@ export const coursesData = {
                 },
                 {
                   name: "Service Cloud",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968329/service_cloud_edfdg7.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784200486/service_cloud_edfdg7_qjhmbf.webp",
                   alt: "Service Cloud",
                 },
                 {
                   name: "Marketing Cloud",
-                  icon: "https://res.cloudinary.com/df65lfym1/image/upload/v1777968326/marketing_cloud_enlqgz.webp",
+                  icon: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784202221/marketing_cloud_enlqgz_fldnpj.webp",
                   alt: "Marketing Cloud",
                 },
                 {
@@ -12819,15 +12819,15 @@ export const coursesData = {
         "Get Certified with the Data Visualization training institute in {city}",
       description:
         "We offers an advanced Data Visualization course in {city} designed to equip you with the essential skills to excel in the fast-evolving field of data analytics and visualization. Our detailed training program covers key modules such as data visualization techniques, tools like Tableau, Power BI, and advanced Excel, as well as best practices for creating compelling, insightful visualizations from complex datasets. By mastering these modules, you will be prepared to take on roles such as Data Visualization Specialist, Business Intelligence Analyst, or Data Analyst.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778307880/datavisualization_cgvjvl.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Data Visualization Program" },
@@ -13213,15 +13213,15 @@ export const coursesData = {
       subtitle: "Job Oriented Power BI Classes in {city}",
       description:
         "Power BI is a powerful tool designed to help businesses turn raw data into actionable insights. Whether you're a beginner or a seasoned professional, our Power BI course in {city} offers an in-depth understanding of the platform, enabling you to harness the full potential of your data. From interactive dashboards to real-time analytics, Power BI makes it easier to make informed decisions. Get started today and elevate your data skills through our advanced Power BI classes in {city}.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778307880/datavisualization_cgvjvl.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Power BI Program" },
@@ -13586,15 +13586,15 @@ export const coursesData = {
         "100% Practical Based Job Oriented Best Tableau Course in {city}",
       description:
         "Tableau is one of the most powerful data visualization tools, offering businesses and individuals the ability to analyze data in dynamic, interactive ways. Whether you're looking to enhance your skills with a Tableau certification Training in {city}, take a Tableau course, or explore Tableau tutorials, we provide everything you need to master the art of data storytelling.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778307880/datavisualization_cgvjvl.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Tableau Program" },
@@ -13964,15 +13964,15 @@ export const coursesData = {
       subtitle: "Get Certified with the best HR training institute in {city}",
       description:
         "Connecting Dots ERP offers a advance HR course in {city} designed to equip you with the essential skills to excel in Human Resources. Our advanced and detailed HR training program covers key modules such as Personnel Administration, Payroll, Time Management, and Organizational Management. By mastering these modules, you'll gain the expertise to streamline HR processes, optimize workforce management, and drive organizational success. Our course is tailored to help you land your dream job in the dynamic field of HR.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308053/hr_owqwxs.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "HR Training Program" },
@@ -14283,15 +14283,15 @@ export const coursesData = {
       subtitle: "Join our Practical-based Core HR Training in {city}",
       description:
         "Enhance your career with Connecting Dot's Core HR course in {city}, tailored to provide you with the key competencies needed to thrive in the field of human resource management. Focusing on practical skills and hands-on learning, this course equips you for various roles such as recruitment, employee engagement, talent development, and HR data analysis, helping you become a valuable asset in any organization.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308053/hr_owqwxs.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         { text: "Request Call back", courseName: "Core HR Training Program" },
@@ -14579,15 +14579,15 @@ export const coursesData = {
         "Become a Versatile HR Professional with Our HR Generalist Training in {city}",
       description:
         "Elevate your career in human resources with Connecting Dot's HR Generalist training in {city}, designed to provide you with a well-rounded understanding of key HR functions. This training program covers recruitment, employee relations, payroll management, performance appraisals, and labor laws, equipping you with the skills required to excel as an HR Generalist in any organization.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308053/hr_owqwxs.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         {
@@ -14883,15 +14883,15 @@ export const coursesData = {
         "Master Data-Driven HR Decision Making with Our HR Analytics Training in {city}",
       description:
         "Upgrade your HR skills with Connecting Dot's HR Analytics course in {city}, designed to provide a comprehensive understanding of data analysis in human resource management. This course equips you with the tools to analyze employee data, improve HR processes, and make informed decisions. By integrating data-driven insights into HR operations, you will enhance talent management, recruitment, employee engagement, and retention strategies.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308053/hr_owqwxs.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         {
@@ -15182,15 +15182,15 @@ export const coursesData = {
       subtitle: "Join our complete HR Management Training in {city}",
       description:
         "Elevate your career with Connecting Dot's HR Management course in {city}, designed to provide in-depth knowledge and hands-on experience in managing human resources effectively. This course covers key areas such as employee recruitment, talent development, performance management, and compliance with labor laws, equipping you with the skills necessary to thrive in HR roles.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308053/hr_owqwxs.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         {
@@ -15484,15 +15484,15 @@ export const coursesData = {
       subtitle: "Join our Project-based HR Payroll Training in {city}",
       description:
         "Advance your career with Connecting Dot's HR Payroll course in {city}, meticulously designed to provide you with the essential skills to excel in payroll management within Human Resource Management. This practical, hands-on training focuses on vital areas like payroll processing, tax compliance, employee benefits, and HR systems, equipping you to efficiently manage payroll functions in any organization.",
-      backgroundVideo: "https://res.cloudinary.com/df65lfym1/video/upload/v1778308053/hr_owqwxs.webm",
+      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       features: ["Live Class", "1:1 mentorship", "Industry projects"],
       alumni: [
         // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/amdocs_imxtpx.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623548/infosys_psvmtb.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623550/cognizant_qekaos.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/tcs_vf98c9.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777623549/IBM_yyj2qp.webp" },
+        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
+        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
+        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
+        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
+        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
       ],
       buttons: [
         {

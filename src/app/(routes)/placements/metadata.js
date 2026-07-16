@@ -60,7 +60,7 @@ export const metadata = {
     locale: "en_IN",
     images: [
       {
-        url: "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+        url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
         width: 1200,
         height: 630,
         alt: "Connecting Dots ERP placement assistance",
@@ -72,7 +72,7 @@ export const metadata = {
     title: placementTitle,
     description: placementDescription,
     images: [
-      "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+      "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
     ],
     site: "@CD_ERP",
     creator: "@CD_ERP",
@@ -107,7 +107,7 @@ export const jsonLd = {
         "@id": `${placementUrl}#primaryimage`,
       },
       thumbnailUrl:
-        "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+        "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
       datePublished: "2025-09-01T10:00:00+00:00",
       dateModified: "2025-11-24T10:00:00+00:00",
       breadcrumb: {
@@ -127,9 +127,9 @@ export const jsonLd = {
       "@type": "ImageObject",
       inLanguage: "en-US",
       "@id": `${placementUrl}#primaryimage`,
-      url: "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+      url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
       contentUrl:
-        "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+        "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
       width: 1200,
       height: 800,
     },
@@ -210,7 +210,7 @@ export const jsonLd = {
       logo: {
         "@type": "ImageObject",
         "@id": "https://connectingdotserp.com/#organizationLogoImage",
-        url: "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+        url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
         width: 228,
         height: 70,
       },

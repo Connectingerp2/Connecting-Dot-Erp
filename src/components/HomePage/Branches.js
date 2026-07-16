@@ -51,7 +51,7 @@ const branches = [
     position: { lat: 18.588048051275003, lng: 73.78119014757031 },
     mapLink: "https://maps.app.goo.gl/DNwzKa2Yt1WB6zUB7",
     color: "#3b82f6", // Blue
-    image: "https://res.cloudinary.com/df65lfym1/image/upload/v1777609818/Pune-Cover-Photo_jzryyz.webp",
+    image: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784204630/Pune-Cover-Photo_jzryyz_xh9onh.webp",
   },
   {
     city: "Mumbai",
@@ -63,7 +63,7 @@ const branches = [
     position: { lat: 19.259055941077712, lng: 72.96564544031934 },
     mapLink: "https://maps.app.goo.gl/i7W3baVVS1mDLmTJ9",
     color: "#10b981", // Green
-    image: "https://res.cloudinary.com/df65lfym1/image/upload/v1777609817/Mumbai-Cover-Photo_cgywi5.webp",
+    image: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784204731/Mumbai-Cover-Photo_cgywi5_thl18f.webp",
   },
   {
     city: "Raipur",
@@ -74,7 +74,7 @@ const branches = [
     position: { lat: 21.23944689267376, lng: 81.65363342070017 },
     mapLink: "https://maps.app.goo.gl/1KA1uhcyoF5Tu4Mg6",
     color: "#f97316", // Orange
-    image: "https://res.cloudinary.com/df65lfym1/image/upload/v1777609818/Raipur-Cover-Photo_pwf70m.webp",
+    image: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784204682/Raipur-Cover-Photo_pwf70m_tcixcy.webp",
   },
 ];
 

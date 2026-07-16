@@ -281,7 +281,7 @@ setTimeout(() => {
               } ${showLogo ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
 
                 <Image
-                 src="https://res.cloudinary.com/df65lfym1/image/upload/v1778307004/Connecting_Logo_New_skvsup.webp"  
+                 src="https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp"  
                   alt="Logo"
                   width={200}         
                   height={100}          

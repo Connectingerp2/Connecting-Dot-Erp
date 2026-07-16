@@ -388,7 +388,7 @@ const DownloadSyllabusForm = ({ onClose, course }) => {
         <div className="relative overflow-hidden rounded-t-3xl bg-gradient-to-br from-indigo-700 via-violet-700 to-blue-600 px-7 pt-8 text-center">
           <div className="pointer-events-none absolute -right-14 -top-20 h-56 w-56 rounded-full bg-white/10 blur-2xl" />
           <img
-            src="https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp"
+            src="https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp"
             alt="Connecting Dots ERP Logo"
             className="relative mx-auto mb-3.5 h-auto max-w-[150px] brightness-0 invert"
           />

@@ -179,7 +179,7 @@ const Footer = () => {
           <div className="w-[180px] h-auto">
             <Link href="/">
               <Image
-                src="https://res.cloudinary.com/df65lfym1/image/upload/v1777627056/cdots_g3izdp.webp"
+                src="https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203515/cdots_g3izdp_mkglqs.webp"
                 alt="Connecting Dots ERP logo"
                 width={150}
                 height={50}
@@ -214,7 +214,7 @@ const Footer = () => {
               aria-hidden="true"
             >
               <Image
-                src="https://res.cloudinary.com/df65lfym1/image/upload/v1781946054/ChatGPT_Image_Jun_20_2026_02_30_00_PM_g2zifl.webp"
+                src="https://res.cloudinary.com/bropujss/image/upload/v1783678851/ChatGPT_Image_Jun_20_2026_02_30_00_PM_g2zifl_qt6pkt.webp"
                 alt=""
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"

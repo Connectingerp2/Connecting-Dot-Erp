@@ -55,7 +55,7 @@ const Certificate = ({ data }) => {
               <div className="certificate-wrapper">
                 <div className="bg-white rounded-xl border-4 border-gray-200">
                   <Image
-                    src={"https://res.cloudinary.com/df65lfym1/image/upload/v1777618559/Certificate_pbdvhs.webp"}
+                    src={"https://res.cloudinary.com/bropujss/image/upload/v1784204578/Certificate_pbdvhs_uexpuc.webp"}
                     alt={data?.alt || `${data?.courseTitle || "SAP Training"} Certificate`}
                     width={1000}
                     height={600}

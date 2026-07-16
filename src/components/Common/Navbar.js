@@ -498,7 +498,7 @@ const Header = () => {
               <AnimatedLogo className={styles.animatedLogo} />
               <div className={styles.logoWrapper}>
                 <Image
-                  src="https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp"
+                  src="https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp"
                   alt="Logo of Connecting Dots ERP"
                   width={120}
                   height={60}
@@ -590,7 +590,7 @@ const Header = () => {
                 >
                   <AnimatedLogo className={styles.sidebarLogo} />
                   <Image
-                    src="https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp"
+                    src="https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp"
                     alt="Connecting Dots ERP Logo"
                     width={130}
                     height={100}

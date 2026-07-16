@@ -67,42 +67,42 @@ const featuredPlacements = [
     salary: "24 LPA",
     course: "SAP ABAP",
     logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305168/agconsultancy_rvgaxq.avif",
-    photo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305823/pic1pp_wtvqhw.webp",
+    photo: "https://res.cloudinary.com/bropujss/image/upload/v1784182429/pic1pp_wtvqhw_gv9ejf.webp",
   },
   {
     name: "Nikhilesh Landge",
     salary: "12 LPA",
     course: "SAP SD",
     logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305282/cltech_xqeelh.avif",
-    photo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305822/pic2pp_ugfo1w.webp",
+    photo: "https://res.cloudinary.com/bropujss/image/upload/v1784182533/pic2pp_ugfo1w_dtaotf.webp",
   },
   {
     name: "Shubham Desale",
     salary: "9 LPA",
     course: "SAP MM",
     logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305402/deloitte1_luqjwi.avif",
-    photo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305822/pic3pp_xgown1.webp",
+    photo: "https://res.cloudinary.com/bropujss/image/upload/v1784182641/pic3pp_xgown1_xcqm3q.webp",
   },
   {
     name: "Nitesh Kumar",
     salary: "15 LPA",
     course: "SAP FICO",
     logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305547/marketlegos_asz8ud.avif",
-    photo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305821/pic4pp_v0iqs4.webp",
+    photo: "https://res.cloudinary.com/brohttps://res.cloudinary.com/bropujss/image/upload/v1784182727/pic4pp_v0iqs4_nt8vb1.webp",
   },
   {
     name: "Seshu Tamma",
     salary: "11 LPA",
     course: "SAP Security",
     logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305402/deloitte1_luqjwi.avif",
-    photo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305821/pic5pp_vllliw.webp",
+    photo: "https://res.cloudinary.com/bropujss/image/upload/v1784182811/pic5pp_vllliw_h7zsmn.webp",
   },
   {
     name: "Sai Srujan",
     salary: "18 LPA",
     course: "SAP FICO",
     logo: "https://res.cloudinary.com/df65lfym1/image/upload/v1778305402/deloitte1_luqjwi.avif",
-    photo: "https://res.cloudinary.com/df65lfym1/image/upload/v1777626417/review_image_5_jjm78u.webp",
+    photo: "https://res.cloudinary.com/bropujss/image/upload/v1784203985/review_image_5_jjm78u_h8txiq.webp",
   },
 ];
 
@@ -1024,7 +1024,7 @@ export default function PlacementPage() {
 
           {/* ── RIGHT — graduate visual ── */}
           <div className="w-[55%] absolute right-5 top-5 h-screen flex items-center">
-            <img src="https://res.cloudinary.com/df65lfym1/image/upload/v1783596718/PlacementHeroSectionImage_xhhviz.webp" alt="placement roadmap image" className="h-[500px]" />
+            <img src="https://res.cloudinary.com/bropujss/image/upload/v1783678174/PlacementHeroSectionImage_xhhviz_c9lypk.webp" alt="placement roadmap image" className="h-[500px]" />
           </div>
         </div>
       </section>

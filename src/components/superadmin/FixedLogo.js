@@ -34,7 +34,7 @@ const FixedLogo = () => {
       }`}
     >
       <Image
-        src="https://res.cloudinary.com/df65lfym1/image/upload/v1778306883/connecting_dot_erp_logo_oidgta.avif"
+        src="https://res.cloudinary.com/bropujss/image/upload/v1783687585/connecting_dot_erp_logo_oidgta_1_ewvjqf.avif"
         alt="ERP Logo"
         width={170}
         height={100}

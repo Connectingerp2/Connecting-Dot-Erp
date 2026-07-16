@@ -37,7 +37,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+        url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
         width: 981,
         height: 420,
         alt: "Connecting Dots ERP Institute",
@@ -51,7 +51,7 @@ export const metadata = {
     title: "Connecting Dots ERP | SAP, HR & IT Training Institute",
     description:
       "Learn SAP, HR and IT courses with expert trainers, real-time projects and 100% placement support at Connecting Dots ERP.",
-    images: ["https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp"],
+    images: ["https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp"],
   },
   icons: {
     icon: [
@@ -73,7 +73,7 @@ const jsonLd = {
       url: "https://connectingdotserp.com/",
       logo: {
         "@type": "ImageObject",
-        url: "https://res.cloudinary.com/df65lfym1/image/upload/v1778307259/logo_rju9sa.webp",
+        url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
         width: 180,
         height: 60,
       },

@@ -69,7 +69,7 @@ export default function OfferLetter() {
         topColored: true,
         icon: (
           <Image
-            src="https://res.cloudinary.com/df65lfym1/image/upload/v1777618964/enroll_enkw1u.webp"
+            src="https://res.cloudinary.com/bropujss/image/upload/v1784204280/enroll_enkw1u_gclrxn.webp"
             alt="Enroll"
             width={40}
             height={40}
@@ -84,7 +84,7 @@ export default function OfferLetter() {
         topColored: false,
         icon: (
           <Image
-            src="https://res.cloudinary.com/df65lfym1/image/upload/v1777618964/corporate_training_dkf6xq.webp"
+            src="https://res.cloudinary.com/bropujss/image/upload/v1784204385/corporate_training_dkf6xq_z1bakb.webp"
             alt="Corporate Training"
             width={40}
             height={40}
@@ -99,7 +99,7 @@ export default function OfferLetter() {
         topColored: true,
         icon: (
           <Image
-            src="https://res.cloudinary.com/df65lfym1/image/upload/v1777618962/real_time_project_xayphn.webp"
+            src="https://res.cloudinary.com/bropujss/image/upload/v1784204534/real_time_project_xayphn_obyg2i.webp"
             alt="Real-Time Projects"
             width={40}
             height={40}
@@ -114,7 +114,7 @@ export default function OfferLetter() {
         topColored: false,
         icon: (
           <Image
-            src="https://res.cloudinary.com/df65lfym1/image/upload/v1777618963/interview_prepration_p4b6ed.webp"
+            src="https://res.cloudinary.com/bropujss/image/upload/v1784204490/interview_prepration_p4b6ed_p8a5tx.webp"
             alt="Interview Preparation"
             width={40}
             height={40}
@@ -129,7 +129,7 @@ export default function OfferLetter() {
         topColored: true,
         icon: (
           <Image
-            src="https://res.cloudinary.com/df65lfym1/image/upload/v1777618963/experience_tcryon.webp"
+            src="https://res.cloudinary.com/bropujss/image/upload/v1784204342/experience_tcryon_rj8u4c.webp"
             alt="Experience Alteration"
             width={40}
             height={40}
@@ -144,7 +144,7 @@ export default function OfferLetter() {
         topColored: false,
         icon: (
           <Image
-            src="https://res.cloudinary.com/df65lfym1/image/upload/v1777618963/job_offer_eoaskk.webp"
+            src="https://res.cloudinary.com/bropujss/image/upload/v1784204435/job_offer_eoaskk_lnw6ft.webp"
             alt="Job Assistance"
             width={40}
             height={40}
@@ -249,7 +249,7 @@ export default function OfferLetter() {
         aria-hidden="true"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/df65lfym1/image/upload/v1781935173/ChatGPT_Image_Jun_20_2026_11_22_30_AM_czzfnr.webp')",
+            "url('https://res.cloudinary.com/bropujss/image/upload/v1783678998/ChatGPT_Image_Jun_20_2026_11_22_30_AM_czzfnr_b8iipn.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

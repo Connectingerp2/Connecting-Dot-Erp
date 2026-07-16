@@ -17,7 +17,7 @@ const AnimatedLogo = ({ className = "" }) => {
       {/* Center Arrow with up-down animation */}
       <div className={styles.centerArrow}>
         <Image
-          src="https://res.cloudinary.com/df65lfym1/image/upload/v1778306754/arrow_vimuey.avif"
+          src="https://res.cloudinary.com/bropujss/image/upload/v1783687662/arrow_vimuey_jheoet.avif"
           alt="Logo Arrow"
           width={18}
           height={18}
