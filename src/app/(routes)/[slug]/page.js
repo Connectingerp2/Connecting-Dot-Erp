@@ -167,6 +167,8 @@ const CourseCityPage = async ({ params }) => {
   const city = citiesData[citySlug];
 
   if (!course || !city) {
+    console.log(course)
+    console.log(city)
     console.error(`❌ CourseCityPage: Course "${courseSlug}" or City "${citySlug}" not found.`);
     return notFound();
   }
