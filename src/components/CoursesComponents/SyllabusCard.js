@@ -594,11 +594,9 @@ export default function SapAbapSyllabus(props) {
         </div>
       </div>
 
-      <div className="w-full h-screen flex items-center justify-center relative z-[50000] bg-white/80">
       {showForm && (
-          <Btnform onClose={handleCloseForm} onSubmit={handleFormSubmit} />
-        )}
-        </div>
+        <Btnform onClose={handleCloseForm} onSubmit={handleFormSubmit} />
+      )}
 
       {/* Success Message */}
       {formSubmitted && (
