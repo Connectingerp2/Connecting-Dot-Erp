@@ -52,7 +52,7 @@ const getCourseCategories = (city) => [
       {
         title: "Data Science",
         courses: [
-          { name: "Advanced Data Analytics", slug: `/data-analytics-with-generative-ai-in-${city}` },
+          { name: "Advanced Data Analytics", slug: `/advanced-data-analytics-with-generative-ai-course-in-${city}` },
           { name: "Data Science with AI", slug: `/data-science-with-ai-in-${city}` },
           { name: "Generative AI", slug: `/generative-ai-course-in-${city}` },
         ],
