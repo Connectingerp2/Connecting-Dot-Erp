@@ -162,11 +162,6 @@ const AnalyticsPage = () => {
       "Data Visualization": [
         "Tableau", "Power BI", "SQL"
       ],
-      "Digital Marketing": [
-        "Advance Digital Marketing", "Pay Per Click Training",
-        "Search Engine Optimization", "Social Media Marketing",
-        "Advance Google Analytics Training"
-      ],
       "HR Courses": [
         "HR Training", "Core HR", "HR Payroll",
         "HR Management", "HR Generalist", "HR Analytics"
@@ -174,8 +169,8 @@ const AnalyticsPage = () => {
       "IT Courses": [
         "MASTERS IN DATA ANALYTICS", "MASTERS IN DATA SCIENCE",
         "MASTERS IN BUSINESS ANALYTICS", "Generative AI",
-        "Full Stack Training", "JAVA", "MERN Stack",
-        "UI/UX Design", "Python", "Salesforce",
+        "Full Stack Training", "JAVA",
+        "Python", "Salesforce",
         "Software Development", "AWS", "Azure", "DevOps", "AIML"
       ]
     };

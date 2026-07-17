@@ -28,12 +28,6 @@
         "alt": "SALESFORCE icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -50,12 +44,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": " from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": " SQL icon"
       },
       {
         "name": "Reactjs Framework",
@@ -94,12 +82,6 @@
         "alt": "SALESFORCE icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -116,12 +98,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
       },
       {
         "name": "Reactjs Framework",
@@ -160,12 +136,6 @@
         "alt": "SALESFORCE icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -182,12 +152,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power Bi icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
       },
       {
         "name": "Reactjs Framework",
@@ -226,12 +190,6 @@
         "alt": "SALESFORCE icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -248,12 +206,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
       },
       {
         "name": "Reactjs Framework",
@@ -292,12 +244,6 @@
         "alt": "SALESFORCE icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Tableau",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
@@ -314,12 +260,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
       },
       {
         "name": "Reactjs Framework",
@@ -358,12 +298,6 @@
         "alt": "SALESFORCE icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -380,78 +314,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
-      },
-      {
-        "name": "Reactjs Framework",
-        "description": "Learn Reactjs from Industry Experts",
-        "icon": "https://i.imgur.com/QxPxKeN.mp4",
-        "alt": "React icon"
-      }
-    ]
-  },
-  "Mernrelcourses": {
-    "id": "Mernrelcourses",
-    "title": "Related courses",
-    "items": [
-      {
-        "name": "Generative AI",
-        "description": "Learn AI from scratch",
-        "icon": "https://i.imgur.com/QHuijGO.mp4",
-        "alt": "Generative AI icon"
-      },
-      {
-        "name": "Masters in Data Science",
-        "description": "Become a data science expert",
-        "icon": "https://i.imgur.com/C0Hv62l.mp4",
-        "alt": "Data Science icon"
-      },
-      {
-        "name": "Masters in Data Analytics",
-        "description": "Master data analytics skills",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "Data Analytics icon"
-      },
-      {
-        "name": "Salesforce",
-        "description": "Salesforce developer courses",
-        "icon": "https://i.imgur.com/6brz8Ea.mp4",
-        "alt": "SALESFORCE icon"
-      },
-      {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
-        "name": "Full-Stack Python",
-        "description": "Full-stack development with Python",
-        "icon": "https://i.imgur.com/grx2N9O.mp4",
-        "alt": "Full Stack icon"
-      },
-      {
-        "name": "Full-Stack Java",
-        "description": "Full-stack development with Java",
-        "icon": "https://i.imgur.com/SYHIAAO.mp4",
-        "alt": "Java icon"
-      },
-      {
-        "name": "PowerBI",
-        "description": "Business intelligence with PowerBI",
-        "icon": "https://i.imgur.com/WE4y4wK.mp4",
-        "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
       },
       {
         "name": "Reactjs Framework",
@@ -514,12 +376,6 @@
         "alt": "Power Bi icon"
       },
       {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
-      },
-      {
         "name": "Reactjs Framework",
         "description": "Learn Reactjs from Industry Experts",
         "icon": "https://i.imgur.com/QxPxKeN.mp4",
@@ -556,12 +412,6 @@
         "alt": "SALESFORCE icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Tableau",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
@@ -578,12 +428,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
       },
       {
         "name": "Reactjs Framework",
@@ -622,12 +466,6 @@
         "alt": "Tableau icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -644,12 +482,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
       },
       {
         "name": "Reactjs Framework",
@@ -1810,12 +1642,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -1832,12 +1658,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -1876,12 +1696,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -1898,12 +1712,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -1942,12 +1750,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -1964,12 +1766,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -2008,12 +1804,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -2030,12 +1820,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -2074,12 +1858,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -2096,12 +1874,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -2140,12 +1912,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -2162,12 +1928,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -2206,12 +1966,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -2228,12 +1982,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -2272,12 +2020,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -2294,12 +2036,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -2338,12 +2074,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -2360,12 +2090,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -2404,12 +2128,6 @@
         "alt": "Salesforce icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -2426,12 +2144,6 @@
         "description": "Learn AI from scratch",
         "icon": "https://i.imgur.com/QHuijGO.mp4",
         "alt": "Generative AI icon"
-      },
-      {
-        "name": "Mern Stack",
-        "description": "Learn Mern Stack from experts",
-        "icon": "https://i.imgur.com/qsfkvBs.mp4",
-        "alt": "Mern Stack icon"
       },
       {
         "name": "Reactjs Framework",
@@ -2555,12 +2267,6 @@
         "alt": "Power BI icon"
       },
       {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
-      },
-      {
         "name": "Reactjs Framework",
         "description": "Learn Reactjs from Industry Experts",
         "icon": "https://i.imgur.com/QxPxKeN.mp4",
@@ -2597,12 +2303,6 @@
         "alt": "SALESFORCE icon"
       },
       {
-        "name": "UI/UX Design",
-        "description": "Design stunning user interfaces",
-        "icon": "https://i.imgur.com/9FN2rSu.mp4",
-        "alt": "UI/UX icon"
-      },
-      {
         "name": "Full-Stack Python",
         "description": "Full-stack development with Python",
         "icon": "https://i.imgur.com/grx2N9O.mp4",
@@ -2619,12 +2319,6 @@
         "description": "Business intelligence with PowerBI",
         "icon": "https://i.imgur.com/WE4y4wK.mp4",
         "alt": "Power BI icon"
-      },
-      {
-        "name": "SQL",
-        "description": "Learn SQL from experts",
-        "icon": "https://i.imgur.com/y0zkEYb.mp4",
-        "alt": "SQL icon"
       },
       {
         "name": "Reactjs Framework",

@@ -21,8 +21,6 @@ export default function ITCourses() {
     { icon: Brain, title: "AIML", slug: "ai-ml", iconColor: "text-purple-500" },
     { icon: Code, title: "Full Stack Training", slug: "full-stack", iconColor: "text-green-500" },
     { icon: Code, title: "JAVA", slug: "java", iconColor: "text-red-500" },
-    { icon: Code, title: "MERN Stack", slug: "mern-stack", iconColor: "text-emerald-500" },
-    { icon: Palette, title: "UI/UX Design", slug: "ui-ux", iconColor: "text-pink-500" },
     { icon: Code, title: "Python", slug: "python", iconColor: "text-yellow-500" },
     { icon: Cloud, title: "Salesforce", slug: "salesforce", iconColor: "text-cyan-500" },
     { icon: BarChart3, title: "Data Analytics", slug: "data-analytics", iconColor: "text-blue-400" },

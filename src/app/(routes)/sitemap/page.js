@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/CitySitemap/Breadcrumb";
 export const metadata = {
   title: "City Course Sitemap | Connecting Dots ERP Training Institute",
   description:
-    "Browse our comprehensive range of professional courses available in cities across India including Pune, Mumbai, Bangalore, Delhi, and more. Find SAP, IT, HR, and Digital Marketing training programs near you.",
+    "Browse our comprehensive range of professional courses available in cities across India including Pune, Mumbai, Bangalore, Delhi, and more. Find SAP, IT,  HR,  Digital Marketing training programs near you.",
   keywords: [
     "course sitemap",
     "city courses",

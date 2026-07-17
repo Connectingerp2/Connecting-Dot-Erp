@@ -36,7 +36,6 @@ const CoursesRelated = ({ data, currentCityName }) => {
     "Full-Stack Python": "python-course",
     "Full-Stack Java": "java-course",
     "Reactjs Framework": "reactjs-framework-course", // Adjusted to be more specific
-    "Mern Stack": "mern-stack-course",
 
 
     // Data Visualization & BI

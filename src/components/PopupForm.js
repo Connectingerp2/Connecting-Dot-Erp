@@ -72,7 +72,6 @@ const PopupForm = ({
     { value: "", label: "Select a course", disabled: true },
     { value: "SAP Course", label: "SAP Course" },
     { value: "IT Course", label: "IT Course" },
-    { value: "Digital Marketing", label: "Digital Marketing" },
     { value: "Data Visualisation", label: "Data Visualisation" },
     { value: "HR Course", label: "HR Course" },
   ];

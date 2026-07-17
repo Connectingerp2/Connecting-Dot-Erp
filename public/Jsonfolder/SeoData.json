@@ -132,7 +132,7 @@
             "areaServed": "IN",
             "availableLanguage": ["English"]
           },
-          "description": "At Connecting Dots ERP, our certifications are globally accredited and recognized by leading multinational companies... We offer expert-led training in SAP, Software Development, Digital Marketing, and HR courses with strong placement support for your career.",
+          "description": "At Connecting Dots ERP, our certifications are globally accredited and recognized by leading multinational companies... We offer expert-led training in SAP, Software Development, and HR courses with strong placement support for your career.",
           "address": [
             {
               "@type": "PostalAddress",

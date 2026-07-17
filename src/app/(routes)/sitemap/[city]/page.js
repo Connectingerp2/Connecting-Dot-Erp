@@ -396,7 +396,7 @@ function generateCityLinks(city) {
         { name: "Python", slug: `/python-course-in-${city}` },
         { name: "Salesforce", slug: `/salesforce-training-in-${city}` },
         { name: "AWS", slug: `/aws-course-in-${city}` },
-        { name: "Azure", slug: `/azure-course-in-${city}` },
+        // { name: "Azure", slug: `/azure-course-in-${city}` },
         { name: "DevOps", slug: `/devops-course-in-${city}` },
         { name: "AIML", slug: `/ai-ml-course-in-${city}` },
       ],
@@ -472,7 +472,7 @@ export async function generateMetadata({ params }) {
 
   const cityInfo = cityData[city];
   const title = `Courses in ${cityInfo.name} | Connecting Dots ERP Training Institute`;
-  const description = `${cityInfo.description} Find SAP, IT, HR, Data Science, and Digital Marketing courses with placement support.`;
+  const description = `${cityInfo.description} Find SAP, IT, HR, Data Science courses with placement support.`;
   const url = `https://connectingdotserp.com/sitemap/${city}`;
   const imageUrl = `https://connectingdotserp.com/images/courses-${city}.jpg`;
 
@@ -600,7 +600,7 @@ function generateCityJsonLd(city, cityInfo) {
         "@id": `${cityUrl}#webpage`,
         url: cityUrl,
         name: `Courses in ${cityInfo.name} | Connecting Dots ERP Training Institute`,
-        description: `${cityInfo.description} Find SAP, IT, HR, Data Science, and Digital Marketing courses with placement support.`,
+        description: `${cityInfo.description} Find SAP, IT, HR, Data Science courses with placement support.`,
         inLanguage: "en-US",
         isPartOf: {
           "@id": "https://connectingdotserp.com/#website",
@@ -649,14 +649,6 @@ function generateCityJsonLd(city, cityInfo) {
               "@type": "Course",
               name: `Data Science Courses in ${cityInfo.name}`,
               description: `Data Science and Analytics training in ${cityInfo.name}`,
-              provider: {
-                "@id": "https://connectingdotserp.com/#organization",
-              },
-            },
-            {
-              "@type": "Course",
-              name: `Digital Marketing Training in ${cityInfo.name}`,
-              description: `Comprehensive digital marketing courses in ${cityInfo.name}`,
               provider: {
                 "@id": "https://connectingdotserp.com/#organization",
               },
@@ -1005,31 +997,6 @@ export default async function CityPage({ params }) {
           </Link>
         </div>
 
-        {/* Digital Marketing Courses Section */}
-        <div>
-          <h2>Digital Marketing Courses in {cityInfo.name}</h2>
-          <Link href={`/digital-marketing-course-in-${city}`}>
-            Digital Marketing Course in {cityInfo.name} - Complete Online
-            Marketing Training
-          </Link>
-          <Link
-            href={`/digital-marketing-course-in-${city}#search-engine-optimization`}
-          >
-            SEO Training in {cityInfo.name} - Search Engine Optimization Course
-          </Link>
-          <Link href={`/digital-marketing-course-in-${city}#pay-per-click`}>
-            PPC Training in {cityInfo.name} - Pay Per Click Advertising Course
-          </Link>
-          <Link
-            href={`/digital-marketing-course-in-${city}#social-media-marketing`}
-          >
-            Social Media Marketing Course in {cityInfo.name} - SMM Training
-          </Link>
-          <Link href={`/digital-marketing-course-in-${city}#advance-analytics`}>
-            Google Analytics Training in {cityInfo.name} - Advanced Analytics
-            Course
-          </Link>
-        </div>
 
         {/* Additional SEO headings for better keyword coverage */}
         <h2>Best Training Institute in {cityInfo.name}</h2>

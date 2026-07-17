@@ -65,7 +65,7 @@ const getCourseCategories = (city) => [
       { name: "Python", slug: `/python-course-in-${city}` },
       { name: "Salesforce", slug: `/salesforce-training-in-${city}` },
       { name: "AWS", slug: `/aws-course-in-${city}` },
-      { name: "Azure", slug: `/azure-course-in-${city}` },
+      // { name: "Azure", slug: `/azure-course-in-${city}` },
       { name: "DevOps", slug: `/devops-course-in-${city}` },
       { name: "AIML", slug: `/ai-ml-course-in-${city}` },
       { name: "Data Visualization with AI", slug: `/data-visualization-with-ai-in-${city}` },

@@ -659,7 +659,6 @@ function Stickyform() {
                   </option>
                   <option value="SAP Course">SAP Course</option>
                   <option value="IT Course">IT Course</option>
-                  <option value="Digital Marketing">Digital Marketing</option>
                   <option value="Data Visualization">Data Visualization</option>
                   <option value="HR Course">HR Course</option>
                   {/* Add more course options as needed */}

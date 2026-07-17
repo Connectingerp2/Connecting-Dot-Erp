@@ -74,8 +74,7 @@ export default function TermsAndConditions() {
                     NetWeaver)
                   </li>
                   <li>
-                    IT Courses (Full Stack Training, Java, MERN Stack, UI/UX
-                    Design, Python, Salesforce)
+                    IT Courses (Full Stack Training, Java, Python, Salesforce)
                   </li>
                   <li>Data Science Courses</li>
                   <li>Data Visualization Courses</li>

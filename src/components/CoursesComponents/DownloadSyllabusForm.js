@@ -25,8 +25,8 @@ const courseOptions = {
   "IT Courses": [
     "MASTERS IN DATA ANALYTICS", "MASTERS IN DATA SCIENCE",
     "MASTERS IN BUSINESS ANALYTICS", "Generative AI",
-    "Full Stack Training", "JAVA", "MERN Stack",
-    "UI/UX Design", "Python", "Salesforce", "Software Development",
+    "Full Stack Training", "JAVA",
+    "Python", "Salesforce", "Software Development",
     "AWS", "Azure", "DevOps", "AIML"
   ]
 };

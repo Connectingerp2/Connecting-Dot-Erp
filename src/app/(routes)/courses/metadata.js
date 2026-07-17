@@ -15,7 +15,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Courses - Connecting Dots ERP',
-    description: 'Expert-led training in SAP, Software Development, Digital Marketing, and HR Courses with strong placement support.',
+    description: 'Expert-led training in SAP, Software Development, and HR Courses with strong placement support.',
   },
 };
 

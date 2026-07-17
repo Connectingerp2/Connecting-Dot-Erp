@@ -900,7 +900,7 @@ export default function CreateBlogPost({ onSave, initialData = {}, isModal = fal
     }
   };
 
-  const categories = ['SAP', 'IT', 'AI', 'Data Science', 'Data Analytics', 'HR', 'Digital Marketing', 'Cloud Computing'];
+  const categories = ['SAP', 'IT', 'AI', 'Data Science', 'Data Analytics', 'HR', 'Cloud Computing'];
 
   if (isLoading) {
     return (

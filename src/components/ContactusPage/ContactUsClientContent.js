@@ -92,11 +92,6 @@ const ContactUsClientContent = ({ formData = {}, setFormData }) => {
     "Data Visualization": [
       "Tableau", "Power BI", "SQL"
     ],
-    "Digital Marketing": [
-      "Advance Digital Marketing", "Pay Per Click Training",
-      "Search Engine Optimization", "Social Media Marketing",
-      "Advance Google Analytics Training"
-    ],
     "HR Courses": [
       "HR Training", "Core HR", "HR Payroll",
       "HR Management", "HR Generalist", "HR Analytics"
@@ -104,8 +99,8 @@ const ContactUsClientContent = ({ formData = {}, setFormData }) => {
     "IT Courses": [
       "MASTERS IN DATA ANALYTICS", "MASTERS IN DATA SCIENCE",
       "MASTERS IN BUSINESS ANALYTICS", "Generative AI",
-      "Full Stack Training", "JAVA", "MERN Stack",
-      "UI/UX Design", "Python", "Salesforce", "Software Development",
+      "Full Stack Training", "JAVA",
+      "Python", "Salesforce", "Software Development",
       "AWS", "Azure", "DevOps", "AIML"
     ]
 

@@ -1231,7 +1231,7 @@ export default function PlacementPage() {
       <div className="mq-wrap">
         <div className="mq-track rev">
           {[...Array(2)].flatMap((_, x) =>
-            ["SAP FICO", "SAP Ariba", "SAP MM", "SAP SD", "SAP HR/HCM", "SAP PP", "SAP QM", "SAP PM", "SAP PS", "SAP EWM", "SAP SCM", "SAP SuccessFactors", "SAP ABAP", "SAP S/4 Hana", "SAP BW/BI", "SAP Basis", "Data Analytics", "Data Science", "Business Analytics", "Generative AI", "Full Stack Developer", "Java", "MERN Stack", "UI/UX Design", "Python Developer", "Salesforce ", "Tableau", "Power BI", "SQL", "Digital Marketing", "SEO", "Social Media Marketing", "Google Analytics", "Pay Per CLick", "HR Training", "CORE HR", "HR Payroll", "HR Management", "HR Generalist", "HR Analytics"].map((r, i) => (
+            ["SAP FICO", "SAP Ariba", "SAP MM", "SAP SD", "SAP HR/HCM", "SAP PP", "SAP QM", "SAP PM", "SAP PS", "SAP EWM", "SAP SCM", "SAP SuccessFactors", "SAP ABAP", "SAP S/4 Hana", "SAP BW/BI", "SAP Basis", "Data Analytics", "Data Science", "Business Analytics", "Generative AI", "Full Stack Developer", "Java", "Python Developer", "Salesforce ", "Tableau", "Power BI", "SEO", "Social Media Marketing", "Google Analytics", "Pay Per CLick", "HR Training", "CORE HR", "HR Payroll", "HR Management", "HR Generalist", "HR Analytics"].map((r, i) => (
               <div key={`${x}-${i}`} className="mq-item">
                 <span className="mq-dot red" />{r}
               </div>

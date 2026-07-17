@@ -172,65 +172,6 @@
         }
       ]
     }
-  }, 
-
-  "mernfaq": {
-    "MernFAQ": { 
-      "title": "Frequently Asked Questions",
-
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "Who should join the MERN stack course in {city}?",
-          "answer": "This course is ideal for aspiring developers, IT professionals, and anyone looking to build a career in full-stack web development using the latest technologies."
-        },
-        {
-          "question": "What is the mode of training for the MERN stack course?",
-          "answer": "The MERN stack training in {city} is available in both online and classroom modes, offering flexibility for students and working professionals."
-        },
-        {
-          "question": "What is the fee range for the MERN stack course in {city}?",
-          "answer": "The fees for the MERN stack course in {city} start from ₹35,000, depending on the level of certification and additional resources provided."
-        },
-        {
-          "question": "Which positions can I apply for after completing the course?",
-          "answer": "After completing the MERN stack certification in {city}, you can apply for roles like MERN Stack Developer, Full Stack Developer, and Web Developer in leading companies."
-        },
-        {
-          "question": "Which companies are hiring MERN stack developers?",
-          "answer": "Top companies like Infosys, Accenture, TCS, and several tech startups are looking for skilled MERN stack developers to build scalable web applications."
-        }
-      ]
-    }
-  },
-  "uiuxfaq": {
-    "UIUXFAQ": {
-      "title": "Frequently Asked Questions",
-
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "Who should join the UI/UX design course in {city}?",
-          "answer": "This course is perfect for aspiring designers, web developers looking to add design skills, or anyone interested in pursuing a career in UI/UX design."
-        },
-        {
-          "question": "What is the mode of training for the UI/UX design course?",
-          "answer": "We offer both online and in-person classes for the UI/UX design training in {city}, giving you the flexibility to learn at your own pace."
-        },
-        {
-          "question": "What is the fee range for the UI/UX design course in {city}?",
-          "answer": "The UI/UX design course fees in {city} start from ₹40,000, with options for different certification levels and additional resources."
-        },
-        {
-          "question": "Which positions can I apply for after completing the course?",
-          "answer": "After completing the UI/UX design certification in {city}, you can apply for roles like UI/UX Designer, Product Designer, and Interaction Designer in companies across various sectors."
-        },
-        {
-          "question": "Which companies are hiring UI/UX designers?",
-          "answer": "Companies like Google, Microsoft, Infosys, and top design agencies are actively hiring skilled UI/UX designers to enhance their digital products."
-        }
-      ]
-    }
   },
   "pythonfaq": {
     "PythonFAQ": {
@@ -809,35 +750,6 @@
         {
           "question": "How long does it take to complete a Power BI course?",
           "answer": "A Power BI course in {city} can be completed in 4 to 8 weeks, depending on the program structure. Fast-track and part-time options are available to suit various learning preferences."
-        }
-      ]
-    }
-  },
-  "sql": {
-    "SQL": {
-      "title": "Frequently Asked Questions",
-
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "What is the duration and SQL course fees in {city}?",
-          "answer": " The SQL course typically spans 4–6 weeks, depending on the depth of the syllabus. The SQL course fees in {city} vary based on the institute and course format, but at Connecting Dots ERP Training Institute, we offer competitive pricing with flexible payment options."
-        },
-        {
-          "question": "Do you offer online SQL training in {city}?",
-          "answer": " Yes, we provide comprehensive online SQL training in {city} to accommodate students who prefer flexible learning schedules. Our online classes are interactive and include live projects to ensure hands-on experience."
-        },
-        {
-          "question": "Is SQL certification in {city} helpful for job placements?",
-          "answer": "Absolutely! Earning an SQL certification in {city} significantly boosts your job prospects. It demonstrates your expertise in SQL, which is essential for roles like Data Analyst, Database Administrator, and Software Developer."
-        },
-        {
-          "question": "What are the prerequisites for joining SQL classes in {city}?",
-          "answer": "There are no strict prerequisites for joining our SQL classes in {city}. However, a basic understanding of computers and databases is beneficial. Our course is designed to take students from beginner to advanced levels."
-        },
-        {
-          "question": "What topics are covered in the SQL training in {city}?",
-          "answer": "Our SQL training in {city} covers essential topics such as SQL basics, data retrieval, joins, indexing, query optimization, and stored procedures. These skills are critical for handling real-world database challenges."
         }
       ]
     }

@@ -173,64 +173,6 @@
       ]
     }
   },
-  "Whymern": {
-    "WhyMern": {
-      "title": "Why MERN ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">MERN Stack?</span>",
-          "content": "MERN stack development involves using MongoDB, Express.js, React, and Node.js to create powerful, full-stack web applications. These technologies enable developers to build everything from dynamic websites to scalable apps. Learning MERN stack development in {city} will make you proficient in both front-end and back-end technologies, making you a valuable asset in the tech industry."
-        },
-        {
-          "title": "What does a <span class=\"highlight-span-cards\">MERN Stack Developer</span> do?",
-          "content":  "A MERN Stack Developer works on building full-stack applications using the MERN stack. They are proficient in both front-end and back-end development.",
-          "listItems": [
-            "Develop web applications using the MERN stack.",
-            "Work on both client-side and server-side.",
-            "Ensure application scalability and performance."
-          ]
-        },
-        {
-          "title": "Why take <span class=\"highlight-span-cards\">MERN Stack</span> training?",
-          "content": "MERN stack developers are highly sought after due to their ability to manage complete web development projects. Our MERN stack training in {city} covers all four technologies, preparing you for roles such as:",
-          "listItems": [
-            "MERN Stack Developer",
-            "Web Developer",
-            "Full Stack Developer"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyuiux": {
-    "WhyUIUX": {
-      "title": "Why UI/UX ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">UI/UX Design?</span>",
-          "content": "UI/UX Design involves creating usUI/UX design focuses on creating intuitive and engaging user interfaces while ensuring a seamless user experience. The UI (User Interface) deals with the visual elements of an application or website, while UX (User Experience) focuses on the overall feel and usability. By mastering both UI and UX, you’ll be equipped to design products that are not only aesthetically pleasing but also functional and user-friendly. Taking a UI/UX course in {city} will give you the skills to design with both form and function in mind, helping companies build products that users love."
-        },
-        {
-          "title": "What does a <span class=\"highlight-span-cards\">UI/UX Designer</span> do?",
-          "content": "A UI/UX Designer creates intuitive user interfaces and experiences. They work on designing the visual layout as well as improving the user journey.",
-          "listItems": [
-            "Design user interfaces for web and mobile.",
-            "Conduct user research and usability testing.",
-            "Collaborate with developers to implement designs."
-          ]
-        },
-        {
-          "title": "Why take <span class=\"highlight-span-cards\">UI/UX Design</span> training?",
-          "content":"UI/UX designers are in high demand across a range of industries, from tech startups to large corporations. Our UI/UX design training in {city} equips you with essential skills for roles like:",
-          "listItems": [
-            "UI/UX Designer",
-            "Product Designer",
-            "Interaction Designer"
-          ]
-        }
-      ]
-    }
-  },
   "Whypython": {
     "WhyPython": {
       "title": "Why Python?",
@@ -837,56 +779,6 @@
             "Data Analyst",
             "Business Intelligence Analyst"
           ]
-        }
-      ]
-    }
-  },
-  "Whysql": {
-    "WhySQL": {
-      "title": "Why SQL ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SQL?</span>",
-          "content": "SQL (Structured Query Language) is a standardized programming language designed for managing and manipulating data within relational databases. It allows users to retrieve, insert, update, and delete data, making it essential for database management, reporting, and analytics in various applications. Join the SQL Course in {city} offered by Connecting Dots ERP Training Institute and gain expertise in database management."
-        },
-        {
-          "title": "What does a <span class=\"highlight-span-cards\">SQL Developer</span> do?",
-          "content": "A SQL Developer is responsible for designing, implementing, and maintaining databases to store and organize data efficiently. They write SQL queries to retrieve, manipulate, and manage data, ensuring its accuracy and security. SQL Developers also optimize database performance, troubleshoot issues, and work closely with other developers or analysts to support business applications. Their role is essential in managing the data backbone of applications and ensuring seamless data flow within an organization.",
-          "listItems": [
-            "Write and optimize SQL queries.",
-            "Manage and maintain database systems.",
-            "Ensure data integrity and security."
-          ]
-        },
-        {
-          "title": "Why take <span class=\"highlight-span-cards\">SQL</span> training?",
-          "content": "SQL training is essential for anyone looking to work with databases, as it equips you with the skills to query, manage, and manipulate data effectively. Whether you’re in IT, data analysis, or business intelligence, mastering SQL enhances your ability to handle large datasets, create meaningful reports, and optimize database performance. It also boosts career opportunities, as SQL is a critical skill in many industries today.",
-          "listItems": [
-            "Oracle SQL Developer",
-            "ETL Developer",
-            "SQL Server Developer"
-          ]
-        }
-      ]
-    }
-  },
-
-
-  "Whydigim": {
-    "WhyDIGIM": {
-      "title": "Why Digital Marketing?",
-      "cards": [
-        {
-          "title": "Wat is <span class=\"highlight-span-cards\">Digital Marketing?</span>",
-          "content": "Our Digital Marketing Course in {city} provides the perfect opportunity to build expertise in this thriving domain. The training covers advanced SEO, social media marketing, PPC strategies, and tools like Google Analytics to track performance. Designed for beginners and professionals alike, this course emphasizes practical learning with real-world projects and case studies. By enrolling in our Digital Marketing Training in {city}, you’ll gain the knowledge and skills needed to excel in the competitive digital landscape, unlocking career opportunities in diverse industries."
-        },
-        {
-          "title": "What do <span class=\"highlight-span-cards\">Digital Marketers</span> Do?",
-          "content": "Digital marketers play a vital role in promoting businesses online by using tools and strategies like SEO, PPC advertising, social media marketing, and content creation. They design campaigns to engage target audiences, drive traffic, and boost brand visibility across digital platforms. By analyzing data and optimizing campaigns, digital marketers ensure businesses achieve measurable results in today’s competitive online environment. Enrolling in a Digital Marketing Course in {city} can help you master these skills and build a strong foundation for a successful career."
-        },
-        {
-          "title": "Why should you take <span class=\"highlight-span-cards\">Digital Marketing</span> Training?",
-          "content": "Taking Digital Marketing Training in {city} is essential for anyone looking to excel in the fast-growing field of online marketing. With businesses increasingly shifting to digital platforms, having expertise in areas like SEO, social media marketing, PPC, and analytics opens up vast career opportunities. The training equips you with practical skills to create impactful marketing campaigns, analyze performance metrics, and adapt strategies to meet industry demands. It’s an excellent choice for beginners and professionals seeking to enhance their knowledge and stay competitive in today’s job market."
         }
       ]
     }

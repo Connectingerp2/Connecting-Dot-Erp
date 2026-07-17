@@ -216,7 +216,6 @@ const generatedItRelatedCourses = [
   "Data Analytics",
   "Power BI",
   "Tableau",
-  "UI/UX Design",
   "Generative AI",
   "Agentic AI",
 ];
@@ -8126,12 +8125,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/6brz8Ea.mp4",
           alt: "SALESFORCE icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Agentic AI",
           description: "Learn Agentic AI from experts",
@@ -8672,12 +8665,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/6brz8Ea.mp4",
           alt: "SALESFORCE icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Full-Stack Python",
           description: "Full-stack development with Python",
@@ -9195,12 +9182,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/6brz8Ea.mp4",
           alt: "Salesforce icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Agentic AI",
           description: "Learn Agentic AI from experts",
@@ -10594,12 +10575,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/grx2N9O.mp4",
           alt: "agentic ai icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Tableau",
           description: "Master data visualization",
@@ -11127,12 +11102,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/grx2N9O.mp4",
           alt: "agentic ai icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Full-Stack Python",
           description: "Full-stack development with Python",
@@ -11659,12 +11628,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/grx2N9O.mp4",
           alt: "agentic ai icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Full-Stack Python",
           description: "Full-stack development with Python",
@@ -12183,12 +12146,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/grx2N9O.mp4",
           alt: "agentic ai icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Tableau",
           description: "Master data visualization",
@@ -12406,11 +12363,6 @@ export const coursesData = {
                   name: "CRM",
                   icon: "https://img.icons8.com/external-soft-fill-juicy-fish/100/external-crm-business-process-soft-fill-soft-fill-juicy-fish.webp",
                   alt: "CRM",
-                },
-                {
-                  name: "UI/UX",
-                  icon: "https://img.icons8.com/ios/100/web.webp",
-                  alt: "UI/UX",
                 },
               ],
               actions: {
@@ -12715,12 +12667,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/grx2N9O.mp4",
           alt: "agentic ai icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Full-Stack Python",
           description: "Full-stack development with Python",
@@ -13113,12 +13059,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/grx2N9O.mp4",
           alt: "agentic ai icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Full-Stack Python",
           description: "Full-stack development with Python",
@@ -13489,12 +13429,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/grx2N9O.mp4",
           alt: "agentic ai icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Full-Stack Python",
           description: "Full-stack development with Python",
@@ -13864,12 +13798,6 @@ export const coursesData = {
           icon: "https://i.imgur.com/grx2N9O.mp4",
           alt: "agentic ai icon",
         },
-        // {
-        //   name: "UI/UX Design",
-        //   description: "Design stunning user interfaces",
-        //   icon: "https://i.imgur.com/9FN2rSu.mp4",
-        //   alt: "UI/UX icon",
-        // },
         {
           name: "Full-Stack Python",
           description: "Full-stack development with Python",

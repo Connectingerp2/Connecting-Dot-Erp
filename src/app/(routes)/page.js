@@ -10,7 +10,6 @@ export const metadata = {
     "SAP Course",
     "Data Science Course",
     "Power Bi Course",
-    "Digital Marketing Course",
     "HR Training Institute",
     "SAP Training Institute",
     "Python Course",
@@ -90,7 +89,7 @@ const jsonLd = {
         availableLanguage: ["English"],
       },
       description:
-        "We offer expert-led training in SAP, Software Development, Digital Marketing, and HR courses with strong placement support for your career.",
+        "We offer expert-led training in SAP, Software Development, and HR courses with strong placement support for your career.",
       address: [
         {
           "@type": "PostalAddress",

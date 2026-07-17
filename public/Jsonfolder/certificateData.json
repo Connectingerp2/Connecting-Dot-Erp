@@ -177,14 +177,6 @@
       "description": " You’ll learn to build dynamic web applications using technologies like HTML, CSS, JavaScript, and Node.js. This certification prepares you for versatile roles in full-stack development with hands-on project experience."
     },
     {
-      "pageId": "mernstackCERT",
-      "courseTitle": "MERN-Stack Certificate",
-      "alt": "mern-stack-certification-from-connecting-dots-erp",
-      "image": "/Certificate/Certificate-1.avif",
-      "completionText": "The MERN Stack Certification at Connecting Dots ERP provides specialized training in MongoDB, Express.js, React, and Node.js.",
-      "description": "You’ll learn to develop full-stack JavaScript applications with a focus on both front-end and back-end technologies. This certification will prepare you for sought-after roles in modern web development."
-    },
-    {
       "pageId": "JavaCERT",
       "courseTitle": "Java Certificate",
       "alt": "java-certification-from-connecting-dots-erp",
