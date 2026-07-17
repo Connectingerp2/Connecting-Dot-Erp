@@ -3,27 +3,28 @@
 import React, { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import styles from "@/styles/PopupForm.module.css";
+// import ContactImage_hrf03g from "@/public/ContactImage_hrf03g.webp"
 
 const MAX_VISIBLE_SUGGESTIONS = 10;
 const SUGGESTION_ROW_HEIGHT = 40;
 const SUGGESTION_SCROLL_OFFSET = 4;
 
 const popupCourseImage =
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_480,h_600/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp";
+  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_480,h_600/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp";
 const popupCourseImageSrcSet = [
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_320,h_400/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 320w",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_480,h_600/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 480w",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_640,h_800/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 640w",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_880,h_1100/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 880w",
+  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_320,h_400/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 320w",
+  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_480,h_600/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 480w",
+  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_640,h_800/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 640w",
+  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_880,h_1100/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 880w",
 ].join(", ");
 
 const popupLogo =
   "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif";
 const popupLogoSrcSet = [
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fit,w_28,h_28/v1778307122/Connecting_Logo_cxqagq.avif 28w",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif 42w",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fit,w_64,h_64/v1778307122/Connecting_Logo_cxqagq.avif 64w",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1782996517/ContactImage_hrf03g.webp,q_auto:eco,c_fit,w_84,h_84/v1778307122/Connecting_Logo_cxqagq.avif 84w",
+  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif,q_auto:eco,c_fit,w_28,h_28/v1778307122/Connecting_Logo_cxqagq.avif 28w",
+  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif 42w",
+  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif,q_auto:eco,c_fit,w_64,h_64/v1778307122/Connecting_Logo_cxqagq.avif 64w",
+  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif,q_auto:eco,c_fit,w_84,h_84/v1778307122/Connecting_Logo_cxqagq.avif 84w",
 ].join(", ");
 
 const popupBackgroundImage =
@@ -833,8 +834,10 @@ const PopupForm = ({
             {/* LEFT SIDE — Decorative Image Panel */}
             <div className={styles.imageContainer}>
               <img
-                src={popupCourseImage}
-                srcSet={popupCourseImageSrcSet}
+                // src={ContactImage_hrf03g}
+                // srcSet={ContactImage_hrf03g}
+                src="/ContactImage_hrf03g.webp"
+                srcSet="/ContactImage_hrf03g.webp"
                 sizes="(max-width: 480px) calc(100vw - 32px), (max-width: 1024px) 326px, 434px"
                 width="434"
                 height="542"
@@ -895,8 +898,10 @@ const PopupForm = ({
 
               <div className={styles.headerContainer}>
                 <img
-                  src={popupLogo}
-                  srcSet={popupLogoSrcSet}
+                  // src={popupLogo}
+                  // srcSet={popupLogoSrcSet}
+                  src="/Connecting_Logo_New.webp"
+                  srcSet="Connecting_Logo_New.webp"
                   sizes="(max-width: 480px) 28px, (max-width: 1024px) 30px, (min-width: 1280px) 42px, 36px"
                   width="42"
                   height="42"
