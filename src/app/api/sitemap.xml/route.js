@@ -138,20 +138,6 @@ export async function GET() {
   `
   );
 
-  // Generate quiz URLs
-  // const quizUrls = [
-  //   // Main quiz page
-  //   `
-  //   <url>
-  //     <loc>${baseUrl}/quiz</loc>
-  //     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-  //     <changefreq>weekly</changefreq>
-  //     <priority>0.6</priority>
-  //   </url>
-  //   `,
-    
-  // ];
-
   // Static pages (Home & About Us)
   const staticUrls = [
     `
@@ -210,7 +196,6 @@ export async function GET() {
     ${staticUrls.join("\n")}
     ${courseUrls.join("\n")}
     ${citySitemapUrls.join("\n")}
-    // ${quizUrls.join("\n")}
   </urlset>`;
 
   return new Response(sitemap, {

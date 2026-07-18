@@ -1,4 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindcssAnimate from 'tailwindcss-animate';
+import tailwindScrollbarHide from 'tailwind-scrollbar-hide';
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
+
 export default {
   darkMode: ["class"],
   content: [
@@ -206,11 +211,9 @@ export default {
     },
   },
   plugins: [
-    require("tailwindcss-animate"),
-    require("tailwind-scrollbar-hide"),
-    require("@tailwindcss/forms")({
-      strategy: "class", // only generate classes
-    }),
-    require("@tailwindcss/typography"),
+    tailwindcssAnimate,
+    tailwindScrollbarHide,
+    forms({ strategy: 'class' }),
+    typography,
   ],
 };

@@ -254,43 +254,43 @@ const CourseCityPage = async ({ params }) => {
     return "";
   }
 
-  if (courseSlug === "digital-marketing" && isMultiSectionCourse) {
-    return (
-      <>
-        {jsonLd && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          />
-        )}
-        {headerData?.backgroundVideo && (
-          <link rel="preload" as="video" href={headerData.backgroundVideo} type="video/mp4" fetchPriority="high" />
-        )}
-        {headerData?.backgroundPoster && (
-          <link rel="preload" as="image" href={headerData.backgroundPoster} fetchPriority="high" />
-        )}
-        <ScrollHandler />
-        <div dangerouslySetInnerHTML={{ __html: dynamicBodyContent }} />
-        <ClientCourseSections
-          layoutType="digital"
-          headerData={headerData}
-          whyData={whyData}
-          sapModData={sapModData}
-          course={course}
-          modulesData={modulesData}
-          descriptionContentData={descriptionContentData}
-          certificateData={certificateData}
-          faqData={faqData}
-          cityLinks={<CityLinks courseSlug={cityLinkCourseSlug} />}
-          relatedCoursesData={relatedCoursesData}
-          currentCityName={city.name}
-          courseCategory={course.category}
-          shouldUseNewCurriculum={shouldUseNewCurriculum}
-          shouldUseLegacyModules={shouldUseLegacyModules}
-        />
-      </>
-    );
-  }
+  // if (courseSlug === "digital-marketing" && isMultiSectionCourse) {
+  //   return (
+  //     <>
+  //       {jsonLd && (
+  //         <script
+  //           type="application/ld+json"
+  //           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+  //         />
+  //       )}
+  //       {headerData?.backgroundVideo && (
+  //         <link rel="preload" as="video" href={headerData.backgroundVideo} type="video/mp4" fetchPriority="high" />
+  //       )}
+  //       {headerData?.backgroundPoster && (
+  //         <link rel="preload" as="image" href={headerData.backgroundPoster} fetchPriority="high" />
+  //       )}
+  //       <ScrollHandler />
+  //       <div dangerouslySetInnerHTML={{ __html: dynamicBodyContent }} />
+  //       <ClientCourseSections
+  //         layoutType="digital"
+  //         headerData={headerData}
+  //         whyData={whyData}
+  //         sapModData={sapModData}
+  //         course={course}
+  //         modulesData={modulesData}
+  //         descriptionContentData={descriptionContentData}
+  //         certificateData={certificateData}
+  //         faqData={faqData}
+  //         cityLinks={<CityLinks courseSlug={cityLinkCourseSlug} />}
+  //         relatedCoursesData={relatedCoursesData}
+  //         currentCityName={city.name}
+  //         courseCategory={course.category}
+  //         shouldUseNewCurriculum={shouldUseNewCurriculum}
+  //         shouldUseLegacyModules={shouldUseLegacyModules}
+  //       />
+  //     </>
+  //   );
+  // }
 
   return (
     <>
