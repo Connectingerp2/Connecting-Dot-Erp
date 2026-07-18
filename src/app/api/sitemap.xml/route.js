@@ -75,7 +75,7 @@ export async function GET() {
     "data-science-with-ai-course-in",
     "advanced-data-analytics-with-generative-ai-course-in",
     "generative-ai-course-in",
-    "full-stack-with-ai-course-in-pune",
+    "full-stack-with-ai-course-in",
     "java-course-in",
     "python-with-ai-course-in",
     "aws-course-in",
@@ -139,18 +139,18 @@ export async function GET() {
   );
 
   // Generate quiz URLs
-  const quizUrls = [
-    // Main quiz page
-    `
-    <url>
-      <loc>${baseUrl}/quiz</loc>
-      <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.6</priority>
-    </url>
-    `,
+  // const quizUrls = [
+  //   // Main quiz page
+  //   `
+  //   <url>
+  //     <loc>${baseUrl}/quiz</loc>
+  //     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+  //     <changefreq>weekly</changefreq>
+  //     <priority>0.6</priority>
+  //   </url>
+  //   `,
     
-  ];
+  // ];
 
   // Static pages (Home & About Us)
   const staticUrls = [
