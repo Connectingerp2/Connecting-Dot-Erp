@@ -9,9 +9,7 @@ const LoadingSpinner = () => {
           <div className="w-16 h-16 border-4 border-[#2FA9EC] border-t-transparent rounded-full animate-spin"></div>
           <div className="absolute inset-0 w-16 h-16 border-4 border-[#1B4168] border-t-transparent rounded-full animate-spin animation-delay-150"></div>
         </div>
-        <p className="mt-4 text-lg font-semibold text-gray-700">
-          Loading your quiz...
-        </p>
+        <p className="mt-4 text-lg font-semibold text-gray-700">Loading...</p>
       </div>
     </div>
   );

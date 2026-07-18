@@ -82,7 +82,7 @@ const courses = [
   "advanced-data-analytics-with-generative-ai-course-in",
   "business-analytics-course-in",
   "generative-ai-course-in",
-  "full-stack-with-ai-course-in-pune",
+  "full-stack-with-ai-course-in",
   "java-course-in",
   "python-course-in",
   "aws-course-in",

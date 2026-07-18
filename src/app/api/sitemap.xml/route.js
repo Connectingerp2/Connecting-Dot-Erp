@@ -210,7 +210,7 @@ export async function GET() {
     ${staticUrls.join("\n")}
     ${courseUrls.join("\n")}
     ${citySitemapUrls.join("\n")}
-    ${quizUrls.join("\n")}
+    // ${quizUrls.join("\n")}
   </urlset>`;
 
   return new Response(sitemap, {
